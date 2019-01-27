@@ -13,6 +13,11 @@
     height: 100%;
 }
 
+.section-header{
+    background: #030089;
+    cursor: pointer;
+}
+
 #editor {
     position: absolute;
     width: 100%;

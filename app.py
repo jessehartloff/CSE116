@@ -1,16 +1,21 @@
-from flask import Flask
+from flask import Flask, send_from_directory, render_template
 
 app = Flask(__name__)
 
 
 @app.route('/cse116')
 def cse116():
-    return 'Hello CSE116!'
+    return render_template('CSE116.html')
 
 
 @app.route('/cse442')
 def cse442():
-    return 'Hello CSE442!'
+    return render_template('CSE442.html')
+
+
+@app.route('/static_files/<path:filename>')
+def send_style(filename):
+    return send_from_directory('static_files', filename)
 
 
 if __name__ == '__main__':
