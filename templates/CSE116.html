@@ -10,183 +10,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="outer">
-<div class="container-fluid">
-    <hr/>
+<div class="container">
 
-    <h2>CSE116 - Spring 2019</h2>
-    <hr/>
+    <div class="row">
+        <div class="col-0 col-sm-0 col-md-1"></div>
 
-    <a href="https://piazza.com/class/jrfaxugrqbq5ih" target="_blank"><img src="static_files/piazza.png"
-                                                                           class="img-responsive" height="45px"/></a>&nbsp;
-    <a href="https://www.reddit.com/r/CSE116/" target="_blank"><img src="static_files/reddit.png" class="img-responsive"
-                                                                    height="45px"/></a>&nbsp;
-    <a href="https://discord.gg/nC4eBGM" target="_blank"><img src="static_files/discord.png" class="img-responsive"
-                                                              height="45px"/></a>
+        <div class="col-12 col-sm-12 col-md-10">
 
-    <hr/>
+            <hr/>
 
-    <div class="card">
-        <a data-toggle="collapse" data-target="#syllabus">
-            <div class="card-header text-white section-header">
-                <h5>
-                    Syllabus
-                </h5>
+            <h2>CSE116 - Spring 2019</h2>
+            <hr/>
+
+            <a href="https://piazza.com/class/jrfaxugrqbq5ih" target="_blank"><img src="static_files/piazza.png"
+                                                                                   class="img-responsive"
+                                                                                   height="45px"/></a>&nbsp;
+            <a href="https://www.reddit.com/r/CSE116/" target="_blank"><img src="static_files/reddit.png"
+                                                                            class="img-responsive"
+                                                                            height="45px"/></a>&nbsp;
+            <a href="https://discord.gg/nC4eBGM" target="_blank"><img src="static_files/discord.png"
+                                                                      class="img-responsive"
+                                                                      height="45px"/></a>
+
+            <hr/>
+
+            <div class="card">
+                <a data-toggle="collapse" data-target="#syllabus">
+                    <div class="card-header text-white section-header">
+                        <h5>
+                            Syllabus
+                        </h5>
+                    </div>
+                </a>
+
+                <div id="syllabus" class="collapse show">
+                    <div class="card-body">
+                        {% include "cse116/syllabus.html" %}
+                    </div>
+                </div>
             </div>
-        </a>
 
-        <div id="syllabus" class="collapse show">
-            <div class="card-body">
-                {% include "cse116/syllabus.html" %}
+            <hr/>
+
+
+            <div class="card">
+                <a data-toggle="collapse" data-target="#officeHours">
+                    <div class="card-header text-white section-header">
+                        <h5>
+                            Office Hours
+                        </h5>
+                    </div>
+                </a>
+
+                <div id="officeHours" class="collapse show">
+                    <div class="card-body">
+                        {% include "cse116/officeHours.html" %}
+                    </div>
+                </div>
             </div>
+
+
+            <hr/>
+
+            <h3>Schedule</h3>
+
+            <table class="table table-bordered">
+
+                <tbody>
+
+                <tr class="text-white bg-primary">
+                    <td colspan="3"><b>Introduction</b></td>
+                </tr>
+                <tr class="text-white bg-primary">
+                    <td colspan="3"><b>Week 1</b></td>
+                </tr>
+
+                {% include "cse116/week1.html" %}
+
+                <tr class="text-white bg-primary">
+                    <td colspan="3"><b>Week 2</b></td>
+                </tr>
+
+
+                {% include "cse116/week2.html" %}
+
+
+                <tr class="text-white bg-success">
+                    <td colspan="3"><b>Object Oriented Programming (OOP)</b></td>
+                </tr>
+                <tr class="text-white bg-success">
+                    <td colspan="3"><b>Week 3</b></td>
+                </tr>
+
+                {% include "cse116/week3.html" %}
+
+
+                <tr class="text-white bg-success">
+                    <td colspan="3"><b>Week 4</b></td>
+                </tr>
+
+
+                {% include "cse116/week4.html" %}
+
+                <tr class="text-white bg-success">
+                    <td colspan="3"><b>Week 5</b></td>
+                </tr>
+
+                {% include "cse116/week5.html" %}
+
+                <tr class="text-white bg-success">
+                    <td colspan="3"><b>Week 6</b></td>
+                </tr>
+
+
+                {% include "cse116/week6.html" %}
+
+
+                <tr class="text-white bg-warning">
+                    <td colspan="3"><b>Functional Programming (FP) and Data Structures</b></td>
+                </tr>
+                <tr class="text-white bg-warning">
+                    <td colspan="3"><b>Week 7</b></td>
+                </tr>
+
+                {% include "cse116/week7.html" %}
+
+                <tr>
+                    <td colspan="3"><b>Spring Break</b></td>
+                </tr>
+                <tr class="text-white bg-warning">
+                    <td colspan="3"><b>Week 8</b></td>
+                </tr>
+
+                {% include "cse116/week8.html" %}
+
+                <tr class="text-white bg-warning">
+                    <td colspan="3"><b>Week 9</b></td>
+                </tr>
+
+                {% include "cse116/week9.html" %}
+
+                <tr class="text-white bg-danger">
+                    <td colspan="3"><b>Networking and Concurrency</b></td>
+                </tr>
+                <tr class="text-white bg-danger">
+                    <td colspan="3"><b>Week 10</b></td>
+                </tr>
+
+                {% include "cse116/week10.html" %}
+
+                <tr class="text-white bg-danger">
+                    <td colspan="3"><b>Week 11</b></td>
+                </tr>
+
+
+                {% include "cse116/week11.html" %}
+
+
+                <tr class="text-white bg-danger">
+                    <td colspan="3"><b>Week 12</b></td>
+                </tr>
+
+
+                {% include "cse116/week12.html" %}
+
+                <tr class="text-white">
+                    <td class="table-dark" colspan="3"><b>Epilogue</b></td>
+                </tr>
+                <tr class="text-white">
+                    <td class="table-dark" colspan="3"><b>Week 13</b></td>
+                </tr>
+
+
+                {% include "cse116/week13.html" %}
+
+
+                <tr class="text-white">
+                    <td class="table-dark" colspan="3"><b>Week 14</b></td>
+                </tr>
+
+
+                {% include "cse116/week14.html" %}
+
+                </tbody>
+            </table>
+
         </div>
+        <div class="col-0 col-sm-0 col-md-1"></div>
     </div>
-
-    <hr/>
-
-
-    <div class="card">
-        <a data-toggle="collapse" data-target="#officeHours">
-            <div class="card-header text-white section-header">
-                <h5>
-                    Office Hours
-                </h5>
-            </div>
-        </a>
-
-        <div id="officeHours" class="collapse show">
-            <div class="card-body">
-                {% include "cse116/officeHours.html" %}
-            </div>
-        </div>
-    </div>
-
-
-    <hr/>
-
-    <h3>Schedule</h3>
-
-    <table class="table table-bordered">
-
-        <tbody>
-
-        <tr class="text-white bg-primary">
-            <td colspan="3"><b>Introduction</b></td>
-        </tr>
-        <tr class="text-white bg-primary">
-            <td colspan="3"><b>Week 1</b></td>
-        </tr>
-
-        {% include "cse116/week1.html" %}
-
-        <tr class="text-white bg-primary">
-            <td colspan="3"><b>Week 2</b></td>
-        </tr>
-
-
-        {% include "cse116/week2.html" %}
-
-
-        <tr class="text-white bg-success">
-            <td colspan="3"><b>Object Oriented Programming (OOP)</b></td>
-        </tr>
-        <tr class="text-white bg-success">
-            <td colspan="3"><b>Week 3</b></td>
-        </tr>
-
-        {% include "cse116/week3.html" %}
-
-
-        <tr class="text-white bg-success">
-            <td colspan="3"><b>Week 4</b></td>
-        </tr>
-
-
-        {% include "cse116/week4.html" %}
-
-        <tr class="text-white bg-success">
-            <td colspan="3"><b>Week 5</b></td>
-        </tr>
-
-        {% include "cse116/week5.html" %}
-
-        <tr class="text-white bg-success">
-            <td colspan="3"><b>Week 6</b></td>
-        </tr>
-
-
-        {% include "cse116/week6.html" %}
-
-
-        <tr class="text-white bg-warning">
-            <td colspan="3"><b>Functional Programming (FP) and Data Structures</b></td>
-        </tr>
-        <tr class="text-white bg-warning">
-            <td colspan="3"><b>Week 7</b></td>
-        </tr>
-
-        {% include "cse116/week7.html" %}
-
-        <tr>
-            <td colspan="3"><b>Spring Break</b></td>
-        </tr>
-        <tr class="text-white bg-warning">
-            <td colspan="3"><b>Week 8</b></td>
-        </tr>
-
-        {% include "cse116/week8.html" %}
-
-        <tr class="text-white bg-warning">
-            <td colspan="3"><b>Week 9</b></td>
-        </tr>
-
-        {% include "cse116/week9.html" %}
-
-        <tr class="text-white bg-danger">
-            <td colspan="3"><b>Networking and Concurrency</b></td>
-        </tr>
-        <tr class="text-white bg-danger">
-            <td colspan="3"><b>Week 10</b></td>
-        </tr>
-
-        {% include "cse116/week10.html" %}
-
-        <tr class="text-white bg-danger">
-            <td colspan="3"><b>Week 11</b></td>
-        </tr>
-
-
-        {% include "cse116/week11.html" %}
-
-
-        <tr class="text-white bg-danger">
-            <td colspan="3"><b>Week 12</b></td>
-        </tr>
-
-
-        {% include "cse116/week12.html" %}
-
-        <tr class="text-white">
-            <td class="table-dark" colspan="3"><b>Epilogue</b></td>
-        </tr>
-        <tr class="text-white">
-            <td class="table-dark" colspan="3"><b>Week 13</b></td>
-        </tr>
-
-
-        {% include "cse116/week13.html" %}
-
-
-        <tr class="text-white">
-            <td class="table-dark" colspan="3"><b>Week 14</b></td>
-        </tr>
-
-
-        {% include "cse116/week14.html" %}
-
-        </tbody>
-    </table>
-
-
 </div>
 
 <script

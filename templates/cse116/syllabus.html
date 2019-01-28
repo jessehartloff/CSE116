@@ -1,130 +1,337 @@
-<a href="">Link to "official" syllabus</a>
+{#<a href="">Link to "official" syllabus</a>#}
 
 
 <div class="card border-dark mb-3">
-    <!--<div class="card-header">Grading</div>-->
+
+    <div class="card-body">
+        <h3 class="card-title">Course Description</h3>
+
+        <p class="card-text">
+            In CSE115 you've learned the basics of programming. You're proficient in variables, functions, control flow,
+            data structures, file IO, networking, databases, and security. With these concepts you can train a computer
+            to complete any task you can imagine. So what's left to study in CSE116?
+        </p>
+
+        <p>
+            <b>How do we write large programs?</b>
+        </p>
+
+        <p>
+            While it's true that you can do anything already, it becomes very difficult very fast to organize and write
+            a large and complex piece of software. You will practice this in CSE116 by studying topics such as:
+        </p>
+
+        <ul>
+            <li><b>Testing</b> to be confident that you program works before submitting to AutoLab</li>
+            <li><b>Object-Oriented Programming</b> to organize and reuse code</li>
+            <li><b>Functional Programming</b> which simplifies certain problems</li>
+            <li>Several <b>Data Structures</b> to organize and efficiently access data</li>
+            <li>And finally <b>Concurrency</b> allowing multiple pieces of code to execute at the same time while
+                communicating with each other
+            </li>
+        </ul>
+
+        <p>
+            While studying these topics we will have a strong focus on <em>how</em> your programs work, not just that
+            they work.
+        </p>
+
+    </div>
+
+
+    <div class="card-body">
+        <h3 class="card-title">Expectations</h3>
+        <p class="card-text">
+            This is not an easy course! To do well in this course you are expected to:
+        </p>
+        <ul>
+            <li>Want to learn computer science (This is assumed since you are taking a second CSE course)</li>
+            <li>Already be comfortable with all of the CSE115 material</li>
+            <li>Participate in lecture and lab every week (Except the first week when there are no labs)</li>
+            <li>Spend at least 7 hours each week outside of class/lab for a total of at least 12 hours/week on CSE116
+            </li>
+        </ul>
+
+        <p>
+            If you are not comfortable with all the CSE115 material you should expect to work significantly more than
+            12 hours/week until you are caught up with the material. You can use
+            <a href="https://fury.cse.buffalo.edu/quest/cse115-f18/skill-tree">UBInfinite</a> to practice this material.
+        </p>
+
+        <p>
+            If you are unable or unwilling to spend at least 12 hours/week on this course, please navigate your
+            browser to the hub and drop it.
+        </p>
+    </div>
+
+
     <div class="card-body">
         <h3 class="card-title">Grading</h3>
         <p class="card-text">
 
         <p>
-            Your final grade will be determined by your homework and exam grades with the following weighting:
+            Your final grade will be determined using a points based system with the following max points per category:
         </p>
 
         <table class="table table-bordered table-skinny">
             <tr>
                 <td>Homework</td>
-                <td>60%</td>
+                <td>500</td>
             </tr>
             <tr>
-                <td>Exams</td>
-                <td>40%</td>
+                <td>Lab Quizzes and Final Exam</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>Lab Activities</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Team Project</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Lecture Questions</td>
+                <td>300</td>
             </tr>
         </table>
 
+        <br/>
+
         <p>
-            To earn an A in this course, your final course average <strong>must be above 90%</strong>. All other
-            letter grades, including A-, will be determined by a curve. Since this class is smaller than most,
-            this curve will take into account the performance of students in previous semesters on similar assignments.
+            Your final letter grade will be determined by the following cutoffs. There is no curve:
+        </p><br/>
+
+        <table class="table table-bordered table-skinny">
+            <tr>
+                <td>1800+</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>1740 - 1799</td>
+                <td>A-</td>
+            </tr>
+            <tr>
+                <td>1660 - 1739</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>1600 - 1659</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>1540 - 1599</td>
+                <td>B-</td>
+            </tr>
+            <tr>
+                <td>1460 - 1539</td>
+                <td>C+</td>
+            </tr>
+            <tr>
+                <td>1400 - 1459</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>1340 - 1399</td>
+                <td>C-</td>
+            </tr>
+            <tr>
+                <td>1260 - 1339</td>
+                <td>D+</td>
+            </tr>
+            <tr>
+                <td>1200 - 1259</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>< 1200</td>
+                <td>F</td>
+            </tr>
+        </table>
+
+        <br/>
+
+        <p>
+            In accordance with the university grading policy, if you earn an F in this course while attending
+            less than 60% of the meetings time (lecture and lab) you will instead earn a grade of FX.
         </p>
 
         <hr/>
         <h4>Homework</h4>
 
         <p>
-            There are 4 homework assignments in this course each with equal weighting (ie. 15% of your final grade is
-            determined
-            by each homework). These assignments will consist of a combination of designing algorithms, implementing
-            your
-            algorithms as programs (coding), proving the correctness of your algorithms, and analyzing the asymptotic
-            runtime of
-            your algorithms.
+            There are 10 assigned homework assignments throughout the semester worth 50 points each. These are to be
+            completed outside of class/lab and will consume the majority of your >=7 hours/week outside of class.
+            To meet the objectives of this course these assignments will all require you to write fairly large programs
+            with little guidance. In addition, you will not receive feedback on your submissions other than your score
+            and compatibility issues (The grader will let you know if you, for example, have the wrong filenames
+            or directory structure). To encourage proper testing, you must test your own code and submit those tests
+            in order to receive full credit on any homework assignment.
+        </p>
+
+
+        <hr/>
+        <h4>Lab Quizzes and Final Exam</h4>
+
+        <p>
+            There are 6 total sections of the course that will be tested via written quizzes and an exam. Each section
+            is worth 100 points. The first 5 sections will be tested through 1 hour written lab quizzes and the final
+            exam will test all 6 sections separately. Your grade for each section will be the max of your lab quiz score
+            and you score for that section on the final exam (except section 6 which is only on the final exam). If you
+            do well on all the lab quizzes you may have a low-stress, or even skip, the final exam. However, if you do
+            poorly on some, or all, of the lab quizzes you can still recover those points by proving that you understand
+            the material at the end of the semester on the final exam. You cannot makeup the lab quizzes for any reason,
+            but you can use the final exam to makeup for any quiz even if you didn't take the quiz.
         </p>
 
         <hr/>
-        <div><h4>Exams</h4></div>
+        <h4>Lab Activities</h4>
 
         <p>
-            There will be a midterm and final exam in this course with the following weightings on your course average:
+            There will be 5 lab activities covering a variety of topics. Lab activities are worth 50 points each with
+            your lowest score being dropped (Your best 4 scores count for your grade). If you have to miss a lab for any
+            reason you will not be able to makeup that activity, but you can drop the 0 and complete the other 4.
+        </p>
+
+        <hr/>
+        <h4>Team Project</h4>
+
+        <p>
+            During the remaining 3 labs you will demo your team project to the TAs. The first 2 demos are worth 100
+            points each with the third worth 200. You will work on this project with your team throughout the semester.
+            You will have time to meet with your team after each of the lab quizzes and are expected to spend
+            significant time outside of lab to complete the project. To allow time for this no homework will be due on
+            the same week as a project demo.
+        </p>
+
+        <hr/>
+        <h4>Lecture Questions</h4>
+
+        <p>
+            Most lectures will consist of questions or activities that are to be completed before the end of lecture.
+            Each lecture is worth 10 points and there will be at least 38 lectures with questions, but your points are
+            capped at 300 total. This is meant to reduce the stress of missing a question of having to miss a lecture
+            since you can miss 8 lectures and still max out this category. The intent of these questions is to give you
+            an opportunity to
+            practice the material in the current lecture as you are learning it as opposed to passively attending
+            the lecture. To be fully prepared for these questions you should complete the reading for the lecture in
+            advance.
+        </p>
+        <p>
+            Please note that these questions are not glorified attendance like you may have experienced in the past.
+            A significant portion of lecture will be spent working on these questions. Lectures will roughly follow
+            this structure, though each lecture will vary as needed:
         </p>
 
         <table class="table table-bordered table-skinny">
             <tr>
-                <td>Midterm Exam</td>
-                <td>15%</td>
+                <td>5 minutes</td>
+                <td>Reinforcing a topic previously covered as voted by you</td>
             </tr>
             <tr>
-                <td>Final Exam</td>
-                <td>25%</td>
+                <td>15 minutes</td>
+                <td>Lecture covering the days topic(s)</td>
+            </tr>
+            <tr>
+                <td>30 minutes</td>
+                <td>Lecture questions. The TAs and myself will answer questions as needed. If there are common questions
+                or mass confusion I will present examples demonstrating the topic(s) that are unclear</td>
             </tr>
         </table>
 
-        <p>
-            However, if it is to your benefit these weightings will be adjusted to the following on an individual basis:
-        </p>
-
-
-        <table class="table table-bordered table-skinny">
-            <tr>
-                <td>Midterm Exam</td>
-                <td>5%</td>
-            </tr>
-            <tr>
-                <td>Final Exam</td>
-                <td>35%</td>
-            </tr>
-        </table>
-
-        <p>
-            This means that if you don't do well on the midterm you can still earn a high grade in the course if you
-            show that
-            you have learned the material before the final exam.
-        </p>
-
-        </p>
     </div>
 
 </div>
 
 <div id="section2" class="section-marker"></div>
 <div class="card border-dark mb-3">
-    <!--<div class="card-header">Contact Information</div>-->
     <div class="card-body">
-        <h3 class="card-title">Contact Information</h3>
-        <p class="card-text">
+        <h3 class="card-title">Communication</h3>
+
+        <p>
+            There are multiple communication channels available to you through this course. There is no requirement to
+            use any of these, though you are encouraged to use any tools that you find helpful. A brief description
+            of the recommended and expected use of each is given below, but the use of each will shift based on what
+            you utilize and how.
+        </p>
+
+        <p>
+            Please note that these platforms are made available to help you communicate with your classmates as well
+            as the course staff. The course
+            staff will do what we can to be active on all platforms, but you should not expect us to answer every
+            question and respond to every post. With that said, you are much more likely to get a response if you show
+            that you are putting in the time to try to understand the material. Posts that just say "help, I'm confused"
+            rarely get meaningful responses.
+        </p>
+
+        <ul>
+            <li>
+                <a href="https://www.reddit.com/r/CSE116/" target="_blank">Reddit</a>: A discussion site with a
+                notable voting system. Will be used to vote on the topics reinforced at the beginning of each lecture
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="https://piazza.com/class/jrfaxugrqbq5ih" target="_blank">Piazza</a>: A Q&A site designed for
+                academic courses
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="https://discord.gg/nC4eBGM" target="_blank">Discord</a>: A chat app with voice and video
+                support
+            </li>
+        </ul>
+
+        <p>
+            All of these platforms are used to help you learn the course material with your classmates and the advantage
+            of these is that the entire class can see the answers and conversation. Please do not use these to DM
+            course staff with specific questions. You will be ignored. If you have a question that requires us to see
+            your code please visit us in office hours.
+        </p>
+
+        <p>
+            If there is a question that requires my/Jesse's attention (ex. I have to sign paperwork, you have to
+            reschedule the final exam, you require accessibility resources) and you can't wait for my office hours
+            please send an email to hartloff@buffalo.edu
+            with the subject line "CSE116 Instructor" to ensure it gets my proper attention. Any emails/DMs/private
+            posts that could be answered by any other means will largely be ignored. I would like to respond to all of
+            you, but I simply do not have the time so I must prioritize this way.
+        </p>
+
+    </div>
+</div>
+
+<div id="section2" class="section-marker"></div>
+<div class="card border-dark mb-3">
+    <div class="card-body">
+        <h3 class="card-title">Instructor</h3>
         <p>
             Instructor: Dr. Jesse Hartloff<br/>
             Office: Davis 344<br/>
-            Office Hours: Wednesday 1:00 PM - 3:00 PM<br/>
-            Email: hartloff@buffalo.edu
+            Office Hours: Tuesday 2:00 PM - 3:20 PM
         </p>
 
-
+        <p>
+            In addition to office hours I will answer quick questions after each lecture. If I don't look busy you can
+            also ask questions before class, but please don't ask a question less that 1 minute before the start of
+            lecture. I've got a thing I gotta do and I won't have time to give you a proper answer.
         </p>
     </div>
-
 </div>
 
 <div id="section3" class="section-marker"></div>
 <div class="card border-dark mb-3">
-    <!--<div class="card-header">Textbook</div>-->
     <div class="card-body">
-        <h3 class="card-title">Textbook</h3>
-        <p class="card-text">
-        <p>There is no <em>required</em> textbook for this course. However, the material will closely follow this course
-            textbook and it
-            is strongly encouraged that you get a copy of the book if you want to do well in this course.</p>
+        <h3 class="card-title">Readings</h3>
         <p>
-            Course textbook:
-            </p>
-        <ul>
-            <li><a href="https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html">Algorithm
-                Design</a>
-            </li>
-        </ul>
-
-
+            There is no textbook for this course. Instead, links to relevant readings and tutorials will be provided
+            in the course schedule. When a reading is listed you should study it before lecture to be prepared for the
+            lecture question.
         </p>
+
     </div>
 
 </div>
@@ -134,7 +341,6 @@
     <!--<div class="card-header">University/Department Policies and Services</div>-->
     <div class="card-body">
         <h3 class="card-title">University/Department Policies and Services</h3>
-        <p class="card-text">
         <ul>
             <li>Counseling: <a href="http://www.buffalo.edu/studentlife/who-we-are/departments/counseling.html">http://www.buffalo.edu/studentlife/who-we-are/departments/counseling.html</a>
             </li>
@@ -145,8 +351,6 @@
             </li>
         </ul>
 
-
-        </p>
     </div>
 
 </div>
@@ -159,8 +363,8 @@
         <p class="card-text">
         <p>
             CSE Department Academic Integrity Policy: <br/><a
-                href="https://engineering.buffalo.edu/computer-science-engineering/undergraduate/resources-for-current-students/academic-integrity-students.html">
-            https://engineering.buffalo.edu/computer-science-engineering/undergraduate/resources-for-current-students/academic-integrity-students.html</a>
+                href="https://engineering.buffalo.edu/computer-science-engineering/information-for-faculty-and-staff/policies/academic-integrity-students.html">
+            https://engineering.buffalo.edu/computer-science-engineering/information-for-faculty-and-staff/policies/academic-integrity-students.html</a>
         </p>
         <p>
             UB Academic Integrity Policy: <br/><a
@@ -168,15 +372,17 @@
             https://catalog.buffalo.edu/policies/integrity.html</a>
         </p>
         <p>
+            In addition to the department and university policies, the following details apply to this course.
+        </p>
+
+        <p>
 
             All submitted work must be of your own creation and you must not share your submission with anyone else. If
             any submission is very similar to code that has been submitted by another student
             or can be found online, it is in violation of this courses academic integrity policy and all students will
             be penalized whether they were copying or sharing their code with other students so they can copy. If two
             submissions are similar beyond what is likely if the students worked independently, then <b>both students
-            are
-            in
-            violation</b> of the academic integrity policy.
+            are in violation</b> of the academic integrity policy.
         </p>
         <p>
             All violations will result in:
@@ -185,7 +391,7 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="text-center alert alert-danger">
-                    <h3 style="color:red">An F in CSE331.</h3>
+                    <h3 style="color:red">An F in CSE116.</h3>
                 </div>
             </div>
             <div class="col-sm-8"></div>
@@ -202,7 +408,7 @@
         </p>
         <ul>
             <li>Discussing an assignment with your classmates and brainstorming abstract solutions, then writing
-                algorithms, code, and proofs independently
+                code independently
             </li>
             <li>Searching the Internet for supplementary material on the course topics</li>
             <li>Asking the teaching staff for clarification on a homework question</li>
@@ -212,13 +418,13 @@
             Examples of <b>un</b>acceptable behavior:
         </p>
         <ul>
-            <li>Submitting an algorithm, code, or proof that you did not write.</li>
-            <li>Allowing another student to see your algorithm, code, or proof for an assignment.</li>
-            <li>Collaborating with another student to write an algorithm, code, or proof together for an assignment.
+            <li>Submitting a code or other work that is not your own.</li>
+            <li>Allowing another student to see your code or submission for an assignment.</li>
+            <li>Collaborating with another student to write code for an assignment [other than working with your
+                teammates on the team project].
             </li>
             <li>Allowing another student to access your work that will be submitted for course credit. (Examples: Do not
-                host your code in a public
-                repository or allow your roommate to access you laptop)
+                post you code publicly, host your code in a public repository, or allow a classmate to access your laptop)
             </li>
             <li>Copying a large amount material found on the Internet into your submission.</li>
             <li>Attempting to access the grading code on AutoLab.</li>
