@@ -79,131 +79,233 @@
 
             <h3>Schedule</h3>
 
-            <table class="table table-bordered">
 
-                <tbody>
+{#            <div class="card">#}
+                <a data-toggle="collapse" data-target="#block1">
+                    <div class="card-header text-white section-header bg-primary">
+                        <h5>
+                            Introduction
+                        </h5>
+                    </div>
+                </a>
 
-                <tr class="text-white bg-primary">
-                    <td colspan="3"><b>Introduction</b></td>
-                </tr>
-                <tr class="text-white bg-primary">
-                    <td colspan="3"><b>Week 1</b></td>
-                </tr>
+                <div id="block1" class="collapse">
+                    <table class="table table-bordered">
 
-                {% include "cse116/week1.html" %}
+                        <tbody>
+                        <tr class="text-white bg-primary">
+                            <td colspan="3"><b>Week 1</b></td>
+                        </tr>
 
-                <tr class="text-white bg-primary">
-                    <td colspan="3"><b>Week 2</b></td>
-                </tr>
+                        {% include "cse116/week1.html" %}
 
-
-                {% include "cse116/week2.html" %}
-
-
-                <tr class="text-white bg-success">
-                    <td colspan="3"><b>Object Oriented Programming (OOP)</b></td>
-                </tr>
-                <tr class="text-white bg-success">
-                    <td colspan="3"><b>Week 3</b></td>
-                </tr>
-
-                {% include "cse116/week3.html" %}
+                        <tr class="text-white bg-primary">
+                            <td colspan="3"><b>Week 2</b></td>
+                        </tr>
 
 
-                <tr class="text-white bg-success">
-                    <td colspan="3"><b>Week 4</b></td>
-                </tr>
+                        {% include "cse116/week2.html" %}
+
+                        </tbody>
+                    </table>
+
+                </div>
+{#            </div>#}
 
 
-                {% include "cse116/week4.html" %}
+            {#            <table class="table table-bordered">#}
+            {##}
+            {#                <tbody>#}
+            {##}
+            {##}
+            {#            <a data-toggle="collapse" data-target="#block1">#}
+            {#                <tr class="text-white bg-primary clickable" data-toggle="collapse" data-target="#block1">#}
+            {#                    <td colspan="3"><b>Introduction</b></td>#}
+            {#                </tr>#}
+            {#            </a>#}
+            {#            <div id="block1" class="collapse">#}
+            {##}
+            {#                <tr class="text-white bg-primary">#}
+            {#                    <td colspan="3"><b>Week 1</b></td>#}
+            {#                </tr>#}
+            {##}
+            {#                {% include "cse116/week1.html" %}#}
+            {##}
+            {#                <tr class="text-white bg-primary">#}
+            {#                    <td colspan="3"><b>Week 2</b></td>#}
+            {#                </tr>#}
+            {##}
+            {##}
+            {#                {% include "cse116/week2.html" %}#}
+            {##}
+            {#</div>#}
 
-                <tr class="text-white bg-success">
-                    <td colspan="3"><b>Week 5</b></td>
-                </tr>
+            <a data-toggle="collapse" data-target="#block2">
+                    <div class="card-header text-white section-header bg-success">
+                        <h5>
+                            Object Oriented Programming (OOP)
+                        </h5>
+                    </div>
+                </a>
 
-                {% include "cse116/week5.html" %}
+                <div id="block2" class="collapse">
+                    <table class="table table-bordered">
 
-                <tr class="text-white bg-success">
-                    <td colspan="3"><b>Week 6</b></td>
-                </tr>
+                        <tbody>
 
+{#            <tr class="text-white bg-success">#}
+{#                <td colspan="3"><b>Object Oriented Programming (OOP)</b></td>#}
+{#            </tr>#}
+            <tr class="text-white bg-success">
+                <td colspan="3"><b>Week 3</b></td>
+            </tr>
 
-                {% include "cse116/week6.html" %}
-
-
-                <tr class="text-white bg-warning">
-                    <td colspan="3"><b>Functional Programming (FP) and Data Structures</b></td>
-                </tr>
-                <tr class="text-white bg-warning">
-                    <td colspan="3"><b>Week 7</b></td>
-                </tr>
-
-                {% include "cse116/week7.html" %}
-
-                <tr>
-                    <td colspan="3"><b>Spring Break</b></td>
-                </tr>
-
-                <tr class="text-white bg-warning">
-                    <td colspan="3"><b>Week 8</b></td>
-                </tr>
-
-                {% include "cse116/week8.html" %}
-
-                <tr class="text-white bg-warning">
-                    <td colspan="3"><b>Week 9</b></td>
-                </tr>
-
-                {% include "cse116/week9.html" %}
-
-                <tr class="text-white bg-danger">
-                    <td colspan="3"><b>Networking and Concurrency</b></td>
-                </tr>
-                <tr class="text-white bg-danger">
-                    <td colspan="3"><b>Week 10</b></td>
-                </tr>
-
-                {% include "cse116/week10.html" %}
-
-                <tr class="text-white bg-danger">
-                    <td colspan="3"><b>Week 11</b></td>
-                </tr>
+            {% include "cse116/week3.html" %}
 
 
-                {% include "cse116/week11.html" %}
+            <tr class="text-white bg-success">
+                <td colspan="3"><b>Week 4</b></td>
+            </tr>
 
 
-                <tr class="text-white bg-danger">
-                    <td colspan="3"><b>Week 12</b></td>
-                </tr>
+            {% include "cse116/week4.html" %}
+
+            <tr class="text-white bg-success">
+                <td colspan="3"><b>Week 5</b></td>
+            </tr>
+
+            {% include "cse116/week5.html" %}
+
+            <tr class="text-white bg-success">
+                <td colspan="3"><b>Week 6</b></td>
+            </tr>
 
 
-                {% include "cse116/week12.html" %}
+            {% include "cse116/week6.html" %}
 
-                <tr class="text-white">
-                    <td class="table-dark" colspan="3"><b>Epilogue</b></td>
-                </tr>
-                <tr class="text-white">
-                    <td class="table-dark" colspan="3"><b>Week 13</b></td>
-                </tr>
+                        </tbody></table></div>
 
 
-                {% include "cse116/week13.html" %}
+            <a data-toggle="collapse" data-target="#block3">
+                    <div class="card-header text-white section-header bg-warning">
+                        <h5>
+                            Functional Programming (FP) and Data Structures
+                        </h5>
+                    </div>
+                </a>
+
+                <div id="block3" class="collapse show">
+                    <table class="table table-bordered">
+
+                        <tbody>
 
 
-                <tr class="text-white">
-                    <td class="table-dark" colspan="3"><b>Week 14</b></td>
-                </tr>
+{#            <tr class="text-white bg-warning">#}
+{#                <td colspan="3"><b>Functional Programming (FP) and Data Structures</b></td>#}
+{#            </tr>#}
+            <tr class="text-white bg-warning">
+                <td colspan="3"><b>Week 7</b></td>
+            </tr>
+
+            {% include "cse116/week7.html" %}
+
+            <tr>
+                <td colspan="3"><b>Spring Break</b></td>
+            </tr>
+
+            <tr class="text-white bg-warning">
+                <td colspan="3"><b>Week 8</b></td>
+            </tr>
+
+            {% include "cse116/week8.html" %}
+
+            <tr class="text-white bg-warning">
+                <td colspan="3"><b>Week 9</b></td>
+            </tr>
+
+            {% include "cse116/week9.html" %}
+
+                        </tbody></table></div>
+
+            <a data-toggle="collapse" data-target="#block4">
+                    <div class="card-header text-white section-header bg-danger">
+                        <h5>
+                            Networking and Concurrency
+                        </h5>
+                    </div>
+                </a>
+
+                <div id="block4" class="collapse show">
+                    <table class="table table-bordered">
+
+                        <tbody>
 
 
-                {% include "cse116/week14.html" %}
+{#            <tr class="text-white bg-danger">#}
+{#                <td colspan="3"><b>Networking and Concurrency</b></td>#}
+{#            </tr>#}
+            <tr class="text-white bg-danger">
+                <td colspan="3"><b>Week 10</b></td>
+            </tr>
 
-                <tr class="text-white">
-                    <td class="table-dark" colspan="3"><b>Final Exam - Friday, May 17</b></td>
-                </tr>
+            {% include "cse116/week10.html" %}
 
-                </tbody>
+            <tr class="text-white bg-danger">
+                <td colspan="3"><b>Week 11</b></td>
+            </tr>
+
+
+            {% include "cse116/week11.html" %}
+
+
+            <tr class="text-white bg-danger">
+                <td colspan="3"><b>Week 12</b></td>
+            </tr>
+
+
+            {% include "cse116/week12.html" %}
+
+                        </tbody></table></div>
+
+            <a data-toggle="collapse" data-target="#block5">
+                    <div class="card-header text-white section-header bg-dark">
+                        <h5>
+                            Epilogue
+                        </h5>
+                    </div>
+                </a>
+
+                <div id="block5" class="collapse show">
+                    <table class="table table-bordered">
+
+                        <tbody>
+
+
+{#            <tr class="text-white">#}
+{#                <td class="table-dark" colspan="3"><b>Epilogue</b></td>#}
+{#            </tr>#}
+            <tr class="text-white">
+                <td class="table-dark" colspan="3"><b>Week 13</b></td>
+            </tr>
+
+
+            {% include "cse116/week13.html" %}
+
+
+            <tr class="text-white">
+                <td class="table-dark" colspan="3"><b>Week 14</b></td>
+            </tr>
+
+
+            {% include "cse116/week14.html" %}
+
+            <tr class="text-white">
+                <td class="table-dark" colspan="3"><b>Final Exam - Friday, May 17</b></td>
+            </tr>
+
+            </tbody>
             </table>
+                </div>
 
         </div>
         <div class="col-0 col-sm-0 col-md-1"></div>
