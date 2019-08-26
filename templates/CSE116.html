@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSE116 - Spring 2019</title>
+    <title>CSE116 - Fall 2019</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
@@ -19,24 +19,19 @@
 
             <hr/>
 
-            <h2>CSE116 - Spring 2019</h2>
+            <h1>CSE116: Computer Science 2</h1>
+            <h2>Fall 2019</h2>
             <hr/>
 
-            <a href="https://piazza.com/class/jrfaxugrqbq5ih" target="_blank"><img src="static_files/piazza.png"
+            <a href="https://github.com/hartloff/CSE116-Scala-Examples"><img src="static_files/github.png"
+                                                                             class="img-responsive"
+                                                                             height="45px"/></a>&nbsp;
+            <a href="https://piazza.com/class/jzrrfym48i57ko" target="_blank"><img src="static_files/piazza.png"
                                                                                    class="img-responsive"
                                                                                    height="45px"/></a>&nbsp;
-            <a href="https://www.reddit.com/r/CSE116/" target="_blank"><img src="static_files/reddit.png"
-                                                                            class="img-responsive"
-                                                                            height="45px"/></a>&nbsp;
             <a href="https://discord.gg/nC4eBGM" target="_blank"><img src="static_files/discord.png"
                                                                       class="img-responsive"
                                                                       height="45px"/></a>
-
-            <hr/>
-
-            <a href="https://github.com/hartloff/CSE116-Scala-Examples">Scala Examples</a><br/>
-            <a href="https://github.com/hartloff/CSE116-Python-Examples">Python Examples</a><br/>
-
             <hr/>
 
             <div class="card">
@@ -48,7 +43,7 @@
                     </div>
                 </a>
 
-                <div id="syllabus" class="collapse">
+                <div id="syllabus" class="collapse show">
                     <div class="card-body">
                         {% include "cse116/syllabus.html" %}
                     </div>
@@ -79,242 +74,205 @@
 
             <h3>Schedule</h3>
 
-
-{#            <div class="card">#}
-                <a data-toggle="collapse" data-target="#block1">
-                    <div class="card-header text-white section-header bg-primary">
-                        <h5>
-                            Introduction
-                        </h5>
-                    </div>
-                </a>
-
-                <div id="block1" class="collapse">
-                    <table class="table table-bordered">
-
-                        <tbody>
-                        <tr class="text-white bg-primary">
-                            <td colspan="3"><b>Week 1</b></td>
-                        </tr>
-
-                        {% include "cse116/week1.html" %}
-
-                        <tr class="text-white bg-primary">
-                            <td colspan="3"><b>Week 2</b></td>
-                        </tr>
-
-
-                        {% include "cse116/week2.html" %}
-
-                        </tbody>
-                    </table>
-
+            <a data-toggle="collapse" data-target="#block1">
+                <div class="card-header text-white section-header bg-primary">
+                    <h5>
+                        Level 1: Welcome to Scala
+                    </h5>
                 </div>
-{#            </div>#}
+            </a>
+
+            <div id="block1" class="collapse show">
+                <table class="table table-bordered">
+
+                    <tbody>
+                    <tr class="text-white bg-primary">
+                        <td colspan="3"><b>Week 1</b></td>
+                    </tr>
+
+                    {% include "cse116/week1.html" %}
+
+                    <tr class="text-white bg-primary">
+                        <td colspan="3"><b>Week 2</b></td>
+                    </tr>
 
 
-            {#            <table class="table table-bordered">#}
-            {##}
-            {#                <tbody>#}
-            {##}
-            {##}
-            {#            <a data-toggle="collapse" data-target="#block1">#}
-            {#                <tr class="text-white bg-primary clickable" data-toggle="collapse" data-target="#block1">#}
-            {#                    <td colspan="3"><b>Introduction</b></td>#}
-            {#                </tr>#}
-            {#            </a>#}
-            {#            <div id="block1" class="collapse">#}
-            {##}
-            {#                <tr class="text-white bg-primary">#}
-            {#                    <td colspan="3"><b>Week 1</b></td>#}
-            {#                </tr>#}
-            {##}
-            {#                {% include "cse116/week1.html" %}#}
-            {##}
-            {#                <tr class="text-white bg-primary">#}
-            {#                    <td colspan="3"><b>Week 2</b></td>#}
-            {#                </tr>#}
-            {##}
-            {##}
-            {#                {% include "cse116/week2.html" %}#}
-            {##}
-            {#</div>#}
+                    {% include "cse116/week2.html" %}
+
+                    <tr class="text-white bg-primary">
+                        <td colspan="3"><b>Week 3</b></td>
+                    </tr>
+
+                    {% include "cse116/week3.html" %}
+                    </tbody>
+                </table>
+
+            </div>
+
 
             <a data-toggle="collapse" data-target="#block2">
-                    <div class="card-header text-white section-header bg-success">
-                        <h5>
-                            Object Oriented Programming (OOP)
-                        </h5>
-                    </div>
-                </a>
+                <div class="card-header text-white section-header bg-success">
+                    <h5>
+                        Level 2: Object Oriented Programming (OOP)
+                    </h5>
+                </div>
+            </a>
 
-                <div id="block2" class="collapse">
-                    <table class="table table-bordered">
+            <div id="block2" class="collapse show">
+                <table class="table table-bordered">
 
-                        <tbody>
+                    <tbody>
 
-{#            <tr class="text-white bg-success">#}
-{#                <td colspan="3"><b>Object Oriented Programming (OOP)</b></td>#}
-{#            </tr>#}
-            <tr class="text-white bg-success">
-                <td colspan="3"><b>Week 3</b></td>
-            </tr>
-
-            {% include "cse116/week3.html" %}
+                    <tr class="text-white bg-success">
+                        <td colspan="3"><b>Week 4</b></td>
+                    </tr>
 
 
-            <tr class="text-white bg-success">
-                <td colspan="3"><b>Week 4</b></td>
-            </tr>
+                    {% include "cse116/week4.html" %}
+
+                    <tr class="text-white bg-success">
+                        <td colspan="3"><b>Week 5</b></td>
+                    </tr>
+
+                    {% include "cse116/week5.html" %}
+
+                    <tr class="text-white bg-success">
+                        <td colspan="3"><b>Week 6</b></td>
+                    </tr>
 
 
-            {% include "cse116/week4.html" %}
+                    {% include "cse116/week6.html" %}
 
-            <tr class="text-white bg-success">
-                <td colspan="3"><b>Week 5</b></td>
-            </tr>
-
-            {% include "cse116/week5.html" %}
-
-            <tr class="text-white bg-success">
-                <td colspan="3"><b>Week 6</b></td>
-            </tr>
-
-
-            {% include "cse116/week6.html" %}
-
-                        </tbody></table></div>
+                    </tbody>
+                </table>
+            </div>
 
 
             <a data-toggle="collapse" data-target="#block3">
-                    <div class="card-header text-white section-header bg-warning">
-                        <h5>
-                            Functional Programming (FP) and Data Structures
-                        </h5>
-                    </div>
-                </a>
+                <div class="card-header text-white section-header bg-warning">
+                    <h5>
+                        Level 3: Concurrency and Networking
+                    </h5>
+                </div>
+            </a>
 
-                <div id="block3" class="collapse">
-                    <table class="table table-bordered">
+            <div id="block3" class="collapse show">
+                <table class="table table-bordered">
 
-                        <tbody>
+                    <tbody>
+
+                    <tr class="text-white bg-warning">
+                        <td colspan="3"><b>Week 7</b></td>
+                    </tr>
+
+                    {% include "cse116/week7.html" %}
 
 
-{#            <tr class="text-white bg-warning">#}
-{#                <td colspan="3"><b>Functional Programming (FP) and Data Structures</b></td>#}
-{#            </tr>#}
-            <tr class="text-white bg-warning">
-                <td colspan="3"><b>Week 7</b></td>
-            </tr>
+                    <tr class="text-white bg-warning">
+                        <td colspan="3"><b>Week 8</b></td>
+                    </tr>
 
-            {% include "cse116/week7.html" %}
+                    {% include "cse116/week8.html" %}
 
-            <tr>
-                <td colspan="3"><b>Spring Break</b></td>
-            </tr>
+                    <tr class="text-white bg-warning">
+                        <td colspan="3"><b>Week 9</b></td>
+                    </tr>
 
-            <tr class="text-white bg-warning">
-                <td colspan="3"><b>Week 8</b></td>
-            </tr>
+                    {% include "cse116/week9.html" %}
 
-            {% include "cse116/week8.html" %}
-
-            <tr class="text-white bg-warning">
-                <td colspan="3"><b>Week 9</b></td>
-            </tr>
-
-            {% include "cse116/week9.html" %}
-
-                        </tbody></table></div>
+                    </tbody>
+                </table>
+            </div>
 
             <a data-toggle="collapse" data-target="#block4">
-                    <div class="card-header text-white section-header bg-danger">
-                        <h5>
-                            Networking and Concurrency
-                        </h5>
-                    </div>
-                </a>
+                <div class="card-header text-white section-header bg-danger">
+                    <h5>
+                        Level 4: First-Class Functions and Data Structures
+                    </h5>
+                </div>
+            </a>
 
-                <div id="block4" class="collapse show">
-                    <table class="table table-bordered">
+            <div id="block4" class="collapse show">
+                <table class="table table-bordered">
 
-                        <tbody>
-
-
-{#            <tr class="text-white bg-danger">#}
-{#                <td colspan="3"><b>Networking and Concurrency</b></td>#}
-{#            </tr>#}
-            <tr class="text-white bg-danger">
-                <td colspan="3"><b>Week 10</b></td>
-            </tr>
-
-            {% include "cse116/week10.html" %}
-
-            <tr class="text-white bg-danger">
-                <td colspan="3"><b>Week 11</b></td>
-            </tr>
+                    <tbody>
 
 
-            {% include "cse116/week11.html" %}
+                    <tr class="text-white bg-danger">
+                        <td colspan="3"><b>Week 10</b></td>
+                    </tr>
+
+                    {% include "cse116/week10.html" %}
+
+                    <tr class="text-white bg-danger">
+                        <td colspan="3"><b>Week 11</b></td>
+                    </tr>
 
 
-            <tr class="text-white bg-danger">
-                <td colspan="3"><b>Week 12</b></td>
-            </tr>
+                    {% include "cse116/week11.html" %}
 
 
-            {% include "cse116/week12.html" %}
+                    <tr class="text-white bg-danger">
+                        <td colspan="3"><b>Week 12</b></td>
+                    </tr>
 
-                        </tbody></table></div>
+
+                    {% include "cse116/week12.html" %}
+
+                    </tbody>
+                </table>
+            </div>
 
             <a data-toggle="collapse" data-target="#block5">
-                    <div class="card-header text-white section-header bg-dark">
-                        <h5>
-                            Epilogue
-                        </h5>
-                    </div>
-                </a>
-
-                <div id="block5" class="collapse show">
-                    <table class="table table-bordered">
-
-                        <tbody>
-
-
-{#            <tr class="text-white">#}
-{#                <td class="table-dark" colspan="3"><b>Epilogue</b></td>#}
-{#            </tr>#}
-            <tr class="text-white">
-                <td class="table-dark" colspan="3"><b>Week 13</b></td>
-            </tr>
-
-
-            {% include "cse116/week13.html" %}
-
-
-            <tr class="text-white">
-                <td class="table-dark" colspan="3"><b>Week 14</b></td>
-            </tr>
-
-
-            {% include "cse116/week14.html" %}
-
-<tr class="table-info">
-    <td colspan="3"><a href="static_files/lab/Sample_Lab_Quiz_6.pdf">Sample Quiz 6</a></td>
-</tr>
-
-            <tr class="text-white">
-                <td class="table-dark" colspan="3"><b>Final Exam - Friday, May 17</b></td>
-            </tr>
-
-            </tbody>
-            </table>
+                <div class="card-header text-white section-header bg-dark">
+                    <h5>
+                        Level 5: Graphs and Algorithms
+                    </h5>
                 </div>
+            </a>
+
+            <div id="block5" class="collapse show">
+                <table class="table table-bordered">
+
+                    <tbody>
+
+                    <tr class="text-white">
+                        <td class="table-dark" colspan="3"><b>Week 13</b></td>
+                    </tr>
+
+
+                    {% include "cse116/week13.html" %}
+
+
+                    <tr class="text-white">
+                        <td class="table-dark" colspan="3"><b>Week 14</b></td>
+                    </tr>
+
+
+                    {% include "cse116/week14.html" %}
+
+
+                    <tr class="text-white">
+                        <td class="table-dark" colspan="3"><b>Week 15</b></td>
+                    </tr>
+
+
+                    {% include "cse116/week15.html" %}
+
+
+                    <tr class="text-white">
+                        <td class="table-dark" colspan="3"><b>Final Exam - Friday, December 13 @ 11:45am - 2:45pm NSC201 </b></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
 
         </div>
         <div class="col-0 col-sm-0 col-md-1"></div>
     </div>
 </div>
+
 
 <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"

@@ -8,11 +8,6 @@ def cse116():
     return render_template('CSE116.html')
 
 
-@app.route('/cse442')
-def cse442():
-    return render_template('CSE442.html')
-
-
 @app.route('/static_files/<path:filename>')
 def send_style(filename):
     return send_from_directory('static_files', filename)
