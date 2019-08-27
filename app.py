@@ -9,7 +9,7 @@ def cse116():
 
 
 @app.route('/cse116-s19')
-def cse116():
+def cse116_s19():
     return render_template('old_CSE116.html')
 
 
