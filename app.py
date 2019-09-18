@@ -2,7 +2,6 @@ from flask import Flask, send_from_directory, render_template
 
 app = Flask(__name__)
 
-
 @app.route('/cse116')
 def cse116():
     return render_template('CSE116.html')
