@@ -19,3 +19,8 @@ def send_style(filename):
 
 if __name__ == '__main__':
     app.run()
+
+
+import html
+
+html.escape("fsdgafsdg")
