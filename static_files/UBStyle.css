@@ -3,8 +3,54 @@
     height: 100%;
 }
 
-.section-header{
+.objective {
+    list-style-type: square;
+}
+
+.section-header {
     background: #030089;
+    cursor: pointer;
+}
+
+.section-intro {
+    background-color: #514f57;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.section-testing {
+    background-color: #3265cb;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.section-oop {
+    background-color: #3c9b3b;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.section-fp {
+    background-color: #cca238;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.section-ds {
+    background-color: #319397;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.section-events {
+    background-color: #bd181f;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.section-se {
+    background-color: #514f57;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -29,10 +75,11 @@ div.xp-progress {
     height: 15px;
 }
 
-div.progress div.progress-bar{
+div.progress div.progress-bar {
     -webkit-transition: none !important;
     transition: none !important;
 }
+
 div.xp-progress-bar {
     background: linear-gradient(to bottom, #bbbb00 0%, #ffff00 35%, #ffff00 60%, #bbbb00 100%);
 }
@@ -183,6 +230,7 @@ div.padded {
     /*padding-right: 5%;*/
     padding: 4px 5px;
 }
+
 div.extra-padded {
     padding: 2% 3%;
 }

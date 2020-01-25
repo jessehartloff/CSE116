@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSE116 - Fall 2019</title>
+{#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"#}
+{#          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">#}
+    <link rel="stylesheet" href="/static_files/lib/bootstrap-4.0.0.min.css">
+    <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/static_files/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="outer">
+<div class="container">
+
+    <div class="row">
+        <div class="col-0 col-sm-0 col-md-1"></div>
+
+        <div class="col-12 col-sm-12 col-md-10">
+
+            <hr/>
+
+            <h1>CSE116: Computer Science 2</h1>
+            <h2>Fall 2019</h2>
+            <hr/>
+
+
+            <a href="https://autograder.cse.buffalo.edu/courses/CSE116-f19/assessments" target="_blank">
+                <img src="/static_files/autolab.svg" class="img-responsive" height="45px"/></a>&nbsp;&nbsp;
+
+            <a href="https://github.com/hartloff/CSE116-Examples" target="_blank">
+                <img src="/static_files/github.png" class="img-responsive" height="45px"/></a>&nbsp;&nbsp;
+
+            <a href="https://piazza.com/class/jzrrfym48i57ko" target="_blank">
+                <img src="/static_files/piazza.png" class="img-responsive" height="45px"/></a>&nbsp;&nbsp;
+
+            <a href="https://www.youtube.com/channel/UCxB_9AWzBvp4mWSk8zpFU6g/videos" target="_blank">
+                <img src="/static_files/youtube.png" class="img-responsive" height="45px"/></a>&nbsp;&nbsp;
+
+            <a href="https://discord.gg/nC4eBGM" target="_blank">
+                <img src="/static_files/discord2.png" class="img-responsive" height="45px"/></a>&nbsp;&nbsp;
+
+            <a href="https://www.twitch.tv/hartloff" target="_blank">
+                <img src="/static_files/twitch.png" class="img-responsive" height="45px"/></a>&nbsp;&nbsp;
+
+            <hr/>
+            
+
+{#            <h3>Schedule</h3>#}
+
+            <a data-toggle="collapse" data-target="#block1">
+                <div class="card-header text-white section-header bg-primary">
+                    <h5>
+                        Level 1: Welcome to Scala
+                    </h5>
+                </div>
+            </a>
+
+            <div id="block1" class="collapse show">
+                <table class="table table-bordered">
+
+                    <tbody>
+                    <tr class="text-white bg-primary">
+                        <td colspan="3"><b>Week 1</b></td>
+                    </tr>
+
+                    <tr>
+    <td width="10%">Monday, August 26</td>
+    <td colspan="2"><h5>Course Introduction / CSE115 Review</h5>
+        <b>Objective: </b>Understand the expectations and structure of this course
+    </td>
+</tr>
+
+<tr>
+    <td width="10%">Wednesday, August 28</td>
+    <td colspan="2">
+        <h5>IDE Setup / Scala Introduction</h5>
+        <b>Objective: </b>Setup your IDE (IntelliJ) for Scala and Python development on your laptop and write a simple
+        Scala program<br/><br/>
+        <b>Before lecture: </b>
+        <ol>
+            <li>Apply for a <a href="https://www.jetbrains.com/student/">JetBrains Educational License</a></li>
+            <li>Install <a href="https://www.jetbrains.com/idea/download/">IntelliJ Ultimate</a> on your laptop</li>
+            <li><a href="https://docs.scala-lang.org/getting-started-intellij-track/getting-started-with-scala-in-intellij.html">Get started with Scala in IntelliJ</a></li>
+            <li>Bring your laptop to lecture (and every lecture)</li>
+        </ol>
+        <b>Reading/Reference: </b>
+        <ol>
+            <li><a href="https://docs.scala-lang.org/tour/basics.html">Scala Basics</a> - (Except for classes, cases classes, and traits which will be covered later in the semester)</li>
+            <li><a href="http://www.tutorialspoint.com/scala/scala_if_else.htm">Scala Conditionals</a></li>
+            <li><a href="https://www.tutorialspoint.com/scala/scala_data_types.htm">Scala: Basic Types</a> - We'll primarily use Int, Double, Char, String, Boolean, and Unit
+            </li>
+        </ol>
+
+{#        <br/><a href="/static_files/f19_cse116_slides/1_Scala_Basics.pdf"><b>Lecture Slides</b></a><br/>#}
+                    <a href="/static_files/f19_cse116_slides/1_Scala_Basics.pdf" target="_blank">
+                <img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+    </td>
+</tr>
+
+<tr>
+    <td width="10%">Friday, August 30</td>
+    <td colspan="2">
+        <h5>Scala Types and Reading Files</h5>
+        <b>Objective: </b>Write a program that can read the lines of a file in a strongly typed language (Scala) and
+        store values in a data structure<br/><br/>
+        <b>Reading/Reference: </b>
+        <ol>
+            <li><a href="https://www.tutorialspoint.com/scala/scala_strings.htm">Scala: String</a></li>
+            <li><a href="https://www.scala-lang.org/api/current/scala/collection/StringOps.html#split(separator:Char):Array%5BString%5D">Scala: String.split</a> - And many other String methods you may find useful</li>
+            <li><a href="https://www.tutorialspoint.com/scala/scala_for_loop.htm">Scala: For loop</a></li>
+            <li><a href="http://otfried.org/scala/reading_files.html">Scala: Reading Files</a></li>
+            <li><a href="https://www.tutorialspoint.com/scala/scala_arrays.htm">Scala: Array</a> - A sequential data structure</li>
+            <li><a href="https://www.tutorialspoint.com/scala/scala_lists.htm">Scala: List</a> - A sequential data structure. You can use either Array or List as you prefer in most cases. We will explore the differences later in the course</li>
+            <li><a href="https://www.tutorialspoint.com/scala/scala_maps.htm">Scala: Map</a> - A key-value store</li>
+        </ol>
+
+{#                <br/><a href="/static_files/f19_cse116_slides/2_Scala_Basics.pdf"><b>Lecture Slides</b></a><br/>#}
+
+            <a href="/static_files/f19_cse116_slides/2_Scala_Basics.pdf" target="_blank">
+                <img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+    </td>
+</tr>
+
+
+                    <tr class="text-white bg-primary">
+                        <td colspan="3"><b>Week 2</b></td>
+                    </tr>
+
+
+                   <tr class="table-info">
+    <td colspan="3"><a href="https://docs.google.com/document/d/1HIkHKGByLLaLXqXfalhw5WRnEs49YO8-6UnX4KBdF2I/edit?usp=sharing">Lab Activity 1</a></td>
+</tr>
+
+<tr>
+    <td width="10%">Monday, September 2</td>
+    <td colspan="2">
+        <h5>No Class</h5>
+    </td>
+</tr>
+
+<tr>
+    <td width="10%">Wednesday, September 4</td>
+    <td colspan="2">
+        <h5>Unit Testing</h5>
+        <b>Objective: </b>Test your own code without needing AutoLab<br/><br/>
+        <b>Reading/Reference: </b>
+        <ol>
+            <li><a href="https://maven.apache.org">Maven Homepage</a> - For reference only</li>
+            <li><a href="/static_files/pom.xml">Example pom.xml</a> - You can copy this into your projects and expand it when needed</li>
+
+            <li><a href="http://www.scalatest.org">Scalatest Homepage</a> - For reference only</li>
+            <li><a href="http://www.scalatest.org/getting_started_with_fun_suite">Scalatest FunSuite Example</a> - A practical unit testing example</li>
+        </ol>
+{#        <br/><a href="/static_files/f19_cse116_slides/3_Unit_Testing.pdf"><b>Lecture Slides</b></a><br/>#}
+        <a href="/static_files/f19_cse116_slides/3_Unit_Testing.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+    </td>
+</tr>
+
+<tr>
+    <td width="10%">Friday, September 6</td>
+    <td colspan="2">
+        <h5>Classes and Objects</h5>
+        <b>Objective: </b>Define and use classes<br/><br/>
+        <b>Reading/Reference: </b>
+        <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Class_(computer_programming)">Wikipedia: Class</a> - Overview and reference (More detail than we'll cover in lecture)</li>
+            <li><a href="https://docs.scala-lang.org/tour/classes.html">Scala: Class</a> - Application of Classes using Scala syntax</li>
+            <li><a href="https://www.w3schools.com/python/python_classes.asp">Python: Class</a> - Application of Classes using Python syntax</li>
+            <li><a href="https://www.scala-lang.org/api/2.12.9/">Scala API</a> - Reference for all Scala packages/classes/objects</li>
+        </ol>
+
+{#        <br/><a href="/static_files/f19_cse116_slides/4_Classes.pdf"><b>Lecture Slides</b></a><br/>#}
+        <a href="/static_files/f19_cse116_slides/4_Classes.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+
+    </td>
+</tr>
+
+                    <tr class="text-white bg-primary">
+                        <td colspan="3"><b>Week 3</b></td>
+                    </tr>
+
+                   <tr class="table-info">
+    <td colspan="3"><a href="https://docs.google.com/document/d/1BLeRF48VnXbZcWlRQ9twi8k5MYTwj8rRZoLe7BKeMJw/edit?usp=sharing">Lab Activity 2</a></td>
+</tr>
+
+<tr>
+    <td width="10%">Monday, September 9</td>
+    <td colspan="2">
+        <h5>Model of Execution</h5>
+        <b>Objective</b>: Describe how the program stack and heap store values in your program<br/><br/>
+        <b>Reading/Reference: </b>
+        <ol>
+            <li><a href="https://medium.com/@nickteixeira/stack-vs-heap-whats-the-difference-and-why-should-i-care-5abc78da1a88">Program Stack and Heap</a></li>
+            <li><a href="https://www.jetbrains.com/help/idea/run-debug-and-test-scala.html#debug_scala_code">Debugging in IntelliJ</a></li>
+        </ol>
+{#        <br/><a href="/static_files/f19_cse116_slides/5_Execution.pdf"><b>Lecture Slides</b></a><br/>#}
+<a href="/static_files/f19_cse116_slides/5_Execution.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+
+    </td>
+</tr>
+
+
+
+<tr>
+    <td width="10%">Wednesday, September 11</td>
+    <td colspan="2">
+        <h5>Model of Execution</h5>
+        <b>Objective</b>: Use a debugger to see the state of your program during execution<br/><br/>
+        <b>Reading/Reference: </b>
+        <ol>
+            <li><a href="https://medium.com/basecs/a-deeper-inspection-into-compilation-and-interpretation-d98952ebc842">Compilers </a><a href="https://www.youtube.com/watch?v=_C5AHaS1mOA">vs.</a><a href="https://medium.com/basecs/a-deeper-inspection-into-compilation-and-interpretation-d98952ebc842"> Interpreters</a>
+                 - Scala/Java/C++ are compiled while Python/JavaScript are interpreted. What does this mean?</li>
+            <li><a href="https://www.jetbrains.com/help/idea/run-debug-and-test-scala.html#debug_scala_code">Debugging in IntelliJ</a></li>
+        </ol>
+{#        <br/><a href="/static_files/f19_cse116_slides/6_Execution.pdf"><b>Lecture Slides</b></a><br/>#}
+        <a href="/static_files/f19_cse116_slides/6_Execution.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+
+    </td>
+</tr>
+
+
+
+<tr class="table-warning">
+    <td colspan="3">Thursday, September 12 @ 11:59pm
+        <span class="float-right"><a href="https://docs.google.com/document/d/1oFVAk9y8_nR4AmFb0TSLEA2b5-6jMpVkMSA0WO5Wi0U/edit?usp=sharing">Physics Engine</a> Due</span></td>
+</tr>
+
+
+<tr>
+    <td width="10%">Friday, September 13</td>
+    <td colspan="2">
+        <h5>Physics Engine Quiz</h5>
+    </td>
+</tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+            <a data-toggle="collapse" data-target="#block2">
+                <div class="card-header text-white section-header bg-success">
+                    <h5>
+                        Level 2: Object Oriented Programming (OOP)
+                    </h5>
+                </div>
+            </a>
+
+            <div id="block2" class="collapse show">
+                <table class="table table-bordered">
+
+                    <tbody>
+
+                    <tr class="text-white bg-success">
+                        <td colspan="3"><b>Week 4</b></td>
+                    </tr>
+
+
+                   <tr class="table-info">
+    <td colspan="3"><a href="https://docs.google.com/document/d/1BDoddJLA_ae_LLec68XltlbNodbJoWyxyqI5T1EoKps/edit?usp=sharing">Lab Activity 3</a></td>
+</tr>
+
+<tr>
+    <td width="10%">Monday, September 16</td>
+    <td colspan="2">
+        <h5>Inheritance</h5>
+        <b>Objective: </b>You will be able to write abstract classes and concreted classes that inherent an abstract class<br/>
+        <b>Reading/Reference: </b>
+        <ol>
+            <li><a href="https://www.geeksforgeeks.org/inheritance-in-scala/">Inheritance in Scala</a></li>
+            <li><a href="https://www.digitalocean.com/community/tutorials/understanding-class-inheritance-in-python-3">Inheritance in Python</a></li>
+        </ol>
+{#        <br/><a href="/static_files/f19_cse116_slides/7_Inheritance.pdf"><b>Lecture Slides</b></a><br/>#}
+                <a href="/static_files/f19_cse116_slides/7_Inheritance.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+
+    </td>
+</tr>
+
+
+<tr>
+    <td width="10%">Wednesday, September 18</td>
+    <td colspan="2">
+        <h5>Level 1 Quiz</h5>
+    </td>
+</tr>
+
+
+
+<tr>
+    <td width="10%">Friday, September 20</td>
+    <td colspan="2">
+        <h5>Polymorphism and JSON</h5>
+
+        <b>Objective: </b>You will study polymorphism and apply it to use JSON in a strongly typed language<br/>
+
+{#        <b>Objective: </b>You will use data structures storing an abstract type containing multiple different concrete classes<br/>#}
+{##}
+        <ol>
+            <li><a href="https://beginnersbook.com/2013/03/oops-in-java-encapsulation-inheritance-polymorphism-abstraction/">OOP Overview</a></li>
+            <li><a href="https://overiq.com/python-101/inheritance-and-polymorphism-in-python/">Polymorphism in Python</a></li>
+            <li><a href="https://dev.to/jmcclell/inheritance-vs-generics-vs-typeclasses-in-scala-20op">Polymorphism in Scala</a> - Just the Subtype Polymorphism (Inheritance) section</li>
+            <li><a href="https://www.playframework.com/documentation/2.7.x/ScalaJson">Play JSON library documentation</a></li>
+            <li><a href="https://mvnrepository.com/artifact/com.typesafe.play/play-json_2.12/2.7.1">Play JSON Maven artifact</a></li>
+            <li><a href="https://github.com/scalaj/scalaj-http">scalaj-http library</a></li>
+        </ol>
+{##}
+{#        <br/><a href="/static_files/f19_cse116_slides/8_Polymorphism.pdf"><b>Lecture Slides</b></a><br/>#}
+                <a href="/static_files/f19_cse116_slides/8_Polymorphism.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+
+    </td>
+</tr>
+
+                    <tr class="text-white bg-success">
+                        <td colspan="3"><b>Week 5</b></td>
+                    </tr>
+
+                    <tr class="table-info">
+    <td colspan="3"><a href="https://docs.google.com/document/d/1u8Ll7CZdC-K2lOu2zrexMcfwp8TYgIFYqzjyMv1mV34/edit?usp=sharing">Project Demo 1</a> (Model and Unit Testing)</td>
+</tr>
+
+<tr>
+    <td width="10%">Monday, September 23</td>
+    <td colspan="2">
+        <h5>Design Pattern: State Pattern</h5>
+        <b>Objective</b>: You will gain experience with the state design pattern to dynamically change the behavior of an object<br/>
+        <ol>
+            <li><a href="https://en.wikipedia.org/wiki/State_pattern">State Pattern on Wikipedia</a></li>
+        </ol>
+{#        <br/><a href="/static_files/f19_cse116_slides/9_State_Pattern.pdf"><b>Lecture Slides</b></a><br/>#}
+        <a href="/static_files/f19_cse116_slides/9_State_Pattern.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+
+    </td>
+</tr>
+
+<tr>
+    <td width="10%">Wednesday, September 25</td>
+    <td colspan="2">
+        <h5>Design Pattern: State Pattern</h5>
+        <b>Objective</b>: Gain more familiarity with the state design pattern by reviewing the Jumper code<br/>
+{#        <br/><a href="/static_files/f19_cse116_slides/10_State_Pattern.pdf"><b>Lecture Slides</b></a><br/>#}
+        <a href="/static_files/f19_cse116_slides/10_State_Pattern.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+
+    </td>
+</tr>
+
+<tr>
+    <td width="10%">Friday, September 27</td>
+    <td colspan="2">
+        <h5>Design Pattern: State Pattern</h5>
+                <b>Objective</b>: Gain more familiarity with the state design pattern<br/>
+
+{#                <br/><a href="/static_files/f19_cse116_slides/11_State_Pattern.pdf"><b>Lecture Slides</b></a><br/>#}
+        <a href="/static_files/f19_cse116_slides/11_State_Pattern.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+
+    </td>
+</tr>
+
+
+
+
+                    <tr class="text-white bg-success">
+                        <td colspan="3"><b>Week 6</b></td>
+                    </tr>
+
+
+                  <tr class="table-info">
+    <td colspan="3"><a href="https://docs.google.com/document/d/1pkm6UxccnlTXqapKLgV0Mc0q5o1em7aAeG4vfcu9MO4/edit?usp=sharing">Lab Activity 4</a></td>
+</tr>
+
+
+<tr>
+    <td width="10%">Monday, September 30</td>
+    <td colspan="2">
+        <h5>GUI</h5>
+        <b>Objective</b>: Build desktop GUIs<br/>
+        <ol>
+            <li><a href="http://www.scalafx.org/">ScalaFX Homepage</a> - Adapter for JavaFX in Scala</li>
+            <li><a href="https://openjfx.io/index.html">JavaFX Homepage</a></li>
+            <li><a href="http://sjgpsoft.blogspot.com/2016/02/scalafx-button-positioning-with-hbox.html#more">ScalaFX Button Example</a></li>
+            <li><a href="https://www.tutorialspoint.com/javafx/javafx_2d_shapes.htm">JavaFX 2D Shapes</a></li>
+            <li><a href="https://www.youtube.com/watch?v=63Utq7Ht-w0&index=1&list=PLLMXbkbDbVt__x5VUQHbI8g25Phxi2yBy">ScalaFX Videos</a> - Playlist by Mark Lewis</li>
+            <li><a href="https://www.tutorialspoint.com/javafx/javafx_3d_shapes.htm">JavaFX 3D Shapes</a> - Optional, but helpful if you're making a 3D app for your project</li>
+        </ol>
+{#        <br/><a href="/static_files/f19_cse116_slides/12_GUI.pdf"><b>Lecture Slides</b></a><br/>#}
+                <a href="/static_files/f19_cse116_slides/12_GUI.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+
+    </td>
+</tr>
+
+
+
+<tr>
+    <td width="10%">Wednesday, October 2</td>
+    <td colspan="2">
+        <h5>Design Architecture: MVC</h5>
+        <b>Objective</b>: Become familiar with the MVC architecture pattern and its benefits<br/>
+        <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Model–view–controller">MVC on Wikipedia</a></li>
+            <li><a href="https://www.codecademy.com/articles/mvc">MVC Analogies</a></li>
+        </ol>
+{#        <br/><a href="/static_files/f19_cse116_slides/13_MVC.pdf"><b>Lecture Slides</b></a><br/>#}
+                <a href="/static_files/f19_cse116_slides/13_MVC.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+
+    </td>
+</tr>
+
+
+
+<tr class="table-warning">
+    <td colspan="3">Thursday, October 3 @ 11:59pm
+        <span class="float-right"><a href="https://docs.google.com/document/d/1A-4tlULXUPLiB2jglTIMorqdgYpQvOXcDlexoDmOWtg/edit?usp=sharing">Calculator</a> Due</span></td>
+</tr>
+
+
+
+<tr>
+    <td width="10%">Friday, October 4</td>
+    <td colspan="2">
+        <h5>Calculator Quiz</h5>
+    </td>
+</tr>
+
+
+
+
+
+                    </tbody>
+                </table>
+            </div>
+
+
+            <a data-toggle="collapse" data-target="#block3">
+                <div class="card-header text-white section-header bg-warning">
+                    <h5>
+                        Level 3: Concurrency and Networking
+                    </h5>
+                </div>
+            </a>
+
+            <div id="block3" class="collapse show">
+                <table class="table table-bordered">
+
+                    <tbody>
+
+                    <tr class="text-white bg-warning">
+                        <td colspan="3"><b>Week 7</b></td>
+                    </tr>
+
+                   <tr class="table-info">
+    <td colspan="3"><a href="https://docs.google.com/document/d/1RBW-NkRbqG8GOGKbLHWD0GJpMluEZ2K_1axxT4QubmU/edit?usp=sharing">Lab Activity 5</a></td>
+</tr>
+
+
+<tr>
+    <td width="10%">Monday, October 7</td>
+    <td colspan="2">
+        <h5>Actors Introduction</h5>
+        <b>Objective: </b>Write programs with multiple pieces of code executing at the same time<br/>
+        <ol>
+            <li><a href="https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor_2.12/2.5.22">Akka Library</a></li>
+            <li><a href="https://doc.akka.io/docs/akka/2.5.22/actors.html?language=scala">Akka Actors</a></li>
+            <li><a href="https://docs.scala-lang.org/tour/case-classes.html">Case Classes</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Actor_model">Actors Model (Wikipedia)</a></li>
+
+        </ol>
+ <a href="/static_files/f19_cse116_slides/14_Actors.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+    </td>
+</tr>
+
+
+
+<tr>
+    <td width="10%">Wednesday, October 9</td>
+    <td colspan="2">
+        <h5>Level 2 Quiz</h5>
+    </td>
+</tr>
+
+
+
+<tr>
+    <td width="10%">Friday, October 11</td>
+    <td colspan="2">
+        <h5>Testing Actors and Database Connections</h5>
+        <b>Objective: </b>Write unit tests for actors and connect to a MySQL server<br/>
+        <ol>
+            <li><a href="https://doc.akka.io/docs/akka/current/testing.html?language=scala">Testing Actors</a></li>
+            <li><a href="https://dev.mysql.com/downloads/mysql/">MySQL download page</a></li>
+            <li><a href="https://alvinalexander.com/scala/scala-jdbc-connection-mysql-sql-select-example">Connecting to MySQL</a></li>
+            <li><a href="https://www.w3schools.com/sql/default.asp">SQL Tutorial</a> - We'll use <a href="https://www.w3schools.com/sql/sql_create_table.asp">Create Table</a>, <a href="https://www.w3schools.com/sql/sql_insert.asp">Insert Into</a>, <a href="https://www.w3schools.com/sql/sql_select.asp">Select</a>, <a href="https://www.w3schools.com/sql/sql_where.asp">Where</a>, and <a href="https://www.w3schools.com/sql/sql_update.asp">Update</a></li>
+        </ol>
+ <a href="/static_files/f19_cse116_slides/15_Actors_Databases.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+    </td>
+</tr>
+
+
+
+                    <tr class="text-white bg-warning">
+                        <td colspan="3"><b>Week 8</b></td>
+                    </tr>
+
+                    <tr class="table-info">
+    <td colspan="3"><a href="https://docs.google.com/document/d/1oSVz654WUtAp03W8AMJTMRbozJA5m434QHTO92djsaA/edit?usp=sharing">Project Demo 2 (View/Front End)</a></td>
+</tr>
+
+<tr>
+    <td width="10%">Monday, October 14</td>
+    <td colspan="2">
+        <h5>Web Sockets</h5>
+        <b>Objective: </b>Enable 2-way communication between the browser and web server<br/>
+        <ol>
+            <li><a href="https://github.com/mrniko/netty-socketio">Scala socket.io Server</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/WebSocket">Web Sockets (Wikipedia)</a></li>
+        </ol>
+ <a href="/static_files/f19_cse116_slides/16_WebSocket_Server.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+    </td>
+</tr>
+
+
+
+<tr>
+    <td width="10%">Wednesday, October 16</td>
+    <td colspan="2">
+        <h5>Web Sockets</h5>
+        <b>Objective: </b>Connect a Scala front end to a web socket server<br/>
+        <ol>
+            <li><a href="https://github.com/socketio/socket.io-client-java">Socket IO Library - Scala</a></li>
+            <li><a href="https://socket.io/docs/client-api/">socket.io Client Docs</a></li>
+        </ol>
+ <a href="/static_files/f19_cse116_slides/17_WebSocket_Clients.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+     </td>
+</tr>
+
+
+
+
+<tr>
+    <td width="10%">Friday, October 18</td>
+    <td colspan="2">
+        <h5>Actors Application with Web Sockets</h5>
+{#        <b>Objective: </b>Apply actors to the Towers MMO<br/>#}
+ <a href="/static_files/f19_cse116_slides/18_WebSocket_App.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+    </td>
+</tr>
+
+
+
+                    <tr class="text-white bg-warning">
+                        <td colspan="3"><b>Week 9</b></td>
+                    </tr>
+
+                  <tr class="table-info">
+    <td colspan="3"><a
+            href="https://docs.google.com/document/d/1pYMjwrRUH5JPpPiEG-SzlIk4lXSXXUQ2ezUfdgt9q2c/edit?usp=sharing">Lab
+        Activity 6</a></td>
+</tr>
+
+<tr>
+    <td width="10%">Monday, October 21</td>
+    <td colspan="2">
+        <h5>MMO Architecture</h5>
+        {#        <h5>MMO Architecture</h5>#}
+        <b>Objective: </b>See an example using the MMO architecture from this class<br/>
+        <a href="/static_files/f19_cse116_slides/19_MMO.pdf" target="_blank"><img src="/static_files/slides.png"
+                                                                             class="img-responsive" height="45px"/></a>
+
+    </td>
+</tr>
+
+
+<tr>
+    <td width="10%">Wednesday, October 23</td>
+    <td colspan="2">
+        <h5>MMO Architecture</h5>
+        <b>Objective: </b>Explore the MMO architecture applied to the course project<br/>
+        <a href="/static_files/f19_cse116_slides/20_MMO.pdf" target="_blank"><img src="/static_files/slides.png"
+                                                                             class="img-responsive" height="45px"/></a>
+
+
+    </td>
+</tr>
+
+<tr class="table-warning">
+    <td colspan="3">Thursday, October 24 @ 11:59pm
+        <span class="float-right"><a
+                href="https://docs.google.com/document/d/1hHb7pGuRJ8MGe68TjRNLEB0MpLQO5zYAorOSdI7IfEA/edit?usp=sharing">Clicker</a> Due</span>
+    </td>
+</tr>
+
+<tr>
+    <td width="10%">Friday, October 25</td>
+    <td><h5>Clicker Quiz</h5></td>
+</tr>
+
+
+
+                    </tbody>
+                </table>
+            </div>
+
+            <a data-toggle="collapse" data-target="#block4">
+                <div class="card-header text-white section-header bg-danger">
+                    <h5>
+                        Level 4: First-Class Functions and Data Structures
+                    </h5>
+                </div>
+            </a>
+
+            <div id="block4" class="collapse show">
+                <table class="table table-bordered">
+
+                    <tbody>
+
+
+                    <tr class="text-white bg-danger">
+                        <td colspan="3"><b>Week 10</b></td>
+                    </tr>
+
+                  <tr class="table-info">
+    <td colspan="3"><a href="https://docs.google.com/document/d/1_XL7zeqB_I2EwTuGIJ38Rzt1meH8QS9KvJliPzHFzws/edit?usp=sharing">Lab Activity 7</a></td>
+</tr>
+
+<tr>
+    <td width="10%">Monday, October 28</td>
+    <td colspan="2">
+        <h5>Custom Sorting with First-Order Functions</h5>
+        <b>Objective: </b>Explore custom sorting in scala and gain experience with function and type parameters<br/>
+        <ol>
+            <li><a href="https://alvinalexander.com/scala/how-sort-scala-sequences-seq-list-array-buffer-vector-ordering-ordered">Custom Sorting - Scala</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Selection_sort">Selection Sort on Wikipedia</a></li>
+            <li><a href="https://docs.scala-lang.org/tour/polymorphic-methods.html">Type Parameters - Scala</a></li>
+        </ol>
+ <a href="/static_files/f19_cse116_slides/21_Sorting_Revisited.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+    </td>
+</tr>
+
+
+
+<tr>
+    <td width="10%">Wednesday, October 30</td>
+    <td colspan="2">
+        <h5>Level 3 Quiz</h5>
+    </td>
+</tr>
+
+
+<tr>
+    <td width="10%">Friday, November 1</td>
+    <td colspan="2">
+        <h5>Merge Sort and Recursion</h5>
+        <b>Objective: </b>Gain an understanding of recursion combined with first-order functions and type parameters<br/>
+        <ol>
+            <li><a href="https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm">Merge Sort Algorithm</a></li>
+            <li><a href="https://javascript.info/recursion">Recursion</a> - Also discussed Linked-List which is the next lecture</li>
+            <li><a href="https://www.scala-exercises.org/scala_tutorial/tail_recursion">Tail Recursion</a></li>
+            <li><a href="https://docs.scala-lang.org/tour/higher-order-functions.html">Higher-Order Functions - Scala</a></li>
+        </ol>
+ <a href="/static_files/f19_cse116_slides/22_Recursion.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+
+
+    </td>
+</tr>
+
+                    <tr class="text-white bg-danger">
+                        <td colspan="3"><b>Week 11</b></td>
+                    </tr>
+
+<tr class="table-info">
+    <td colspan="3"><a href="https://docs.google.com/document/d/1h-dx0obDyG9OgGOOEIlRwscD0_UKYU-w2NdR_VHhpxw/edit?usp=sharing">Lab Activity 8</a></td>
+</tr>
+
+<tr>
+    <td width="10%">Monday, November 4</td>
+    <td colspan="2">
+        <h5>Linked List</h5>
+        <b>Objective: </b>Understand the structure of a linked list<br/>
+        <ol>
+            <li><a href="https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm">Linked List</a></li>
+            <li><a href="https://www.interviewbit.com/tutorial/arrays-vs-linked-lists/">Array v. Linked List</a></li>
+        </ol>
+ <a href="/static_files/f19_cse116_slides/23_Linked_List.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+     </td>
+</tr>
+
+
+
+<tr>
+    <td width="10%">Wednesday, November 6</td>
+    <td colspan="2">
+        <h5>Linked List Algorithms</h5>
+        <b>Objective: </b>Explore how various operations are performed on a linked list<br/>
+        <ol>
+            <li><a href="https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm">Algorithm Examples</a></li>
+            <li><a href="https://www.codementor.io/codementorteam/a-comprehensive-guide-to-implementation-of-singly-linked-list-using-c_plus_plus-ondlm5azr">Linked List and Operations</a> - Code is in C++</li>
+        </ol>
+ <a href="/static_files/f19_cse116_slides/24_Linked_List_Algorithms.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+     </td>
+</tr>
+
+
+<tr>
+    <td width="10%">Friday, November 8</td>
+    <td colspan="2">
+        <h5>Stack and Queue</h5>
+        <b>Objective: </b>Use a linked list to implement the functionality of a stack and queue<br/>
+        <ol>
+            <li><a href="https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm">Stack</a></li>
+            <li><a href="https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm">Queue</a></li>
+        </ol>
+ <a href="/static_files/f19_cse116_slides/25_Stack_Queue.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+     </td>
+</tr>
+
+
+
+                    <tr class="text-white bg-danger">
+                        <td colspan="3"><b>Week 12</b></td>
+                    </tr>
+
+<tr class="table-info">
+    <td colspan="3"><a href="https://docs.google.com/document/d/1TZHuBkzHUrHPfGRuQQWAxrz125l-WXHzT5QuPy6Lwc8/edit?usp=sharing">Lab Activity 9</a></td>
+</tr>
+
+
+<tr>
+    <td width="10%">Monday, November 11</td>
+    <td colspan="2">
+        <h5>Binary Tree and Traversals</h5>
+        <b>Objective: </b>Gain familiarity with the structure of binary trees and how to traverse existing trees<br/>
+        <ol>
+            <li><a href="https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm">Trees</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Tree_traversal">Tree Traversals (Wikipedia)</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Binary_expression_tree">Expression Trees (Wikipedia)</a></li>
+            <li><a href="https://www.101computing.net/binary-expression-trees/">Expression Tree Examples</a></li>
+            <li><a href="https://www.hackerrank.com/contests/data-structure-tasks-binary-tree-union-find/challenges/binary-expression-tree">Hacker Rank Question</a></li>
+        </ol>
+ <a href="/static_files/f19_cse116_slides/26_Trees.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+     </td>
+</tr>
+
+
+
+
+<tr>
+    <td width="10%">Wednesday, November 13</td>
+    <td colspan="2">
+        <h5>Binary Search Tree</h5>
+        <b>Objective: </b>Explore an application of binary trees by using them for searching and sorting<br/>
+        <ol>
+            <li><a href="https://www.tutorialspoint.com/data_structures_algorithms/binary_search_tree.htm">BST</a></li>
+        </ol>
+ <a href="/static_files/f19_cse116_slides/27_BST.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+     </td>
+</tr>
+
+
+
+<tr class="table-warning">
+    <td colspan="3">Thursday, November 14 @ 11:59pm
+        <span class="float-right"><a href="https://docs.google.com/document/d/1UhdvYRITs5m5nyNJwyrKbruQ2Y9oj6gciOByvbB8qB8/edit?usp=sharing">Genetic Algorithm</a> Due</span></td>
+</tr>
+
+<tr>
+    <td width="10%">Friday, November 15</td>
+        <td><h5>Genetic Algorithm Quiz</h5></td>
+</tr>
+
+
+
+                    </tbody>
+                </table>
+            </div>
+
+            <a data-toggle="collapse" data-target="#block5">
+                <div class="card-header text-white section-header bg-dark">
+                    <h5>
+                        Level 5: Graphs and Algorithms
+                    </h5>
+                </div>
+            </a>
+
+            <div id="block5" class="collapse show">
+                <table class="table table-bordered">
+
+                    <tbody>
+
+                    <tr class="text-white">
+                        <td class="table-dark" colspan="3"><b>Week 13</b></td>
+                    </tr>
+
+<tr class="table-info">
+    <td colspan="3"><a href="https://docs.google.com/document/d/13cMQzDl3dn7g3iRflPS09JGd1YcN5xg4pzbfXvCFZpA/edit?usp=sharing">Project Demo 3</a></td>
+</tr>
+
+<tr>
+    <td width="10%">Monday, November 18</td>
+    <td colspan="2">
+        <h5>Graph Representations and Breath-First Search</h5>
+        <b>Objective: </b>Learn how to represent a graph in code and work with that representation<br/>
+        <ol>
+            <li><a href="https://www.tutorialspoint.com/data_structures_algorithms/graph_data_structure.htm">Graph Overview</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Adjacency_list">Adjacency List</a></li>
+            <li><a href="https://www.tutorialspoint.com/data_structures_algorithms/breadth_first_traversal.htm">BFS Overview</a></li>
+        </ol>
+ <a href="/static_files/f19_cse116_slides/28_Graphs.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+
+    </td>
+</tr>
+
+
+<tr>
+    <td width="10%">Wednesday, November 20</td>
+    <td colspan="2">
+        <h5>Level 4 Quiz</h5>
+    </td>
+</tr>
+
+
+
+<tr>
+    <td width="10%">Friday, November 22</td>
+    <td colspan="2">
+        <h5>Pathfinding with Breath-First Search</h5>
+        <b>Objective: </b>Find the shortest path between two nodes using BFS<br/>
+ <a href="/static_files/f19_cse116_slides/29_Pathfinding.pdf" target="_blank"><img src="/static_files/slides.png" class="img-responsive" height="45px"/></a>
+    </td>
+</tr>
+
+
+
+                    <tr class="text-white">
+                        <td class="table-dark" colspan="3"><b>Week 14</b></td>
+                    </tr>
+
+
+<tr>
+    <td width="10%">Monday, November 25</td>
+    <td colspan="2">
+        <h5>Review and Examples</h5>
+    </td>
+</tr>
+
+
+
+<tr>
+    <td width="10%">Wednesday, November 27</td>
+    <td colspan="2">
+        <h5>No Class</h5>
+    </td>
+</tr>
+
+
+
+
+
+<tr>
+    <td width="10%">Friday, November 29</td>
+    <td colspan="2">
+        <h5>No Class</h5>
+    </td>
+</tr>
+
+
+
+
+                    <tr class="text-white">
+                        <td class="table-dark" colspan="3"><b>Week 15</b></td>
+                    </tr>
+
+<tr class="table-info">
+    <td colspan="3"><a href="https://docs.google.com/document/d/13cMQzDl3dn7g3iRflPS09JGd1YcN5xg4pzbfXvCFZpA/edit?usp=sharing">Project Demo 3</a> - Alternate Date</td>
+</tr>
+
+
+<tr>
+    <td width="10%">Monday, December 2</td>
+    <td colspan="2">
+        <h5>Review and Reinforce</h5>
+    </td>
+</tr>
+
+
+
+<tr>
+    <td width="10%">Wednesday, December 4</td>
+    <td colspan="2">
+        <h5>Review and Reinforce</h5>
+
+    </td>
+
+
+</tr>
+
+
+
+<tr class="table-warning">
+    <td colspan="3">Thursday, December 5 @ 11:59pm
+        <span class="float-right"><a href="https://docs.google.com/document/d/1mFlpixliLQtQvtoCLw6s5a4k0vAe-BE1kQ5JQBpfaGY/edit?usp=sharing">MMO</a> Due</span></td>
+</tr>
+
+
+<tr>
+    <td width="10%">Friday, December 6</td>
+        <td><h5>MMO Quiz</h5></td>
+</tr>
+
+
+
+
+
+<tr class="table-warning">
+    <td colspan="3">Thursday, December 12 @ 11:59pm
+        <span class="float-right"><a href="https://docs.google.com/document/d/19DEtrYl5wss4BzMZhfLW9C7e4fR2r655gJFs83OuOAI/edit?usp=sharing">Bonus Homework</a> Due</span>
+    </td>
+</tr>
+
+
+                    <tr>
+    <td width="10%">Level Quizzes</td>
+    <td colspan="2">
+        <a href="/static_files/f19_cse116_quizzes/Level1_Quiz.pdf"><b>Level 1</b></a><br/>
+        <a href="/static_files/f19_cse116_quizzes/Level2_Quiz.pdf"><b>Level 2</b></a><br/>
+        <a href="/static_files/f19_cse116_quizzes/Level3_Quiz.pdf"><b>Level 3</b></a><br/>
+        <a href="/static_files/f19_cse116_quizzes/Level4_Quiz.pdf"><b>Level 4</b></a>
+
+    </td>
+
+
+</tr>
+
+
+
+                    <tr class="text-white">
+                        <td class="table-dark" colspan="3"><b>Final Exam - Friday, December 13 @ 11:45am - 2:45pm NSC201 </b></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <hr/>
+
+            <div class="card">
+                <a data-toggle="collapse" data-target="#syllabus">
+                    <div class="card-header text-white section-header">
+                        <h5>
+                            Syllabus
+                        </h5>
+                    </div>
+                </a>
+
+                <div id="syllabus" class="collapse show">
+                    <div class="card-body">
+                        {#<a href="">Link to "official" syllabus</a>#}
+
+
+<div class="card border-dark mb-3">
+
+    <div class="card-body">
+        <h3 class="card-title">Course Description</h3>
+
+        <p class="card-text">
+            In CSE115 you've learned the basics of programming. You're proficient in variables, functions, control flow,
+            data structures, file IO, networking, databases, and security. With these concepts you can train a computer
+            to complete any task you can imagine. So what's left to study in CSE116?
+        </p>
+
+        <p>
+            <b>How to write large programs</b>
+        </p>
+
+        <p>
+            While you can apply what you already know to code practically anything a computer is capable of processing,
+            it becomes very difficult very fast to organize and write
+            a large and complex piece of software. You will gain experience with this in CSE116 by studying topics
+            such as:
+        </p>
+
+        <ul>
+            <li><b>Testing</b> to be confident that you program works without relying on AutoLab</li>
+            <li><b>Object-Oriented Programming</b> to organize and reuse code</li>
+            <li><b>Concurrency</b> allowing multiple pieces of code to execute at the same time while
+                communicating with each other
+            </li>
+            <li><b>First-Order Functions</b> which simplifies certain problems</li>
+            <li>And finally, several <b>Data Structures</b> to organize and efficiently access data</li>
+
+        </ul>
+
+        <p>
+            While studying these topics we will have a strong focus on <em>how</em> your programs work, not just that
+            they work.
+        </p>
+
+    </div>
+</div>
+
+<div class="card border-dark mb-3">
+
+    <div class="card-body">
+        <h3 class="card-title">Expectations</h3>
+        <p class="card-text">
+            This is not an easy course! To do well in this course you are expected to:
+        </p>
+        <ul>
+            <li>Want to learn about computer science (This is assumed since you are taking a second CSE course)</li>
+            <li>Already be comfortable with <b>all</b> of the CSE115 material</li>
+            <li>Participate in every lecture and lab (Except the first week when there are no labs)</li>
+            <li>Bring a working and charged laptop to lecture (If this is an issue please contact Jesse immediately and we'll work something out)</li>
+            <li>Spend at least 7 hours each week outside of class/lab, on average, for a total of at least 12 hours/week on CSE116</li>
+        </ul>
+
+        <p>
+            The 12 hour/week minimum assumes that you are up-to-date on all concepts that have been covered. If you
+            are not comfortable with all the CSE115 material you should expect to work significantly more than
+            12 hours/week until you are caught up with the material.
+        </p>
+
+        <p>
+            If you are unable or unwilling to spend at least 12 hours/week on this course, please navigate your
+            browser to the hub and drop CSE116.
+        </p>
+    </div>
+
+</div>
+<div class="card border-dark mb-3">
+
+    <div class="card-body">
+        <h3 class="card-title">CSE115 Review</h3>
+        <p class="card-text">
+            If you did not take the new CSE115 or would otherwise like to review the material, below are CSE115
+            resources to help you get caught up:
+        </p>
+        <ul>
+            <li><a href="https://fury.cse.buffalo.edu/quest/cse115-f18/skill-tree">UBInfinite</a>: Practice problem site</li>
+            <li><a href="https://cse.buffalo.edu/faculty/alphonce/FA18/CSE115/index.php">Course Website</a>: Contains links to lecture slides</li>
+            <li><a href="https://docs.google.com/document/d/1_iJO23pl21YcgP8nw4YJYrOzqihAXgFBI8xd9dzt2SM/edit?usp=sharing">Lecture Recordings</a>: Videos of every lecture by Dr. Carl Alphonce</li>
+            <li><a href="https://github.com/hartloff/CSE116-Python-Examples/tree/master/src/cse115">Largest Cities</a>: Review code shown in first lecture</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="card border-dark mb-3">
+
+    <div class="card-body">
+        <h3 class="card-title">Grading</h3>
+        <p class="card-text">
+
+        <p>
+            Your final grade will be determined using a points based system with the following max points per category:
+        </p>
+
+        <table class="table table-bordered table-skinny">
+            <tr>
+                <td>Homework and Homework Quizzes</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>Project Demos</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Quizzes and Final Exam</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Lecture Questions</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Lab Activities</td>
+                <td>200</td>
+            </tr>
+        </table>
+
+        <br/>
+
+        <p>
+            Your final letter grade will be determined by the following cutoffs. There is no curve:
+        </p>
+
+        <br/>
+
+        <table class="table table-bordered table-skinny">
+            <tr>
+                <td>1800+</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>1740 - 1799</td>
+                <td>A-</td>
+            </tr>
+            <tr>
+                <td>1660 - 1739</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>1600 - 1659</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>1540 - 1599</td>
+                <td>B-</td>
+            </tr>
+            <tr>
+                <td>1460 - 1539</td>
+                <td>C+</td>
+            </tr>
+            <tr>
+                <td>1400 - 1459</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>1340 - 1399</td>
+                <td>C-</td>
+            </tr>
+            <tr>
+                <td>1260 - 1339</td>
+                <td>D+</td>
+            </tr>
+            <tr>
+                <td>1200 - 1259</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>< 1200</td>
+                <td>F</td>
+            </tr>
+        </table>
+
+        <br/>
+
+        <p>
+            In accordance with the university grading policy, if you earn an F in this course while attending
+            less than 60% of the meetings time (lecture and lab) you will instead earn a grade of FX.
+        </p>
+
+        <p>
+            * To account for unexpected absences you will earn full credit for one quiz (including HW
+            quizzes). The quiz that will maximize your course score will automatically be chosen.
+        </p>
+
+
+        <p>
+            * There will be opportunities to earn up to 100 points of bonus credit. These points are intended as an
+            extra challenge for advanced students and are not seen as part of the course.
+        </p>
+
+        <hr/>
+        <h4>Homework and Homework Quizzes</h4>
+
+        <p>
+            There are 5 homework assignments throughout the semester worth 100 points each. These assignments will
+            consume the majority of your >=7 hours/week outside of class/lab.
+            To meet the objectives of this course these assignments will all require you to write fairly large programs
+            with little guidance. In addition, you will not receive feedback on your submissions other than your score
+            and compatibility issues (For example, the grader will let you know if you have the wrong filenames
+            or directory structure). To encourage proper testing, you must test your own code and submit those tests
+            in order to receive full credit on any homework assignment.
+        </p>
+
+        <p>
+            There will be a homework quiz in lecture after each homework is due. These quizzes contain questions about
+            the homework and potential solutions. Each quiz is worth 40 points.
+        </p>
+
+        <hr/>
+        <h4>Quizzes and Final Exam</h4>
+
+        <p>
+            There are 4 quizzes throughout the semester as well as a comprehensive final exam. These assessments will
+            test your conceptual knowledge, as opposed to your coding ability. There are 2 grading options for the
+            quizzes/exam:
+        </p>
+
+            <ol>
+                <li>Quizzes worth 50 points each and the exam worth 200</li>
+                <li>Quizzes worth 25 points each and the exam worth 300</li>
+            </ol>
+
+        <p>
+            The option that maximizes your grade will automatically be applied. This allows you to make up some missed
+            quiz points if you prepare well for the final exam.
+        </p>
+
+
+        <hr/>
+        <h4>Lab Activities</h4>
+
+        <p>
+            There will be 9 lab activities covering a variety of topics. Lab activities are worth 25 points each with
+            your lowest score being dropped (Your best 8 scores count for your grade). If you have to miss a lab for any
+            reason you will not be able to makeup that activity, but you can drop the 0 and complete the other 8 activities.
+        </p>
+
+        <hr/>
+
+
+
+        <h4>Project Demos</h4>
+
+        <p>
+            You will have a semester-long team project submitted via 4 demos to your TA during lab. Each demo is worth
+            100 points. You are expected to spend a
+            significant amount of time outside of lab/lecture to complete the project.
+        </p>
+
+        <hr/>
+        <h4>Lecture Questions</h4>
+
+        <p>
+            Most lectures will consist of questions or activities that are to be completed before midnight on the day
+            of the lecture. The total points for lecture questions will be capped at 300, though there will be more
+            than 300 points available throughout the semester.
+            This is meant to reduce the stress of missing a question or having to miss a lecture
+            The intent of these questions is to give you
+            an opportunity to
+            practice the material as you are learning it as opposed to passively attending
+            the lecture. To be fully prepared for these questions you should complete the reading for the lecture in
+            advance.
+        </p>
+        <p>
+            Please note that these questions are not glorified attendance like you may have experienced in other courses.
+            These will typically be programming questions related to the lecture topic of the day and submitted to
+            AutoLab for grading.
+        </p>
+
+    </div>
+
+</div>
+
+<div id="section2" class="section-marker"></div>
+<div class="card border-dark mb-3">
+    <div class="card-body">
+        <h3 class="card-title">Communication</h3>
+
+        <p>
+            There are multiple communication channels available to you through this course. There is no requirement to
+            use any of these, though you are encouraged to use any tools that you find helpful.
+        </p>
+
+        <p>
+            Please note that these platforms are made available to help you communicate with your classmates as well
+            as the course staff. The course
+            staff will do what we can to be active on all platforms, but you should not expect us to answer every
+            question and respond to every post. With that said, you are much more likely to get a response if you show
+            that you are putting in the time to try to understand the material. Posts that just say "help, I'm confused"
+            rarely get meaningful responses.
+        </p>
+
+        <ul>
+            <li>
+                <a href="https://piazza.com/class/jzrrfym48i57ko" target="_blank">Piazza</a>: A Q&A site designed for
+                academic courses
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="https://discord.gg/nC4eBGM" target="_blank">Discord</a>: A chat app with voice and video support
+            </li>
+        </ul>
+
+        <p>
+            These platforms are used to help you learn the course material with your classmates and the advantage
+            of these is that the entire class can see the answers and conversation. Please do not use these to DM
+            course staff with specific questions unless it's absolutely necessary. If you have a question that requires
+            us to see
+            your code you should visit us in office hours.
+        </p>
+
+        <p>
+            If there is a question that requires my/Jesse's attention (ex. I have to sign paperwork, you have to
+            reschedule the final exam, you require accessibility resources, etc) and you can't wait for my office hours
+            please send an email to hartloff@buffalo.edu
+            with the subject line "CSE116 Instructor" to ensure it gets my proper attention. Any emails/DMs/private
+            posts that could be answered by any other means will largely be ignored. I would like to respond to all of
+            you, but I simply do not have the time so I must prioritize this way.
+        </p>
+
+    </div>
+</div>
+
+<div id="section3" class="section-marker"></div>
+<div class="card border-dark mb-3">
+    <div class="card-body">
+        <h3 class="card-title">Readings</h3>
+        <p>
+            There is no textbook for this course. Instead, links to relevant readings and tutorials will be provided
+            in the course schedule. When a reading is listed you should study it before lecture to be prepared for the
+            lecture question.
+        </p>
+
+    </div>
+
+</div>
+
+<div id="section4" class="section-marker"></div>
+<div class="card border-dark mb-3">
+    <!--<div class="card-header">University/Department Policies and Services</div>-->
+    <div class="card-body">
+        <h3 class="card-title">University/Department Policies and Services</h3>
+        <ul>
+            <li>Counseling: <a href="http://www.buffalo.edu/studentlife/who-we-are/departments/counseling.html">http://www.buffalo.edu/studentlife/who-we-are/departments/counseling.html</a>
+            </li>
+            <li>Accessibility: <a
+                    href="http://www.buffalo.edu/studentlife/who-we-are/departments/accessibility.html">http://www.buffalo.edu/studentlife/who-we-are/departments/accessibility.html</a>
+            </li>
+            <li>Grading: <a href="https://catalog.buffalo.edu/policies/explanation.html">https://catalog.buffalo.edu/policies/explanation.html</a>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div id="section5" class="section-marker"></div>
+<div class="card border-dark mb-3">
+    <!--<div class="card-header">Academic Integrity</div>-->
+    <div class="card-body">
+        <h3 class="card-title">Academic Integrity</h3>
+        <p class="card-text">
+        <p>
+            CSE Department Academic Integrity Policy: <br/><a
+                href="http://engineering.buffalo.edu/computer-science-engineering/information-for-students/policies/academic-integrity.html">
+            http://engineering.buffalo.edu/computer-science-engineering/information-for-students/policies/academic-integrity.html</a>
+        </p>
+        <p>
+            UB Academic Integrity Policy: <br/><a
+                href="https://catalog.buffalo.edu/policies/integrity.html">
+            https://catalog.buffalo.edu/policies/integrity.html</a>
+        </p>
+        <p>
+            In addition to the department and university policies, the following details apply to this course.
+        </p>
+
+        <p>
+
+            All submitted work must be of your own creation and you must not share your submission with anyone else. If
+            any submission is very similar to code that has been submitted by another student
+            or can be found online, it is in violation of this courses academic integrity policy and all students will
+            be penalized whether they were copying or sharing their code with other students so they can copy. If two
+            submissions are similar beyond what is likely if the students worked independently, then <b>both students
+            are in violation</b> of the academic integrity policy.
+        </p>
+        <p>
+            All violations will result in:
+            </p>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="text-center alert alert-danger">
+                    <h3 style="color:red">An F in CSE116.</h3>
+                </div>
+            </div>
+            <div class="col-sm-8"></div>
+        </div>
+        <p>
+            It is your responsibility to understand what constitutes an academic integrity violation. If you have
+            any question whether something you are doing is a violation or not, ask for
+            clarification <b>before receiving an F in the course</b>. I will not entertain excuses after you
+            have been caught.
+
+        </p>
+        <p>
+            Examples of acceptable behavior:
+        </p>
+        <ul>
+            <li>Discussing an assignment with your classmates and brainstorming <b>abstract</b> solutions, then writing
+                code independently
+            </li>
+            <li>Searching the Internet for supplementary material on the course topics</li>
+            <li>Asking the teaching staff for clarification on a homework question</li>
+        </ul>
+
+        <p>
+            Examples of <b>un</b>acceptable behavior:
+        </p>
+        <ul>
+            <li>Submitting code or other work that is not your own for course credit.</li>
+            <li>Allowing another student to see your code or submission for an assignment.</li>
+            <li>Collaborating with another student to write code for an assignment [other than working with your
+                teammates on the team project].
+            </li>
+            <li>Allowing another student to access your work that will be submitted for course credit. (Examples: Do not
+                post you code publicly, host your code in a public repository, or allow a classmate to access your laptop)
+            </li>
+            <li>Copying a large amount material found on the Internet into your submission.</li>
+            <li>Attempting to access the grading code on AutoLab.</li>
+        </ul>
+
+        <p>
+            If you plan on cheating, plan on taking this course again.
+        </p>
+    </div>
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-0 col-sm-0 col-md-1"></div>
+    </div>
+</div>
+
+
+
+<script src="/static_files/lib/jquery-3.3.1.min.js"></script>
+<script src="/static_files/lib/popper-1.12.9.min.js"></script>
+<script src="/static_files/lib/bootstrap-4.0.0.min.js"></script>
+
+</body>
+</html>
