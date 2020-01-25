@@ -1,4 +1,8 @@
 
+p, li{
+    text-align: justify;
+}
+
 .container-fluid {
     height: 100%;
 }

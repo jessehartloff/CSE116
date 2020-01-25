@@ -15,8 +15,8 @@
 
         <p>
             While you can apply what you already know to code practically anything a computer is capable of processing,
-            it becomes very difficult very fast to organize and write
-            a large and complex piece of software. To this end, in CSE116 you will study:
+            it becomes very difficult very fast to write and organize
+            large and complex pieces of software. To this end, in CSE116 you will study:
         </p>
 
         <ul>
@@ -29,8 +29,8 @@
         </ul>
 
         <p>
-            While studying these topics we will have a strong focus on <em>how</em> your programs work, not just that
-            they work.
+            While studying these topics we will have a strong focus on <em>how</em> your programs work, not just
+            <em>that</em> they work.
         </p>
 
     </div>
@@ -45,25 +45,27 @@
             This is not an easy course! To do well in this course you are expected to:
         </p>
         <ul>
-            <li>Want to learn about computer science (This is assumed since you are taking a second CSE course)</li>
-            <li>Already be comfortable with <b>all</b> of the CSE115 material</li>
-            <li>Participate in every lecture and lab (Except the first week when there are no labs)</li>
-            <li>Bring a working and charged laptop to lab (If this is an issue please contact Jesse immediately and
-                we'll work something out)
+            <li>Invest a minimum of <b>12 hours/week</b> in CSE116 including at least 7 hours/week outside of class/lab
             </li>
-            <li>Invest a minimum of 12 hours each week in CSE116 including at least 7 hours/week outside of class/lab
+            <li>Want to learn about computer science (This is assumed since you are taking a second CSE course)</li>
+            <li>Be comfortable with <b>all</b> of the CSE115 material</li>
+            <li>Participate in every lecture and lab (Except the first week when there are no labs)</li>
+            <li>Bring a working and charged laptop to lab (If this is not possible for you, communicate with Jesse and/or your TAs to find a solution that works for you)
             </li>
         </ul>
 
         <p>
             The 12 hour/week minimum assumes that you are up-to-date on all concepts that have been covered. If you
             are not comfortable with all the CSE115 material you should expect to work significantly more than
-            12 hours/week until you are caught up with the material.
+            12 hours/week until you are caught up with the material. Likewise, if you invest less than 12 hours/week in
+            CSE116 during the first several weeks of the semester you should expect to work significantly more than
+            12 hours/week later in the semester (ie. Expect to spend 40+ hours in a single week if you wait until a
+            major deadline before studying).
         </p>
 
         <p>
             If you are unable or unwilling to spend at least 12 hours/week on this course, please navigate your
-            browser to the hub and drop CSE116.
+            browser to the hub and drop CSE116. Dropping is much better for your transcript than an F or an R.
         </p>
     </div>
 
@@ -75,7 +77,7 @@
     <div class="card-body">
         <h3 class="card-title">CSE115 Review</h3>
         <p class="card-text">
-            If you did not take the new CSE115 or would otherwise like to review the material, below are CSE115
+            If you did not take the new CSE115, or would otherwise like to review the material, below are some CSE115
             resources to help you get caught up:
         </p>
         <ul>
@@ -93,6 +95,10 @@
             </li>
         </ul>
 
+        <p>
+            Keep in mind that you must understand the concepts of CSE115 and be prepared to apply them to a new
+            language (Scala).
+        </p>
     </div>
 
 </div>
@@ -102,11 +108,18 @@
     <div class="card-body">
         <h3 class="card-title">Learning Objectives</h3>
 
+        <p>
+            I CSE116 you will learn concepts related to the following 5 learning objectives. Being successful in CSE116
+            requires completing all 5 of these objectives.
+        </p>
+
         <hr/>
         <h4>Program Execution</h4>
 
         <p>
-            How does a program run?
+            How does a program run? In CSE115 there was a focus on writing programs to accomplish specific tasks. Now
+            we want to focus on how those programs run. We will look at how a program's memory is managed as well as
+            how to automate the testing of program to ensure that it behaves the way it should.
         </p>
 
         <p>
@@ -114,11 +127,11 @@
         </p>
 
         <ul class="objective">
-            <li class="objective">Write and run automated tests to verify the functionality of a function/method</li>
+            <li class="objective">Write and run automated tests to verify the functionality of a method</li>
+            <li class="objective">Implement, and trace through the execution of, programs that pass references of objects to methods</li>
             <li class="objective">Trace through a program and track the state of the stack and heap memory throughout
                 its execution
             </li>
-            <li class="objective">Run a debugger to identify bugs in a program</li>
         </ul>
 
 
@@ -126,7 +139,9 @@
         <h4>Object-Oriented Programming</h4>
 
         <p>
-
+            Instead of writing programs as a collection of variables and functions, object-oriented programming groups
+            these variables and functions into classes and objects. This allows developers to reason about their
+            programs at a higher level of abstraction and simplifies code reuse.
         </p>
 
         <p>
@@ -137,7 +152,7 @@
             <li class="objective">Use inheritance to create a new class by extending an existing class and overriding
                 its functionality
             </li>
-            <li class="objective">Implement, and trace through the execution, of a programs using polymorphism</li>
+            <li class="objective">Implement, and trace through the execution of, programs that use polymorphism</li>
             <li class="objective">Implement programs that change behavior based on the type of an object stored in a
                 variable
             </li>
@@ -148,7 +163,10 @@
         <h4>Functional Programming</h4>
 
         <p>
-
+            Functional programming is based on functions with clearly defined input/output behavior. If a function is
+            called multiple times with the same input it must always have the same output regardless of the state of
+            the program. This consistent behavior make functional programs suitable for multi-threading and
+            distributed systems.
         </p>
 
         <p>
@@ -156,9 +174,9 @@
         </p>
 
         <ul class="objective">
-            <li class="objective">Implement and call methods that take a function as a parameter</li>
-            <li class="objective">Implement and call methods that return a function</li>
             <li class="objective">Implement, and trace the execution of, recursive methods or functions</li>
+            <li class="objective">Implement, call, and trace the execution of methods that take a function as a parameter and return a function</li>
+            <li class="objective">Implement, and trace through the execution of, programs that have no side-effects (immutability)</li>
         </ul>
 
 
@@ -166,7 +184,8 @@
         <h4>Data Structures & Algorithms</h4>
 
         <p>
-
+            We will study several new approaches for storing data and computing with that data. Primarily we will see
+            linked-lists, trees, and graphs while exploring applications of each structure.
         </p>
 
         <p>
@@ -186,7 +205,10 @@
         <h4>Event-Based Architectures</h4>
 
         <p>
-
+            As CPUs and GPUs add more cores and large apps are distributed across multiple machines (ex. YouTube is
+            much too large run on a single machine) the importance of concurrency executing code is more important than
+            ever. Event-based architectures provide a way for concurrent running pieces of code to communicate with
+            each other while accomplishing the goals of a larger program.
         </p>
 
         <p>
@@ -194,9 +216,9 @@
         </p>
 
         <ul class="objective">
-            <li class="objective">Implement an event-based program using an actor system</li>
-            <li class="objective">Implement an event-based program using web sockets</li>
-            <li class="objective">Trace through the execution of programs designed with event-based architectures</li>
+            <li class="objective">Implement event-based software using actor systems</li>
+            <li class="objective">Implement event-based software using web sockets</li>
+            <li class="objective">Trace through the execution of software designed with event-based architectures</li>
         </ul>
 
 
@@ -227,7 +249,7 @@
             </thead>
             <tr>
                 <td>5</td>
-                <td>Grade depends on application objectives completed</td>
+                <td>Grade depends on the number of application objectives completed</td>
             </tr>
             <tr>
                 <td>0-4</td>
@@ -235,7 +257,7 @@
             </tr>
         </table>
         <br/>
-
+        <br>
         <p>
             If you have completed all 5 learning objectives, your grade will be determined by the number of
             application objectives met. You will have 8 opportunities to demonstrate that you can <em>apply</em> the
@@ -314,30 +336,31 @@
         <ul>
             <li>Six lecture questions</li>
             <ul>
-                <li>Each learning objective will be covered across six lecture meetings. Each lecture will have a
+                <li>Each learning objective will be covered across six lectures. Each lecture will have a
                     corresponding lecture question to be submitted on AutoLab. These questions have a deadline of
                     midnight the day after lecture.</li>
             </ul>
             <li>One lab activity</li>
             <ul>
                 <li>Each learning objective has a corresponding lab session that will include a lab activity. These
-                    activities are to be completed throughout the 110 minute lab period and your work submitted on
-                    AutoLab</li>
+                    activities are to be completed during the 110 minute lab period.</li>
             </ul>
             <li>One interview with a TA</li>
             <ul>
                 <li>During the lab activity your TA will visit each student for a short interview. The TA may ask any
                     questions they deem appropriate in order to assess your completion of the learning objective.
-                    Following the interview, the TA will submit a report to Jesse based on your performance. Note: Your
-                    TA does not make decisions for learning objective completion and Jesse will weight all evidence
+                    Following the interview, the TA will submit a report to Jesse based on your performance.
+                </li><li>
+                Your
+                    TA does not make decisions for learning objective completion. Jesse will weight all evidence
                     while reviewing these reports and efforts will be made to neutralize the variance between TAs (ie.
-                    Your completion of learning objectives should not be affected by which TA you were assigned)
+                    Your completion of learning objectives should not be affected by which TA you were assigned).
                 </li>
             </ul>
             <li>The final exam</li>
             <ul>
                 <li>Any student failing to complete a learning objective via the lecture questions and lab will have
-                    one last opportunity to prove completion during the final exam time</li>
+                    one last opportunity to prove completion during the final exam time.</li>
             </ul>
         </ul>
 
@@ -351,7 +374,7 @@
 
         <ul>
             <li>
-                Example: Getting credit on AutoLab with code that you cannot explain, or bypasses the learning
+                Example: Getting credit on AutoLab with code that you cannot explain, or that bypasses the learning
                 objective (eg. Not using recursion on a recursion lecture question), does not demonstrate completion
                 of the learning objective.
             </li>
@@ -369,24 +392,25 @@
 
         <p>
             You can improve your letter grade by proving that you can <b>apply</b> the learning objectives to solve
-            <b>real-world problems</b>. You will have 8 opportunities for you to complete application objectives.
+            <b>real-world problems</b>. You will have 8 opportunities to complete application objectives.
         </p>
 
         <ul>
-            <li>Homework Assignments</li>
+            <li>Homework Assignments x5</li>
             <ul>
                 <li>
                     Each of the 5 learning objectives will have one or more corresponding homework assignments. Complete
-                    one homework for a learning objective and verify completion with your TA to complete these
-                    objectives. Homework verification will take place in certain lab sessions.
+                    one homework assignment for a learning objective and verify completion with your TA to complete these
+                    objectives. Homework verification will take place in certain lab sessions. Completing more than 1
+                    homework assignment for a single learning objective will not result in additional credit.
                 </li>
             </ul>
             <li>Homework Expansion</li>
             <ul>
                 <li>
                     Some homework assignments will contain expansion opportunities. These will be open-ended objectives
-                    that expand the functionality of the software. Complete one of these expansions and have a TA verify
-                    completion during the homework verification lab.
+                    that expand the functionality of the software. Complete one of these expansions and demonstrate your
+                    software to your TA during a homework verification lab.
                 </li>
             </ul>
             <li>Project Contribution</li>
