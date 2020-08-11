@@ -2,17 +2,18 @@ from flask import Flask, send_from_directory, render_template
 
 app = Flask(__name__)
 
-@app.route('/cse116')
+
+@app.route('/')
 def cse116():
     return render_template('CSE116.html')
 
 
-@app.route('/cse116/f19')
+@app.route('/f19')
 def cse116_f19():
     return render_template('f19_CSE116.html')
 
 
-@app.route('/cse116/s19')
+@app.route('/s19')
 def cse116_s19():
     return render_template('s19_CSE116.html')
 
@@ -23,4 +24,4 @@ def send_style(filename):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0", port=5000)
