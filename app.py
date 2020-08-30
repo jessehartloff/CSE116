@@ -10,12 +10,12 @@ def cse116():
 
 @app.route('/f19')
 def cse116_f19():
-    return render_template('f19_CSE116.html')
+    return render_template('CSE116.html')
 
 
 @app.route('/s19')
 def cse116_s19():
-    return render_template('s19_CSE116.html')
+    return render_template('CSE116.html')
 
 
 @app.route('/static_files/<path:filename>')

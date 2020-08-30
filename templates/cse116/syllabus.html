@@ -45,17 +45,16 @@
             This is not an easy course! To do well in this course you are expected to:
         </p>
         <ul>
-            <li>Invest a minimum of <b>12 hours/week</b> in CSE116 including at least 7 hours/week outside of class/lab
+            <li>Invest a minimum of <b>12 hours/week*</b> in CSE116 including at least 7 hours/week outside of class/lab
             </li>
             <li>Want to learn about computer science (This is assumed since you are taking a second CSE course)</li>
             <li>Be comfortable with <b>all</b> of the CSE115 material</li>
             <li>Participate in every lecture and lab (Except the first week when there are no labs)</li>
-            <li>Bring a working and charged laptop to lab (If this is not possible for you, communicate with Jesse and/or your TAs to find a solution that works for you)
-            </li>
+            <li>Have access to a computer with a reliable Internet connection</li>
         </ul>
 
         <p>
-            The 12 hour/week minimum assumes that you are up-to-date on all concepts that have been covered. If you
+            * The 12 hour/week minimum assumes that you are up-to-date on all concepts that have been covered. If you
             are not comfortable with all the CSE115 material you should expect to work significantly more than
             12 hours/week until you are caught up with the material. Likewise, if you invest less than 12 hours/week in
             CSE116 during the first several weeks of the semester you should expect to work significantly more than
@@ -110,8 +109,24 @@
 
         <p>
             In CSE116 you will learn concepts related to the following 5 learning objectives. Being successful in CSE116
-            requires completing all 5 of these objectives.
+            requires completion of all 5 of these objectives. Each objective is divided into 3 parts:
         </p>
+
+        <ul class="objective">
+            <li>Read - Given a program related to the learning objective, trace through its execution and describe
+                what the computer does at each step. This is primarily assessed during the learning objective
+                verification labs. If you do not demonstrate this during the lab, makeup opportunities will be given
+                during later labs.
+            </li>
+            <li >Write - Given a real-world problem statement, write a program that solves the problem. This is
+                primarily assessed through the lecture questions. Each learning objective has 6 lecture questions that
+            are submitted to, and grade by, AutoLab. Complete all 6 lecture questions to complete the writing portion
+            of the learning objective. If you complete a homework assignment related to a learning objective some of the
+            lecture question requirements may be waived.</li>
+            <li>Explain - Communicate verbally about the concepts of the learning objective. You must demonstrate an
+                understanding of these concepts as well as comprehensive knowledge of the related terminology. This
+                will primarily be assessed during interviews where you will be asked questions about these concepts.</li>
+        </ul>
 
         <hr/>
         <h4>Program Execution</h4>
@@ -127,11 +142,13 @@
         </p>
 
         <ul class="objective">
-            <li class="objective">Write and run automated tests to verify the functionality of a method</li>
-            <li class="objective">Implement, and trace through the execution of, programs that pass references of objects to methods</li>
-            <li class="objective">Trace through a program and track the state of the stack and heap memory throughout
+            <li class="objective">Read: Trace through a program and track the state of the stack and heap memory throughout
                 its execution
             </li>
+            <li class="objective">Write: Write programs that pass references of objects to methods and automated tests
+                to verify the functionality of such methods</li>
+            <li class="objective">Explain: Describe the concepts of pass-by-reference, stack frame, unit testing,
+                classes, and objects while reflecting on their importance in the programs we write</li>
         </ul>
 
         <br/>
@@ -151,13 +168,12 @@
         </p>
 
         <ul class="objective">
-            <li class="objective">Use inheritance to create a new class by extending an existing class and overriding
-                its functionality
+            <li class="objective">Read: Trace through the execution of programs that use inheritance and polymorphism while tracking the state of stack and heap memory</li>
+            <li class="objective">Write: Implement programs that change behavior based on the type of an object stored in a
+                variable by applying the concepts of inheritance and polymorphism
             </li>
-            <li class="objective">Implement, and trace through the execution of, programs that use polymorphism</li>
-            <li class="objective">Implement programs that change behavior based on the type of an object stored in a
-                variable
-            </li>
+            <li class="objective">Explain: Describe the concepts of inheritance, polymorphism, and abstract classes and
+                explain how they can be used to help us write software</li>
         </ul>
 
         <br/>
@@ -177,9 +193,9 @@
         </p>
 
         <ul class="objective">
-            <li class="objective">Implement, and trace through the execution of, recursive methods or functions</li>
-            <li class="objective">Implement, call, and trace through the execution of methods that take a function as a parameter and return a function</li>
-            <li class="objective">Implement, and trace through the execution of, programs that do not depend on state (immutability)</li>
+            <li class="objective">Read: Trace through the execution of recursive methods/functions, methods that take a function as a parameter, methods that return a function, and programs that use immutable types while tracking the state of stack and heap memory</li>
+            <li class="objective">Write: Implement recursive methods/functions, methods that take a function as a parameter, methods that return a function, and programs that use immutable types</li>
+            <li class="objective">Explain: Describe the concepts of recursion, first-order functions, and immutability while explaining their implications for software that applies these concepts</li>
         </ul>
 
         <br/>
@@ -197,11 +213,11 @@
         </p>
 
         <ul class="objective">
-            <li class="objective">Implement programs that use linked-lists, trees, and graphs and their algorithms</li>
-            <li class="objective">Implement new algorithms to expand the functionality of linked-lists, trees, and
+            <li class="objective">Read: Trace through the execution of programs using linked-lists, trees, and graphs</li>
+            <li class="objective">Write: Implement new algorithms to expand the functionality of linked-lists, trees, and
                 graphs
             </li>
-            <li class="objective">Trace through the execution of programs using linked-lists, trees, and graphs</li>
+            <li class="objective">Explain: Describe the structure of linked-lists, trees, and graphs and the implications of these structures including advantages and disadvantages of each</li>
         </ul>
 
 
@@ -222,9 +238,9 @@
         </p>
 
         <ul class="objective">
-            <li class="objective">Implement event-based software using actor systems</li>
-            <li class="objective">Implement event-based software using web sockets</li>
-            <li class="objective">Trace through the execution of software designed with event-based architectures</li>
+            <li class="objective">Read: Trace through the execution of software designed with event-based architectures</li>
+            <li class="objective">Write: Implement event-based software using actor systems and web sockets</li>
+            <li class="objective">Explain: Describe the structure of event-based systems, the mechanics of message passing, and what advantages these architectures provide over sequentially executing programs</li>
         </ul>
 
         <br/>
@@ -319,10 +335,10 @@
 
         <br/>
 
-        <p>
-            In accordance with the university grading policy, if you earn an F in this course while participating in
-            less than 60% of the meeting time (lecture and lab) you will instead earn a grade of FX.
-        </p>
+{#        <p>#}
+{#            In accordance with the university grading policy, if you earn an F in this course while participating in#}
+{#            less than 60% of the meeting time (lecture and lab) you will instead earn a grade of FX.#}
+{#        </p>#}
 
 
         <hr/>
@@ -336,7 +352,8 @@
 
         <p>
             All decisions relating to learning objective completion will be made by Jesse using your performance in
-            the course as evidence. At a minimum, for each of the 5 learning objectives you will have the following
+            the course as evidence. TAs will make recommendations, but no objective is complete until it is reviewed
+            and approved by Jesse. At a minimum, for each of the 5 learning objectives you will have the following
             opportunities to demonstrate completion of the objective:
         </p>
 
@@ -344,17 +361,18 @@
             <li>Six lecture questions</li>
             <ul>
                 <li>Each learning objective will be covered across six lectures. Each lecture will have a
-                    corresponding lecture question to be submitted on AutoLab. These questions have a deadline of
-                    midnight the day after lecture.</li>
+                    corresponding lecture question to be submitted on AutoLab. These questions have a recommended deadline
+                    of midnight the day after lecture.</li>
             </ul>
             <li>One lab activity</li>
             <ul>
                 <li>Each learning objective has a corresponding lab session that will include a lab activity. These
-                    activities are to be completed during the 110 minute lab period.</li>
+                    activities are to be completed during the 2 hour lab period.</li>
             </ul>
             <li>One interview with a TA</li>
             <ul>
-                <li>During the lab activity your TA will visit each student for a short interview. The TA may ask any
+                <li>Interviews are scheduled with a TA and take place over a Zoom meeting. You must have a webcam
+                    showing your face during these interviews. The TA may ask any
                     questions they deem appropriate in order to assess your completion of the learning objective.
                     Following the interview, the TA will submit a report to Jesse based on your performance.
                 </li><li>
@@ -366,8 +384,12 @@
             </ul>
             <li>The final exam</li>
             <ul>
-                <li>Any student failing to complete a learning objective via the lecture questions and lab will have
-                    one last opportunity to prove completion during the final exam time.</li>
+                <li>There is no standard final exam for this course. However, the final exam time may be used for any
+                    student who has not yet completed all 5 learning objectives at the discretion of the course staff.
+                    Note that if you do not have all 5 learning objectives by the end of the last day of class then you
+                    have earned an F in CSE116. In certain cases you may be invited to prove your completion of these
+                    objectives during finals week, but there is no guarantee that you will have this opportunity.
+                    No application objectives can be made up during this time.</li>
             </ul>
         </ul>
 
@@ -407,40 +429,37 @@
             <ul>
                 <li>
                     Each of the 5 learning objectives will have one or more corresponding homework assignments. Complete
-                    one homework assignment for a learning objective and verify completion with your TA to complete these
-                    objectives. Homework verification will take place in certain lab sessions. Completing more than 1
-                    homework assignment for a single learning objective will not result in additional credit.
+                    one homework assignment for a learning objective and verify completion with your TA, via an
+                    interview, to complete these objectives. Homework verification will take place in certain lab
+                    sessions.
                 </li>
             </ul>
-            <li>Homework Expansion</li>
+            <li>Homework Expansion x2</li>
             <ul>
                 <li>
                     Some homework assignments will contain expansion opportunities. These will be open-ended objectives
-                    that expand the functionality of the software. Complete one of these expansions and demonstrate your
-                    software to your TA during a homework verification lab.
+                    that expand the functionality of the software. Complete one of these expansions and schedule an
+                    interview to demonstrate completion.
+                </li>
+                <li>
+                    As an alternative to homework expansions, you may complete an additional homework assignment for a
+                    learning objective that you've already completed. If you choose this option you should notify your
+                    TA and schedule and additional interview to demonstrate this completion.
                 </li>
             </ul>
             <li>Project Contribution</li>
             <ul>
                 <li>
                     The last section of the course will involve a large project. Your contribution to the project is
-                    another opportunity to complete an application objective. Contributions will be demonstrated during
-                    lab.
+                    another opportunity to complete an application objective. Contributions will be demonstrated through
+                    interviews.
                 </li>
-            </ul>
-            <li>Open-Ended Software</li>
-            <ul>
-                <li>Show us something cool: Apply the skills your acquired throughout this course to build software
-                of interest to you. The software must be approved by the course staff and must use the skills of this
-                    course (ie. A student coming out of CSE115 should not be able to develop your software without
-                    self-studying CSE116 topics)</li>
-                <li>Alternative: You may complete a second homework expansion to earn credit for this opportunity</li>
             </ul>
         </ul>
 
         <p>
             All application objectives must be verified by the course staff to earn credit for completion. During
-            homework verification labs you must be prepared to:
+            homework verification interviews you must be prepared to:
         </p>
 
         <ul>
@@ -451,17 +470,12 @@
         </ul>
 
         <p>
-            Each homework assignment will also have a pre-homework during lab to ensure that you understand the
-            assignment. Your participation in the pre-homework will be considered during verification.
-        </p>
-
-        <p>
             As with the learning objectives:
         </p>
 
         <ul>
             <li>It is possible to pass all the tests on AutoLab and not complete the application objective if you fail
-                any of the above verification tasks.</li>
+                any of the above verification tasks during an interview.</li>
             <li>
                 It is possible to fail some/all tests on AutoLab and still complete the application objective depending
                 on the specific situation. (Final decisions will be made by Jesse based on recommendations from TAs)
@@ -472,6 +486,27 @@
             The amount and type of verification required will depend on your AutoLab results when applicable.
         </p>
 
+        <h3>Homework Procedure</h3>
+
+        <p>
+            Each homework assignment will have a posted deadline, though you may have opportunities to complete the
+            assignment after this deadline. The following apply to homework deadlines:
+        </p>
+
+        <ul>
+            <li>If you do not submit (On AutoLab) an honest effort to complete the assignment before the posted
+                deadline you will not be able to earn credit for that assignment. This implies that if you miss one
+                homework deadline you cannot earn an A in CSE116 this semester. What constitutes an "honest effort"
+                will be decided at the discretion of the course staff.</li>
+            <li>If you submit an honest effort before the deadline but don't complete the assignment, you will be given
+                additional time to complete the assignment.</li>
+            <li>If you never complete the AutoLab portion of the assignment, you may still earn completion of the
+                application objective through the interview. If you know your program is correct (And you have
+                comprehensive unit tests that pass!! Don't even attempt to get credit if you haven't tested your code
+                thoroughly) but AutoLab won't
+                award completion, don't waste hours of your life swearing at the grading code. Explain the situation to
+                your TA during the interview and the course staff will determine how to proceed.</li>
+        </ul>
 
     </div>
 
@@ -483,13 +518,9 @@
     <div class="card-body">
         <h3 class="card-title">Readings</h3>
         <p>
-            There is no textbook for this course. Instead, links to relevant readings and tutorials will be provided
+            There is no textbook for this course. Instead, links to relevant readings and tutorials are provided
             in the course schedule. When a reading is listed you should study it before lecture to be prepared for the
             lecture question.
-        </p>
-
-        <p>
-            Recommended resources:
         </p>
     </div>
 
@@ -567,8 +598,10 @@
             <li>Discussing an assignment with your classmates and brainstorming <b>abstract</b> solutions, then writing
                 code independently
             </li>
+            <li>Forming study groups and discussing course material and assignments on Discord, Zoom, etc.</li>
             <li>Searching the Internet for supplementary material on the course topics</li>
             <li>Asking the teaching staff for clarification on a homework question</li>
+            <li>Having, or hiring, someone to help you understand the concepts of the course</li>
         </ul>
 
         <p>
@@ -577,14 +610,14 @@
         <ul>
             <li>Pressuring a TA to falsify a learning objective report or application objective verification.</li>
             <li>Submitting code or other work that is not your own for course credit.</li>
-            <li>Allowing another student to see your code or submission for an assignment.</li>
-            <li>Collaborating with another student to write code for an assignment [other than working with your
-                teammates on the team project].
+            <li>Collaborating with another student to write code for an assignment. <-- This is the most common type of violation. DO NOT write code together!
             </li>
+            <li>Allowing another student to see your code or submission for an assignment.</li>
             <li>Allowing another student to access your work that will be submitted for course credit. (Examples: Do not
                 post you code publicly, host your code in a public repository, or allow a classmate to access your
                 laptop)
             </li>
+            <li>Having, or hiring, someone to help you write code</li>
             <li>Copying a large amount of material found on the Internet into your submission.</li>
             <li>Attempting to access the grading code on AutoLab.</li>
         </ul>
@@ -592,6 +625,7 @@
         <p>
             If you plan on cheating, plan on taking this course again.
         </p>
+
     </div>
 
 </div>
