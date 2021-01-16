@@ -5,6 +5,7 @@
     <title>CSE116 - Spring 2021</title>
     <link rel="stylesheet" href="/static_files/lib/bootstrap-4.0.0.min.css">
     <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="shortcut icon" type="image/x-icon" href="/static_files/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -19,7 +20,7 @@
             <hr/>
 
             <h1>CSE116: Computer Science 2</h1>
-            <h2>Fall 2020</h2>
+            <h2>Spring 2021</h2>
             <hr/>
 
 
@@ -33,7 +34,7 @@
                 <img src="static_files/piazza.png" class="img-responsive" height="45px"/></a>&nbsp;&nbsp;
 
             <a href="https://www.youtube.com/channel/UCxB_9AWzBvp4mWSk8zpFU6g/videos" target="_blank">
-                <img src="static_files/youtube.png" class="img-responsive" height="45px"/></a>&nbsp;&nbsp;
+                <img src="static_files/_youtube_.png" class="img-responsive" height="45px"/></a>&nbsp;&nbsp;
 
             <a href="https://discord.gg/nC4eBGM" target="_blank">
                 <img src="static_files/discord2.png" class="img-responsive" height="45px"/></a>&nbsp;&nbsp;
@@ -47,9 +48,10 @@
             <div class="card">
                 <a data-toggle="collapse" data-target="#syllabus">
                     <div class="card-header text-white section-header">
-                        <h5>
-                            Syllabus
-                        </h5>
+                        <div>
+                            Syllabus <span class="float-right"><i
+                            class='far fa-caret-square-down'></i></span>
+                        </div>
                     </div>
                 </a>
 
@@ -66,9 +68,10 @@
             <div class="card">
                 <a data-toggle="collapse" data-target="#officeHours">
                     <div class="card-header text-white section-header">
-                        <h5>
-                            Assistance
-                        </h5>
+                        <div>
+                            Assistance <span class="float-right"><i
+                            class='far fa-caret-square-down'></i></span>
+                        </div>
                     </div>
                 </a>
 
@@ -82,59 +85,44 @@
 
             <hr/>
 
+            <!--- LO1 --->
 
             <a data-toggle="collapse" data-target="#block1">
-                <div class="card-header section-intro">
-                    <h5>
-                        Introduction to Scala
-                    </h5>
+                <div class="card-header section-testing">
+                    <div>
+                        Learning Objective 1: Program Execution <span class="float-right"><i
+                            class='far fa-caret-square-down'></i></span></div>
                 </div>
             </a>
 
-            <div id="block1" class="collapse show">
+            <div id="block1" class="collapse show section-card card-testing">
                 <table class="table table-bordered">
 
                     <tbody>
-                    <tr class="section-intro">
-                        <td colspan="3"><b>Week 1</b></td>
+
+                    <tr class="homework">
+                        <td colspan="3">Project 1: Pale Blue Dot
+{#                            <a href="">Rhyming Dictionary</a>#}
+                        </td>
+                    </tr>
+
+
+                    <tr class="section-testing">
+                        <td colspan="3" class="week">Week 1</td>
                     </tr>
 
                     {% include "cse116/week1.html" %}
 
 
-                    </tbody>
-                </table>
-
-            </div>
-
-
-            <a data-toggle="collapse" data-target="#block2">
-                <div class="card-header section-testing">
-                    <h5>
-                        Learning Objective 1: Program Execution
-                    </h5>
-                </div>
-            </a>
-
-            <div id="block2" class="collapse show">
-                <table class="table table-bordered">
-
-                    <tbody>
-
-
-                    <tr class="table-info">
-                        <td colspan="3">Homework: <a href="https://docs.google.com/document/d/1SwrgTSM5PDMWcDxFdvsMHGEC3_Ln3OEbKM8yRwf1EPQ/edit?usp=sharing">Physics Engine</a> || <a href="https://docs.google.com/document/d/17uQuowj9YUOUIoxeOQ8ZglSea73iStsnXBTXG4jT9x4/edit?usp=sharing">Rhyming Dictionary</a></td>
-                    </tr>
-
                     <tr class="section-testing">
-                        <td colspan="3"><b>Week 2</b></td>
+                        <td colspan="3" class="week">Week 2</td>
                     </tr>
 
 
                     {% include "cse116/week2.html" %}
 
                     <tr class="section-testing">
-                        <td colspan="3"><b>Week 3</b></td>
+                        <td colspan="3" class="week">Week 3</td>
                     </tr>
 
                     {% include "cse116/week3.html" %}
@@ -143,210 +131,210 @@
 
 
             </div>
-            <a data-toggle="collapse" data-target="#block3">
+
+            <!--- LO2 --->
+
+            <a data-toggle="collapse" data-target="#block2">
                 <div class="card-header section-oop">
-                    <h5>
-                        Learning Objective 2: Object-Oriented Programming (OOP)
-                    </h5>
+                    <div>
+                        Learning Objective 2: Object-Oriented Programming (OOP) <span class="float-right"><i
+                            class='far fa-caret-square-down'></i>
+</span>
+                    </div>
                 </div>
             </a>
 
-            <div id="block3" class="collapse show">
+            <div id="block2" class="collapse show section-card card-oop">
                 <table class="table table-bordered">
 
                     <tbody>
 
 
-                    <tr class="table-info">
-                        <td colspan="3">Homework: <a href="https://docs.google.com/document/d/1DyKKfVquvYWNXeQddB9h9Ie7Il9_tsJrpldLYr9RjRM/edit?usp=sharing">Calculator</a> || <a href="https://docs.google.com/document/d/1zhWIMyFFtv33Cw5H0UjeLQf4l5nQVPeExXkxQyU5N6o/edit?usp=sharing">Microwave</a></td>
+                    <tr class="homework">
+                         <td colspan="3">Project 2: ____
+{#                            <a href=""></a>#}
+                        </td>
                     </tr>
 
                     <tr class="section-oop">
-                        <td colspan="3"><b>Week 4</b></td>
+                        <td colspan="3" class="week">Week 4</td>
                     </tr>
 
 
                     {% include "cse116/week4.html" %}
 
                     <tr class="section-oop">
-                        <td colspan="3"><b>Week 5</b></td>
+                        <td colspan="3" class="week">Week 5</td>
                     </tr>
 
                     {% include "cse116/week5.html" %}
 
-                    </tbody>
-                </table>
-            </div>
 
-
-            <a data-toggle="collapse" data-target="#block4">
-                <div class="card-header section-fp">
-                    <h5>
-                        Learning Objective 3: Functional Programming (FP)
-                    </h5>
-                </div>
-            </a>
-
-            <div id="block4" class="collapse show">
-                <table class="table table-bordered">
-
-                    <tbody>
-
-
-                    <tr class="section-fp">
-                        <td colspan="3"><b>Week 6</b></td>
+                    <tr class="section-oop">
+                        <td colspan="3" class="week">Week 6</td>
                     </tr>
 
 
                     {% include "cse116/week6.html" %}
 
+                    </tbody>
+                </table>
+            </div>
 
 
-                    <tr class="section-se">
-                        <td colspan="3"><b>Week 7</b></td>
+            <!--- Spring Break --->
+
+
+            <a data-toggle="collapse" data-target="#block3">
+                <div class="card-header section-review">
+                    <div>
+                        Definitely Not Spring Break <span class="float-right"><i class='far fa-caret-square-down'></i>
+</span>
+                    </div>
+                </div>
+            </a>
+
+
+            <div id="block3" class="collapse show section-card card-review">
+                <table class="table table-bordered">
+
+                    <tbody>
+
+                    <tr class="section-review">
+                        <td colspan="3" class="week">Week 7</td>
                     </tr>
 
 
                     {% include "cse116/week7.html" %}
 
-
                     </tbody>
                 </table>
+            </div>
 
 
+            <!--- LO3 --->
 
+            <a data-toggle="collapse" data-target="#block4">
                 <div class="card-header section-fp">
-                    <h5>
-                        Learning Objective 3: Functional Programming (FP) continued
-                    </h5>
+                    <div>
+                        Learning Objective 3: Functional Programming (FP) & Concurrency <span class="float-right"><i
+                            class='far fa-caret-square-down'></i>
+</span>
+                    </div>
                 </div>
+            </a>
 
-
+            <div id="block4" class="collapse show section-card card-fp">
                 <table class="table table-bordered">
 
                     <tbody>
 
 
-                    <tr class="table-info">
-                        <td colspan="3">Homework: <a href="https://docs.google.com/document/d/1i7nEaGcPQxFwVXro4Wz2ng9-U4OY7NImAG9ZMsPHFRY/edit?usp=sharing">Genetic Algorithm</a></td>
+                    <tr class="homework">
+                         <td colspan="3">Project 3: Genetic Algorithm
+{#                            <a href=""></a>#}
+                        </td>
                     </tr>
 
 
                     <tr class="section-fp">
-                        <td colspan="3"><b>Week 8</b></td>
+                        <td colspan="3" class="week">Week 8</td>
                     </tr>
+
 
                     {% include "cse116/week8.html" %}
 
 
+                    <tr class="section-fp">
+                        <td colspan="3" class="week">Week 9</td>
+                    </tr>
+
+
+                    {% include "cse116/week9.html" %}
+
+
+                    <tr class="section-fp">
+                        <td colspan="3" class="week">Week 10</td>
+                    </tr>
+
+
+                    {% include "cse116/week10.html" %}
 
 
                     </tbody>
                 </table>
+
             </div>
 
+
+            <!--- LO4 --->
 
 
             <a data-toggle="collapse" data-target="#block5">
                 <div class="card-header section-ds">
-                    <h5>
-                        Learning Objective 4: Data Structures & Algorithms
-                    </h5>
+                    <div>
+                        Learning Objective 4: Data Structures & Algorithms <span class="float-right"><i
+                            class='far fa-caret-square-down'></i></span>
+                    </div>
                 </div>
             </a>
 
 
-
-            <div id="block5" class="collapse show">
-                <table class="table table-bordered">
-
-                    <tbody>
-                    <tr class="table-info">
-                        <td colspan="3">Homework: <a href="https://docs.google.com/document/d/1_7K6P3P3d4b0ceh-_zSyqNUkCKNyrDt448kTXY9F1tg/edit?usp=sharing">Maze Solver</a></td>
-                    </tr>
-
-                    <tr class="section-ds">
-                        <td colspan="3"><b>Week 9</b></td>
-                    </tr>
-
-                    {% include "cse116/week9.html" %}
-
-                    <tr class="section-ds">
-                        <td colspan="3"><b>Week 10</b></td>
-                    </tr>
-
-                    {% include "cse116/week10.html" %}
-
-                    </tbody>
-                </table>
-            </div>
-
-
-            <a data-toggle="collapse" data-target="#block6">
-                <div class="card-header section-events">
-                    <h5>
-                        Learning Objective 5: Event-Based Architectures
-                    </h5>
-                </div>
-            </a>
-
-            <div id="block6" class="collapse show">
+            <div id="block5" class="collapse show section-card card-ds">
                 <table class="table table-bordered">
 
                     <tbody>
 
-                    <tr class="table-info">
-                        <td colspan="3">Homework: <a href="https://docs.google.com/document/d/14hDY_TAyR5PA5TpVZEQPnhBE_97bMC8_oNIKdasyzbQ/edit?usp=sharing">Clicker</a></td>
+
+                    <tr class="homework">
+                         <td colspan="3">Project 4: Enemy AI
+{#                            <a href=""></a>#}
+                        </td>
                     </tr>
 
-                    <tr class="section-events">
-                        <td colspan="3"><b>Week 11</b></td>
+                    <tr class="section-ds">
+                        <td colspan="3" class="week">Week 11</td>
                     </tr>
 
                     {% include "cse116/week11.html" %}
 
-                    <tr class="section-events">
-                        <td colspan="3"><b>Week 12</b></td>
+                    <tr class="section-ds">
+                        <td colspan="3" class="week">Week 12</td>
                     </tr>
-
 
                     {% include "cse116/week12.html" %}
 
+                    <tr class="section-ds">
+                        <td colspan="3" class="week">Week 13</td>
+                    </tr>
+
+                    {% include "cse116/week13.html" %}
 
                     </tbody>
                 </table>
             </div>
 
 
-            <a data-toggle="collapse" data-target="#block7">
-                <div class="card-header section-se">
-                    <h5>
-                        Software Engineering
-                    </h5>
+            <!--- Review Week --->
+
+
+            <a data-toggle="collapse" data-target="#block6">
+                <div class="card-header section-review">
+                    <div>
+                        Review Week <span class="float-right"><i
+                            class='far fa-caret-square-down'></i></span>
+                    </div>
                 </div>
             </a>
 
-            <div id="block7" class="collapse show">
+            <div id="block6" class="collapse show section-card card-review">
                 <table class="table table-bordered">
 
                     <tbody>
 
 
-                    <tr>
-                        <td colspan="3"><b>Fall Recess (Lecture and Lab cancelled Monday-Friday)</b></td>
-                    </tr>
-
-
-                    <tr class="section-se">
-                        <td colspan="3"><b>Week 13</b></td>
-                    </tr>
-
-
-                    {% include "cse116/week13.html" %}
-
-
-                    <tr class="section-se">
-                        <td colspan="3"><b>Week 14</b></td>
+                    <tr class="section-review">
+                        <td colspan="3" class="week">Week 14</td>
                     </tr>
 
 
@@ -375,18 +363,18 @@
 
 <script>
     function collapse() {
-        for(let x of document.getElementsByClassName("collapse")) {
+        for (let x of document.getElementsByClassName("collapse")) {
             if (localStorage.getItem(x.id) === "hide") {
                 x.setAttribute("class", "collapse");
             }
         }
-        for(let x of document.getElementsByTagName("a")){
-            if(x.getAttribute("data-toggle")) {
+        for (let x of document.getElementsByTagName("a")) {
+            if (x.getAttribute("data-toggle")) {
                 x.addEventListener("click", function () {
                     const elem = document.getElementById(x.getAttribute("data-target").replace("#", ""));
-                    if(elem.classList.contains("show")){
+                    if (elem.classList.contains("show")) {
                         localStorage.setItem(elem.id, "hide");
-                    }else{
+                    } else {
                         localStorage.removeItem(elem.id);
                     }
                 });

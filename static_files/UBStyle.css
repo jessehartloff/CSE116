@@ -1,6 +1,49 @@
 
+.homework{
+    background-color: #f9fff9;
+}
 
+.lab{
+    background-color: #f9fff9;
+}
 
+.non_visual_link{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.non_visual_link:hover{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.reading{
+    margin: 0;
+}
+
+li.reading{
+    margin: 0;
+}
+
+.table td{
+    padding: 7px;
+}
+
+.card-header {
+    padding: 10px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.week {
+    font-weight: bold;
+}
+
+.slide-icon {
+    text-align: center;
+    width: 35px;
+    margin: 4px;
+}
 
 .strike {
     text-decoration: line-through;
@@ -14,7 +57,7 @@
     padding: 20px
 }
 
-p, li{
+p, li {
     text-align: justify;
 }
 
@@ -37,22 +80,56 @@ p, li{
     cursor: pointer;
 }
 
+.section-card{
+    margin-bottom: 15px;
+    border: 2px solid;
+    border-radius: 0;
+}
+
+.card-review{
+    border-color: #f0f0f0;
+}
+
+
+.section-review {
+    background-color: #f0f0f0;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+
+.card-testing{
+    border-color: #3265cb;
+}
+
 .section-testing {
     background-color: #3265cb;
     color: #ffffff;
     cursor: pointer;
 }
 
+
+.card-oop{
+    border-color: #3c9b3b;
+}
 .section-oop {
     background-color: #3c9b3b;
     color: #ffffff;
     cursor: pointer;
 }
 
+.card-fp{
+    border-color: #cca238;
+}
 .section-fp {
     background-color: #cca238;
     color: #ffffff;
     cursor: pointer;
+}
+
+.card-ds{
+    border-color: #319397;
 }
 
 .section-ds {
