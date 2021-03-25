@@ -7,12 +7,16 @@
     <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static_files/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static_files/lib/darktheme.css">
+    {# Dark mode based on https://www.cssscript.com/dark-mode-switcher-bootstrap/ #}
 
     <base target="_blank">
 </head>
 
 <body class="outer" onload="collapse();">
 <div class="container">
+{#    Load the dark theme right away to avoid blinding someone when refreshing #}
+    <script src="/static_files/lib/theme.js"></script>
 
     <div class="row">
         <div class="col-0 col-sm-0 col-md-1"></div>
@@ -28,6 +32,14 @@
 
             <h1>CSE116: Computer Science 2</h1>
             <h2>Spring 2021</h2>
+
+
+
+            <div class="dark-theme-toggle-region">
+                <script src="/static_files/lib/darkswitch.js"></script>
+            </div>
+
+
             <hr/>
 
             <a href="https://www.twitch.tv/hartloff" class="non_visual_link">
@@ -355,7 +367,6 @@
 
             <hr/>
 
-
         </div>
 
 
@@ -390,6 +401,5 @@
         }
     }
 </script>
-
 </body>
 </html>
