@@ -5,13 +5,14 @@
     <title>CSE116 - Spring 2021</title>
     <link rel="stylesheet" href="/static_files/lib/bootstrap-4.0.0.min.css">
     <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
+    <link rel="stylesheet" type="text/css" id="darkThemeCss" href="/static_files/darktheme.css" disabled/>
     <link rel="shortcut icon" type="image/x-icon" href="/static_files/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="/static_files/cse116.js"></script>
     <base target="_blank">
 </head>
 
-<body class="outer" onload="collapse();">
+<body class="outer" onload="bodyLoaded();">
 <div class="container">
 
     <div class="row">
@@ -28,6 +29,10 @@
 
             <h1>CSE116: Computer Science 2</h1>
             <h2>Spring 2021</h2>
+            <div class="darkThemeCheckboxRegion">
+                <label for="darkThemeCheckbox">Dark Theme</label>
+                <input id="darkThemeCheckbox" type="checkbox" onclick="setDarkMode(this.checked);"/>
+            </div>
             <hr/>
 
             <a href="https://www.twitch.tv/hartloff" class="non_visual_link">
@@ -368,28 +373,6 @@
 <script src="/static_files/lib/popper-1.12.9.min.js"></script>
 <script src="/static_files/lib/bootstrap-4.0.0.min.js"></script>
 <script src="/static_files/lib/fontawesome.js"></script>
-
-<script>
-    function collapse() {
-        for (let x of document.getElementsByClassName("collapse")) {
-            if (localStorage.getItem(x.id) === "hide") {
-                x.setAttribute("class", "collapse");
-            }
-        }
-        for (let x of document.getElementsByTagName("a")) {
-            if (x.getAttribute("data-toggle")) {
-                x.addEventListener("click", function () {
-                    const elem = document.getElementById(x.getAttribute("data-target").replace("#", ""));
-                    if (elem.classList.contains("show")) {
-                        localStorage.setItem(elem.id, "hide");
-                    } else {
-                        localStorage.removeItem(elem.id);
-                    }
-                });
-            }
-        }
-    }
-</script>
 
 </body>
 </html>

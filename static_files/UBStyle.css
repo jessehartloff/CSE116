@@ -1,4 +1,11 @@
+.darkThemeCheckboxRegion {
+    margin-top: 20px;
+}
 
+.table {
+    /* Remove the annoying space under each table */
+    margin-bottom: 0;
+}
 
 .my-social-icon{
     width: 40px;
