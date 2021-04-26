@@ -6,7 +6,8 @@
     --card-background-color: #181818;
     --card-header-color: #3f3f3f;
     --card-subheader-color: #272727;
-    --text-color: white;
+    --card-border-color: #5b6b80;
+    --text-color: #d9d9d9; /* A little easier on the eyes than white */
     --link-color: #67b2e8;
     --link-hover-color: #bfccff;
 }
@@ -17,16 +18,29 @@ body.outer {
     color: var(--text-color);
 }
 
+.card, .card-review, .table-bordered td {
+    border-color: var(--card-border-color);
+}
+
+th {
+    border-color: var(--card-border-color) !important;
+}
+
+.card .border-dark {
+    border-color: var(--card-border-color) !important;
+}
+
 /* Dark card backgrounds */
 .card-body, .section-card, .table {
     background-color: var(--card-background-color);
 }
 
 /* Lighter card headers */
-.card-header {
-    background-color: var(--card-header-color);
-    color: var(--text-color);
-}
+/* Removed to keep the original section colors */
+/*.card-header {*/
+/*    background-color: var(--card-header-color);*/
+/*    color: var(--text-color);*/
+/*}*/
 
 /* Slightly lighter card subheaders */
 .homework, .lab, .section-review {
@@ -48,7 +62,7 @@ a:hover {
     color: var(--link-hover-color);
 }
 
-/* Gray horizontal bars so they're not too bright or invisible */
+/* Border blue horizontal bars so they're not too bright or invisible */
 hr {
-    background-color: gray;
+    background-color: var(--card-border-color);
 }
