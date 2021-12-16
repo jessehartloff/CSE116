@@ -1,7 +1,11 @@
-from flask import Flask, send_from_directory, render_template, make_response
+from flask import Flask, send_from_directory, render_template, make_response, redirect
 
 app = Flask(__name__)
 
+
+@app.route('/final')
+def final_exam():
+    return redirect("https://docs.google.com/document/d/10oHZKDJSkDNhF-UCUAPZvx3zlR6Q_-ZurJCMymz3x90/edit?usp=sharing")
 
 @app.route('/')
 def cse116():
