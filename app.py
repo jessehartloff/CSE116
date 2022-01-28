@@ -3,26 +3,13 @@ from flask import Flask, send_from_directory, render_template, make_response, re
 app = Flask(__name__)
 
 
-@app.route('/final')
-def final_exam():
-    return redirect("https://docs.google.com/document/d/10oHZKDJSkDNhF-UCUAPZvx3zlR6Q_-ZurJCMymz3x90/edit?usp=sharing")
+# @app.route('/final')
+# def final_exam():
+#     return redirect("https://docs.google.com/document/d/10oHZKDJSkDNhF-UCUAPZvx3zlR6Q_-ZurJCMymz3x90/edit?usp=sharing")
+
 
 @app.route('/')
 def cse116():
-    resp = make_response(render_template('CSE116.html'))
-    resp.headers["X-Content-Type-Options"] = "nosniff"
-    return resp
-
-
-@app.route('/f19')
-def cse116_f19():
-    resp = make_response(render_template('CSE116.html'))
-    resp.headers["X-Content-Type-Options"] = "nosniff"
-    return resp
-
-
-@app.route('/s19')
-def cse116_s19():
     resp = make_response(render_template('CSE116.html'))
     resp.headers["X-Content-Type-Options"] = "nosniff"
     return resp
