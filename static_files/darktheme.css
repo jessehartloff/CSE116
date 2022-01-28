@@ -12,6 +12,7 @@
     --link-hover-color: #bfccff;
 }
 
+
 /* The whole page */
 body.outer {
     background-color: var(--page-background-color);
@@ -65,4 +66,9 @@ a:hover {
 /* Border blue horizontal bars so they're not too bright or invisible */
 hr {
     background-color: var(--card-border-color);
+}
+
+/* Dark text on the bootstrap elements that don't change color based on the theme (Deadlines should still stand out) */
+.table-warning, .table-danger{
+    color: black;
 }
