@@ -78,7 +78,7 @@ li.reading{
 }
 
 p, li {
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 .container-fluid {
