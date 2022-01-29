@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSE116 - Fall 2021</title>
+    <link rel="stylesheet" href="/static_files/lib/bootstrap-4.0.0.min.css">
+    <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/static_files/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/static_files/cse116.js"></script>
+</head>
+
+<body class="outer" onload="checkButtonFromServer()">
+<div class="container">
+
+    <br/><br/><br/>
+    <button id="the_button" type="button" class="btn btn-secondary btn-lg" onclick="buttonPressed();">Lecture Question is OFF</button>
+
+</div>
+
+<script>
+
+    function setButton(on_or_off){
+        const theButton = document.getElementById("the_button");
+        if(on_or_off === "on"){
+            theButton.className = "btn btn-primary btn-lg";
+            theButton.textContent = "Lecture Question is ON. Good Luck!";
+        }else if(on_or_off === "off"){
+            theButton.className = "btn btn-secondary btn-lg";
+            theButton.textContent = "Lecture Question is OFF";
+        }else{
+            theButton.className = "btn btn-danger btn-lg";
+            theButton.textContent = on_or_off;
+        }
+    }
+
+    function checkButtonFromServer(){
+        talkToServer("GET");
+    }
+
+    function buttonPressed(){
+        talkToServer("POST");
+    }
+
+    function talkToServer(requestType){
+        const request = new XMLHttpRequest();
+        request.onreadystatechange = function() {
+            if(this.readyState === 4 && this.status === 200){
+                setButton(this.responseText);
+            }
+        }
+        request.open(requestType, "/lq_switch");
+        request.send();
+    }
+
+</script>
+
+<script src="/static_files/lib/jquery-3.3.1.min.js"></script>
+<script src="/static_files/lib/popper-1.12.9.min.js"></script>
+<script src="/static_files/lib/bootstrap-4.0.0.min.js"></script>
+<script src="/static_files/lib/fontawesome.js"></script>
+
+</body>
+</html>

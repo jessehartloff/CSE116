@@ -3,5 +3,7 @@ services:
   app:
     build: .
     restart: always
+    environment:
+      token: changeMe
     ports:
       - '8116:5000'
