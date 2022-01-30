@@ -31,7 +31,7 @@ def send_style(filename):
 
 lecture_question_switch = "off"
 time_of_latest_turn_off = 0.0  # remember when the question was last turned off to allow for a delay in actually turing it off
-turn_off_delay_in_second = 20  # accept submission this long after the question is turned off. This makes up for the delay in AutoLab
+turn_off_delay_in_second = 35  # accept submission this long after the question is turned off. This makes up for the delay in AutoLab
 hashed_password = b'$2b$12$ttSdEPdcXqGzuLZxtqUQN.1lCj0CM0GORvaCZLqEFTrEvw.88e2eq'  # try and hack me
 hashed_token = b'$2b$12$vr9AFns4hEWtRXR.pmoaG.4bbTt553ck9sm5tPXnUJzeMFs35qDFi'
 the_token = os.environ.get('token', "oops. Forgot to set envvar for token")
