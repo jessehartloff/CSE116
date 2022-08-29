@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSE116 - Spring 2022</title>
+    <title>CSE116 - Fall 2022</title>
     <link rel="stylesheet" href="/static_files/lib/bootstrap-4.0.0.min.css">
     <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
     <link rel="stylesheet" type="text/css" id="darkThemeCss" href="/static_files/darktheme.css" disabled/>
@@ -31,17 +31,11 @@
             </div>
             <hr/>
 
-            <a href="https://autograder.cse.buffalo.edu/courses/CSE116-s22/assessments" class="non_visual_link">
-                <img src="static_files/autolab.svg" class="img-responsive my-social-icon"/> Submit programming assignments</a><br/>
+            <a href="https://autograder.cse.buffalo.edu/courses/CSE116-f22/assessments" class="non_visual_link">
+                <img src="static_files/autolab.svg" class="img-responsive my-social-icon"/> Submit programming assignments</a> [Not yet active]<br/>
 
             <a href="https://github.com/jessehartloff/CSE116-Examples" class="non_visual_link">
                 <img src="static_files/github.png" class="img-responsive my-social-icon"/> Code examples shown in lecture slides</a><br/>
-
-            <a href="https://github.com/pauled/cse116-S22-SectionA" class="non_visual_link">
-                <img src="static_files/github.png" class="img-responsive my-social-icon"/> Section A lecture code</a><br/>
-
-            <a href="https://github.com/pauled/cse116-S22-SectionD" class="non_visual_link">
-                <img src="static_files/github.png" class="img-responsive my-social-icon"/> Section D lecture code</a><br/>
 
             <a href="static_files/MemoryDiagrams-Scala.pdf" class="non_visual_link">
                 <img src="static_files/pdf.png" class="img-responsive my-social-icon"/> Memory Diagram Reference</a><br/>
@@ -49,15 +43,11 @@
             <a href="https://www.youtube.com/channel/UCxB_9AWzBvp4mWSk8zpFU6g/videos" class="non_visual_link">
                 <img src="static_files/_youtube_.png" class="img-responsive my-social-icon"/> Watch past lectures</a><br/>
 
-            <a href="https://piazza.com/class/kyxuva62f9d62x?cid=11" class="non_visual_link">
+            <a href="https://piazza.com/class/l7epcnsyjaz3r8" class="non_visual_link">
                 <img src="static_files/piazza.png" class="img-responsive my-social-icon"/> Ask questions and find office hours</a><br/>
 
             <a href="https://discord.gg/nC4eBGM" class="non_visual_link">
                 <img src="static_files/discord2.png" class="img-responsive my-social-icon"/> Chat with other students</a><br/>
-
-{#            <a href="https://www.twitch.tv/drhartloff" class="non_visual_link">#}
-{#                <img src="static_files/twitch.png" class="img-responsive my-social-icon"/> Select lectures may be live-streamed on Twitch</a><br/>#}
-
 
             <hr/>
 
@@ -99,7 +89,7 @@
 
                     <tr class="homework">
                         <td colspan="3">Project 1
-                            : <a href="https://docs.google.com/document/d/1QSA0jWJ0quBfBmExiADsdWdsY6hoqm5Ka98bo4j2b40/edit?usp=sharing">Pale Blue Dot</a>
+{#                            : <a href="https://docs.google.com/document/d/1QSA0jWJ0quBfBmExiADsdWdsY6hoqm5Ka98bo4j2b40/edit?usp=sharing">Pale Blue Dot</a>#}
                         </td>
                     </tr>
 
@@ -123,6 +113,16 @@
                     </tr>
 
                     {% include "cse116/week3.html" %}
+
+
+                    <tr class="section-testing">
+                        <td colspan="3" class="week">Week 4</td>
+                    </tr>
+
+                    {% include "cse116/week4.html" %}
+
+
+
                     </tbody>
                 </table>
 
@@ -149,16 +149,10 @@
 
                     <tr class="homework">
                          <td colspan="3">Project 2
-                             : <a href="https://docs.google.com/document/d/1NqgJtiYsx1qaxeltEpOZGyzFiLzTpLS6-L7VG-zM088/edit?usp=sharing">Point of Sale</a>
+{#                             : <a href="https://docs.google.com/document/d/1NqgJtiYsx1qaxeltEpOZGyzFiLzTpLS6-L7VG-zM088/edit?usp=sharing">Point of Sale</a>#}
                         </td>
                     </tr>
 
-                    <tr class="section-oop">
-                        <td colspan="3" class="week">Week 4</td>
-                    </tr>
-
-
-                    {% include "cse116/week4.html" %}
 
                     <tr class="section-oop">
                         <td colspan="3" class="week">Week 5</td>
@@ -174,39 +168,9 @@
 
                     {% include "cse116/week6.html" %}
 
-                    </tbody>
-                </table>
-            </div>
 
 
-
-
-            <!--- LO3 --->
-
-            <a data-toggle="collapse" data-target="#block4">
-                <div class="card-header section-fp">
-                    <div>
-                        Learning Objective 3: Functional Programming (FP)<span class="float-right"><i
-                            class='far fa-caret-square-down'></i>
-</span>
-                    </div>
-                </div>
-            </a>
-
-            <div id="block4" class="collapse show section-card card-fp">
-                <table class="table table-bordered">
-
-                    <tbody>
-
-
-                    <tr class="homework">
-                         <td colspan="3">Project 3
-                             : <a href="https://docs.google.com/document/d/1L9MpOSVrK-CS8hP1sJ9xejXejV19BIJN0DJQcgLYftI/edit?usp=sharing">Song Ratings</a>
-                        </td>
-                    </tr>
-
-
-                    <tr class="section-fp">
+                    <tr class="section-oop">
                         <td colspan="3" class="week">Week 7</td>
                     </tr>
 
@@ -215,7 +179,7 @@
 
 
 
-                    <tr class="section-fp">
+                    <tr class="section-oop">
                         <td colspan="3" class="week">Week 8</td>
                     </tr>
 
@@ -223,7 +187,7 @@
                     {% include "cse116/week8.html" %}
 
 
-                    <tr class="section-fp">
+                    <tr class="section-oop">
                         <td colspan="3" class="week">Week 9</td>
                     </tr>
 
@@ -231,19 +195,20 @@
                     {% include "cse116/week9.html" %}
 
 
+
                     </tbody>
                 </table>
-
             </div>
 
 
-            <!--- LO4 --->
+
+            <!--- LO3 --->
 
 
             <a data-toggle="collapse" data-target="#block5">
                 <div class="card-header section-ds">
                     <div>
-                        Learning Objective 4: Data Structures & Algorithms <span class="float-right"><i
+                        Learning Objective 3: Data Structures & Algorithms <span class="float-right"><i
                             class='far fa-caret-square-down'></i></span>
                     </div>
                 </div>
@@ -258,8 +223,8 @@
 
                     <tr class="homework">
                          <td colspan="3">
-                             Project 4
-                             : <a href="https://docs.google.com/document/d/1gLvRewOg7biz3hwsyCfYI6wWF2wNzUwdoJOJGlOwnCY/edit?usp=sharing">Enemy AI</a>
+                             Project 3
+{#                             : <a href="https://docs.google.com/document/d/1gLvRewOg7biz3hwsyCfYI6wWF2wNzUwdoJOJGlOwnCY/edit?usp=sharing">Enemy AI</a>#}
                         </td>
                     </tr>
 
@@ -285,6 +250,20 @@
                     {% include "cse116/week12.html" %}
 
 
+                    <tr class="section-ds">
+                        <td colspan="3" class="week">Week 13</td>
+                    </tr>
+
+                    {% include "cse116/week13.html" %}
+
+
+                    <tr class="section-ds">
+                        <td colspan="3" class="week">Week 14</td>
+                    </tr>
+
+                    {% include "cse116/week14.html" %}
+
+
                     </tbody>
                 </table>
             </div>
@@ -308,17 +287,7 @@
                     <tbody>
 
 
-                    <tr class="section-review">
-                        <td colspan="3" class="week">Week 13</td>
-                    </tr>
 
-                    {% include "cse116/week13.html" %}
-
-                    <tr class="section-review">
-                        <td colspan="3" class="week">Week 14</td>
-                    </tr>
-
-                    {% include "cse116/week14.html" %}
 
 
                     <tr class="section-review">
