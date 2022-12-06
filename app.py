@@ -19,6 +19,14 @@ def cse116():
     resp.headers["X-Content-Type-Options"] = "nosniff"
     return resp
 
+@app.get('/teach')
+def ta_a():
+    return redirect("https://docs.google.com/forms/d/e/1FAIpQLScFJ8afYq0RU9o4aZ7YeFVVCnqGbBDdE-EP3VJPUt8o3_77sQ/viewform?usp=sf_link")
+
+@app.get('/apply')
+def ta_b():
+    return redirect("https://docs.google.com/forms/d/e/1FAIpQLScN6jXy7qWTgD0WTfa132Vffa6gYaKNhneKUAoaLOwhwkUBPg/viewform?usp=sf_link")
+
 
 @app.get('/static_files/<path:filename>')
 def send_style(filename):
