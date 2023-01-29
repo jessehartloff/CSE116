@@ -124,6 +124,10 @@ p, li {
     border-color: #555555;
 }
 
+.hw-content{
+    padding: 20px;
+}
+
 td.date{
     /*width: 20%;*/
     white-space: nowrap;

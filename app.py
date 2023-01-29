@@ -19,6 +19,79 @@ def cse116():
     resp.headers["X-Content-Type-Options"] = "nosniff"
     return resp
 
+@app.get('/task1')
+def task1():
+    resp = make_response(render_template('hw/task1.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
+@app.get('/task2')
+def task2():
+    resp = make_response(render_template('hw/task2.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
+@app.get('/task3')
+def task3():
+    resp = make_response(render_template('hw/task3.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
+@app.get('/task4')
+def task4():
+    resp = make_response(render_template('hw/task4.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
+@app.get('/task5')
+def task5():
+    resp = make_response(render_template('hw/task5.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
+@app.get('/task6')
+def task6():
+    resp = make_response(render_template('hw/task6.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
+@app.get('/task7')
+def task7():
+    resp = make_response(render_template('hw/task7.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
+@app.get('/task8')
+def task8():
+    resp = make_response(render_template('hw/task8.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
+@app.get('/task9')
+def task9():
+    resp = make_response(render_template('hw/task9.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
+@app.get('/ao1')
+def ao1():
+    resp = make_response(render_template('hw/ao1.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
+@app.get('/ao2')
+def ao2():
+    resp = make_response(render_template('hw/ao2.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
+@app.get('/ao3')
+def ao3():
+    resp = make_response(render_template('hw/ao3.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
+
 # @app.get('/teach')
 # def ta_a():
 #     return redirect("https://docs.google.com/forms/d/e/1FAIpQLScFJ8afYq0RU9o4aZ7YeFVVCnqGbBDdE-EP3VJPUt8o3_77sQ/viewform?usp=sf_link")
