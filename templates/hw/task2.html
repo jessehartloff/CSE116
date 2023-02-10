@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSE116: Computer Science 2</title>
+    <link rel="stylesheet" href="/static_files/lib/bootstrap-4.0.0.min.css">
+    <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
+    <link rel="stylesheet" type="text/css" id="darkThemeCss" href="/static_files/darktheme.css" disabled/>
+    <link rel="shortcut icon" type="image/x-icon" href="/static_files/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/static_files/cse116.js"></script>
+    <base target="_blank">
+</head>
+
+<body class="outer" onload="bodyLoaded();">
+<div class="container">
+    <div class="row">
+        <div class="col-0 col-sm-0 col-md-1"></div>
+        <div class="col-12 col-sm-12 col-md-10 main-hw-block">
+
+
+            <hr/>
+
+            <h1>Programming Task 2</h1>
+            <h2>Classes 1</h2>
+            <hr/>
+            <h5>Time Estimate: 6 hours</h5>
+            <hr/>
+
+            <div class="card-header section-testing">
+                <div>Requirements</div>
+            </div>
+
+            <div class="section-card card-testing hw-content">
+
+                <hr/>
+
+
+                <h3>
+                    Project Structure
+                </h3>
+
+                <hr/>
+                <p>
+                    You will continue to add functionality to your existing project from the previous task. There is
+                    no new repository to clone.
+                </p>
+
+                <br/>
+                <hr/>
+
+                <h3>
+                    Testing Requirements
+                </h3>
+
+                <hr/>
+                <p>
+                    There are not testing requirements for this programming task. Instead, the tests are provided for
+                    you in the tests.TestClasses1 class. All of the tests are commented out since the code they test
+                    does not exist which would prevent your project from compiling. As you complete parts of the
+                    project, you should uncomment the corresponding tests and run this test class to check your
+                    functionality. (You can highlight several lines of code and press command+/ on mac or
+                    <a href="https://stackoverflow.com/questions/45432031/intellij-shortcut-to-comment-line">
+                        ctrl+shift+/ on Windows</a> to comment/uncomment all highlighted lines)
+                </p>
+
+                <p>
+                    You will be writing your own tests for most/all future tasks. You should use these tests as an
+                    example of how to approach testing your code.
+                </p>
+
+                <br/>
+                <hr/>
+
+                <h3>
+                    Programming Requirements
+                </h3>
+
+                <hr/>
+                <p>
+                    Implement the following three classes with all of the listed functionality:
+                </p>
+
+
+                <ul>
+                    <li>ratings.Song - In the ratings package, create a class named Song
+                        <ul>
+                            <li>
+                                This class will have a constructor that takes 3 parameters in this order:
+                                <ol>
+                                    <li>A String representing the title of the Song</li>
+                                    <li>A String representing the artist of the Song</li>
+                                    <li>A String representing the Songs ID</li>
+                                </ol>
+                            </li>
+                            <li>
+                                Implement getter and setter methods for the three constructor parameters named:
+                                <ol>
+                                    <li>getTitle</li>
+                                    <li>setTitle</li>
+                                    <li>getArtist</li>
+                                    <li>setArtist</li>
+                                    <li>getSongID <-- Note that both characters in ID are capital</li>
+                                    <li>setSongID</li>
+                                </ol>
+                            </li>
+                            <li>
+                                For this task, you don't need to implement any additional methods in the Song class.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>ratings.Rating - In the ratings package, create a class named Rating
+                        <ul>
+                            <li>
+                                This class will have a constructor that takes 2 parameters in this order:
+                                <ol>
+                                    <li>A String representing the ID of the reviewer who gave the rating</li>
+                                    <li>An int representing the rating that the reviewer gave</li>
+                                </ol>
+                            </li>
+                            <li>
+                                Implement getter and setter methods for the two constructor parameters named:
+                                <ol>
+                                    <li>getReviewerID</li>
+                                    <li>setReviewerID</li>
+                                    <li>getRating</li>
+                                    <li>setRating</li>
+                                </ol>
+                            </li>
+                            <li>
+                                Ratings must be in the range 1-5. If someone calls setRatings with an invalid rating,
+                                the rating should be set to -1 to indicate that an error has occurred.
+                                (eg. setRating(100) should result in the rating being set to -1)
+                            </li>
+                            <li>
+                                It is good practice to have your constructor call your setter methods. If your
+                                constructor calls setRating, you only have to write code that checks for invalid ratings
+                                once and call that code whenever needed.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>ratings.Reviewer - In the ratings package, create a class named Reviewer
+                        <ul>
+                            <li>
+                                This class will have a constructor that takes 1 parameter:
+                                <ol>
+                                    <li>A String representing the ID of the reviewer</li>
+                                </ol>
+                            </li>
+                            <li>
+                                Implement getter and setter methods for the constructor parameter named:
+                                <ol>
+                                    <li>getReviewerID</li>
+                                    <li>setReviewerID</li>
+                                </ol>
+                            </li>
+                            <li>
+                                Implement a method named rateSong that takes an int as a parameter and returns a new
+                                Rating object with this reviewer's ID and the rating from the parameter.
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                </ul>
+
+
+                <br/>
+                <hr/>
+
+                <h3>AutoLab Feedback</h3>
+
+                <hr/>
+                <p>
+                    Since the tests are provided for you in this task, there is only one phase of AutoLab feedback.
+                </p>
+
+                <ol>
+                    <li>Running my tests on Your Solution
+                        <ul>
+                            <li>
+                                AutoLab will run my tests against your code to check
+                                it for correctness. If you are running, and passing, the provided tests before
+                                submitting, you should pass all the tests in AutoLab.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <p>
+                    Once you passed the tests, you will have completed this Task and AutoLab will confirm this
+                    with a score of 1 for complete.
+                </p>
+                <hr/>
+
+                <table class="table table-bordered">
+                    <tbody>
+
+                    <tr class="table-warning">
+                        <td colspan="3">Wednesday, February 22 @ 9:00 <b>AM</b><br/>
+                            Expected Deadline
+                        </td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td colspan="3">Wednesday, March 1 @ 9:00 <b>AM</b><br/>
+                            Deadline
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+        <div class="col-0 col-sm-0 col-md-1"></div>
+    </div>
+</div>
+
+
+<script src="/static_files/lib/jquery-3.3.1.min.js"></script>
+<script src="/static_files/lib/popper-1.12.9.min.js"></script>
+<script src="/static_files/lib/bootstrap-4.0.0.min.js"></script>
+<script src="/static_files/lib/fontawesome.js"></script>
+
+</body>
+</html>
