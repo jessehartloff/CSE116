@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSE116: Computer Science 2</title>
+    <link rel="stylesheet" href="/static_files/lib/bootstrap-4.0.0.min.css">
+    <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
+    <link rel="stylesheet" type="text/css" id="darkThemeCss" href="/static_files/darktheme.css" disabled/>
+    <link rel="shortcut icon" type="image/x-icon" href="/static_files/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/static_files/cse116.js"></script>
+    <base target="_blank">
+</head>
+
+<body class="outer" onload="bodyLoaded();">
+<div class="container">
+    <div class="row">
+        <div class="col-0 col-sm-0 col-md-1"></div>
+        <div class="col-12 col-sm-12 col-md-10 main-hw-block">
+
+
+            <hr/>
+
+            <h1>Programming Task 3</h1>
+            <h2>Data Structures 1</h2>
+            <hr/>
+            <h5>Time Estimate: 7 hours</h5>
+            <hr/>
+
+            <div class="card-header section-testing">
+                <div>Requirements</div>
+            </div>
+
+            <div class="section-card card-testing hw-content">
+
+                <hr/>
+
+
+                <h3>
+                    Project Structure
+                </h3>
+
+                <hr/>
+                <p>
+                    You will continue to add functionality to your existing project from the previous task. There is
+                    no new repository to clone.
+                </p>
+
+                <br/>
+                <hr/>
+
+                <h3>
+                    Testing Requirements
+                </h3>
+
+                <hr/>
+                <p>
+                    There are not testing requirements for this programming task. Instead, the tests are provided for
+                    you in the tests.TestDataStructures1 class. All of the tests are commented out since the code they test
+                    does not exist which would prevent your project from compiling. As you complete parts of the
+                    project, you should uncomment the corresponding tests and run this test class to check your
+                    functionality. (You can highlight several lines of code and press command+/ on mac or
+                    <a href="https://stackoverflow.com/questions/45432031/intellij-shortcut-to-comment-line">
+                        ctrl+shift+/ on Windows</a> to comment/uncomment all highlighted lines)
+                </p>
+
+                <p>
+                    You will be writing your own tests for most/all future tasks. You should use these tests as an
+                    example of how to approach testing your code.
+                </p>
+
+                <br/>
+                <hr/>
+
+                <h3>
+                    Programming Requirements
+                </h3>
+
+                <hr/>
+                <p>
+                    Add the following functionality to the ratings.Song class:
+                </p>
+
+
+                <ul>
+
+
+                    <li>A public method named addRating that takes a [reference to a] Rating object as a parameter and returns void
+                        <ul>
+                            <li>
+                                This method will be called when a Reviewer rates this Song. You should store all
+                                added Ratings in this object. You may add any additional instance variables that you'd
+                                like.
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li>A public Method named getRatings that takes no parameters and returns a LinkedListNode of Ratings
+                        <ul>
+                            <li>
+                                This method returns the head of a Linked List containing all Ratings that have been
+                                added to this Song.
+                            </li>
+                            <li>
+                                The returned Linked List must return the Ratings in the order in which they were added.
+                                For example, the first Rating that was added must be the first value in the list.
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>A public method named averageRating that takes no parameters and returns a double
+                        <ul>
+                            <li>
+                                This method return the average of all the Rating for this Song
+                            </li>
+                            <li>
+                                Technically, ratings of -1 should be ignored, but I forgot to include a test for that,
+                                so you'll get away with it if you don't ignore them...
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li>A public method named didReviewerRateSong that takes a String representing the ID of a reviewer and returns a boolean
+                        <ul>
+                            <li>
+                                This method returns true if the reviewer with the given ID has rated this Song, false otherwise.
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li>Update the addRating method to prevent a Reviewer from rating a Song multiple times
+                        <ul>
+                            <li>
+                                You should call your didReviewerRateSong method from your addRating method to check if
+                                the reviewer rated this Song yet. If it returns true, don't add the new Rating to your Linked List
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li>A public method named removeRatingByReviewer that takes a Reviewer as a parameter and returns void
+                        <ul>
+                            <li>
+                                This method will remove any Rating made for this Song by the given Reviewer
+                            </li>
+                            <li>
+                                Note that since you are preventing multiple Rating from a Reviewer in your addRating
+                                method, you can assume that the Reviewer has rated this Song at most once.
+                            </li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+                <br/>
+                <hr/>
+
+                <h3>AutoLab Feedback</h3>
+
+                <hr/>
+                <p>
+                    Since the tests are provided for you in this task, there is only one phase of AutoLab feedback.
+                </p>
+
+                <ol>
+                    <li>Running my tests on Your Solution
+                        <ul>
+                            <li>
+                                AutoLab will run my tests against your code to check
+                                it for correctness. If you are running, and passing, the provided tests before
+                                submitting, you should pass all the tests in AutoLab.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <p>
+                    Once you passed the tests, you will have completed this Task and AutoLab will confirm this
+                    with a score of 1 for complete.
+                </p>
+                <hr/>
+
+                <table class="table table-bordered">
+                    <tbody>
+
+                    <tr class="table-warning">
+                        <td colspan="3">Wednesday, March 1 @ 9:00 <b>AM</b><br/>
+                            Expected Deadline
+                        </td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td colspan="3">Wednesday, March 8 @ 9:00 <b>AM</b><br/>
+                            Deadline
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+        <div class="col-0 col-sm-0 col-md-1"></div>
+    </div>
+</div>
+
+
+<script src="/static_files/lib/jquery-3.3.1.min.js"></script>
+<script src="/static_files/lib/popper-1.12.9.min.js"></script>
+<script src="/static_files/lib/bootstrap-4.0.0.min.js"></script>
+<script src="/static_files/lib/fontawesome.js"></script>
+
+</body>
+</html>
