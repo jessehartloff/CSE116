@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSE116: Computer Science 2</title>
+    <link rel="stylesheet" href="/static_files/lib/bootstrap-4.0.0.min.css">
+    <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
+    <link rel="stylesheet" type="text/css" id="darkThemeCss" href="/static_files/darktheme.css" disabled/>
+    <link rel="shortcut icon" type="image/x-icon" href="/static_files/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/static_files/cse116.js"></script>
+    <base target="_blank">
+</head>
+
+<body class="outer" onload="bodyLoaded();">
+<div class="container">
+    <div class="row">
+        <div class="col-0 col-sm-0 col-md-1"></div>
+        <div class="col-12 col-sm-12 col-md-10 main-hw-block">
+
+
+            <hr/>
+
+            <h1>Programming Task 4</h1>
+            <h2>Testing 2</h2>
+            <hr/>
+            <h5>Time Estimate: 8 hours</h5>
+            <hr/>
+
+            <div class="card-header section-testing">
+                <div>Requirements</div>
+            </div>
+
+            <div class="section-card card-testing hw-content">
+
+                <hr/>
+
+
+                <h3>
+                    Project Structure
+                </h3>
+
+
+                <hr/>
+                <p>
+                    You will continue to add functionality to your existing project from the previous task. There is
+                    no new repository to clone.
+                </p>
+
+                <br/>
+                <hr/>
+
+                <h3>
+                    Testing Requirements
+                </h3>
+
+                <hr/>
+                <p>
+                    This is a testing task and your feedback in AutoLab will <em>only</em> check your tests.
+                    You will write tests for all of the following classes and methods. You do not need to implement
+                    any of the functionality for the classes/methods in this task (You will implement them in
+                    the next 2 tasks). For this task, you are only writing the tests, and just enough code such that
+                    your tests will compile and run.
+                </p>
+
+                <p>
+                    <b>TestClasses2:</b> Create a class named TestClasses2 in the tests package that will test the
+                    following functionality
+                    that will be implemented in programming task 5. You are encouraged to divide your tests cases into
+                    multiple/many individual test methods within this class.
+                </p>
+
+
+
+                <ul>
+                    <li>ratings.Song - Test the following functionality of the Song class
+                        <ul>
+                            <li>A method named bayesianAverageRating that takes 2 ints and returns a double:
+                                <ul>
+                                    <li>The first parameter is a number of extra ratings</li>
+                                    <li>The second parameter is the value of the extra ratings</li>
+                                    <li>The method return the average rating of the song if the extra ratings were
+                                        added. Note that you are not actually adding the ratings to the Song.
+                                        You are only using the extra ratings in your computation of the average</li>
+                                    <li>add this method to the Song class so your test compile, but you can have it
+                                        always return 0.0 for now. This is referred to as "stubbing out" the method
+                                        since we never wrote the code for the method (You will write this method as
+                                        part of task 5)</li>
+                                    <li>Example: If the song has ratings of 4 and 5 and this method is called with
+                                        parameters 2 and 3 (2 extra ratings of value 3), then the bayesian average is
+                                        (4+5+3+3)/4 == 3.75 instead of the regular average of 4.5</li>
+                                    <li>If a Song has no ratings and this method is called with 0 additional ratings, return 0.0</li>
+                                    <li>Why? When comparing songs (Or anything), it's common to have many songs that are only rated
+                                        by a single reviewer who gave it a 5/5. This song would have a perfect average rating
+                                        of 5.0 and would be rated higher than a song that has been rated 10000 times
+                                        with an average rating of 4.99. The second song is well-loved by many
+                                        people, and you would [likely] rather have that song in your playlist rather
+                                        than the song that only 1 person likes and no one else is aware of. We adjust
+                                        this by adding a few fake ratings to each song. In the example of 2 ratings of
+                                        3 being added, the first song would be lowered to an average of 3.67 while the
+                                        second song's rating would still be 4.99. This provides a more useful
+                                        rating system than directly taking the average of all ratings</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>ratings.Movie - Create a stubbed out (Create, but don't implement the methods) Movie class and
+                        test the following functionality (You will implement this functionality in task 5)
+                        <ul>
+                            <li>A constructor that takes a String and an ArrayList of Strings:
+                                <ul>
+                                    <li>The String represents the title of the Movie</li>
+                                    <li>The ArrayList contains the name of the cast members of the Movie as Strings</li>
+                                </ul>
+                            </li>
+                            <li>A Method named getTitle that takes no parameters and returns the title String given
+                                in the constructor
+                                <ul>
+                                    <li>eg. In your tests, call the constructor to create a Movie object, then call
+                                        getTitle and assert that it returned the same String you gave the constructor</li>
+                                </ul>
+                            </li>
+                            <li>A Method named getCast that takes no parameters and returns an ArrayList with the
+                                same cast members that were provided to the constructor
+                                <ul>
+                                    <li>This method might not return the same exact ArrayList provided to the
+                                        constructor, but it will contain the same <em>names</em> in the same order.
+                                    However, the names might not have the same combination of upper/lower-case letters.
+                                    Any String in the returned ArrayList containing the correct letter should be
+                                        considered correct regardless of upper/lower-case</li>
+                                    <li>Example: In the constructor, you provide the ArrayList
+                                        ["Chris Pratt", "Zoe Saldana", "Dave Bautista"]. All of the following are
+                                        correct outputs
+                                        ["Chris Pratt", "Zoe Saldana", "Dave Bautista"],
+                                        ["chris pratt", "zoe saldana", "dave bautista"], and
+                                        ["CHRIS pratt", "ZoE SalDANA", "dAVE bautistA"]</li>
+                                    <li>Note that the String class has a method named equalsIgnoreCase that will prove
+                                        useful when testing this method</li>
+                                </ul>
+                            </li>
+                            <li>Methods named addRating and bayesianAverageRating with the same parameters and return
+                                type as the methods in the Song class wit the same names:
+                                <ul>
+                                    <li>These methods will behave identically to the methods in your
+                                        Song class</li>
+                                    <li>It is acceptable, and expected, that you'll use the same tests you wrote for
+                                        Song, but replace Song with Movie</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>ratings.datastructures.SongTitleComparator - Create a stubbed out SongTitleComparator class in
+                        the ratings.datastructures package and test:
+                        <ul>
+                            <li>A method named compare that takes 2 references to Songs and returns a boolean
+                                <ul>
+                                    <li>The method returns true if the title of first Song comes before the title of the second Song alphabetically</li>
+                                    <li>The method returns false otherwise (Including for Songs with the same title)</li>
+                                    <li>The method won't take upper/lower-case into consideration (eg. "a" and "A" both come before "b" and "B")</li>
+                                    <li>If one String is a prefix of another, it should come before the other: "aa" comes before "aaa" (This implies that the empty String comes before every other String)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>ratings.datastructures.SongBayesianRatingComparator - Create a stubbed out SongBayesianRatingComparator class in
+                        the ratings.datastructures package and test:
+                        <ul>
+                            <li>A method named compare that takes 2 references to Songs and returns a boolean
+                                <ul>
+                                    <li>The method will compare the bayesian averages of the two songs using 2 extra ratings of 3</li>
+                                    <li>The method returns true if the bayesian average of the first Song is greater than the bayesian average of the second Song</li>
+                                    <li>The method returns false otherwise (Including for Songs with the same bayesian average)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <p>
+                    <b>TestDataStructures2:</b> Create a class named TestDataStructures2 in the tests package that
+                    will test the following functionality
+                    that will be implemented in programming task 6. You are encouraged to divide your tests cases into
+                    multiple/many individual test methods within this class.
+                </p>
+
+                <ul>
+                    <li>ratings.Playlist - Create a stubbed out (Create, but don't implement the methods) Playlist
+                        class and test the following functionality (You will implement this functionality in task 6)
+                        <ul>
+                            <li>
+                                A constructor that takes as a parameter a reference to an object of type
+                                Comparator&lt;Song&gt;. In your testing, you can pass either a new SongTitleComparator
+                                or a new SongBayesianRatingComparator:
+                            </li>
+                            <li>A method named addSong that takes a reference to a Song as a parameter and returns void
+                            </li>
+                            <li>
+                                A method named getSongList that takes no parameters and returns a LinkedListNode of
+                                Songs
+                                <ul>
+                                    <li>The returned node will be the head of a linked list containing all the Songs
+                                    that were added in sorted order according to the comparator provided to the
+                                        constructor</li>
+                                    <li>
+                                        If you provided a SongTitleComparator, the Songs will be sorted alphabetically
+                                    </li>
+                                    <li>
+                                        If you provided a SongBayesianRatingComparator, the Songs will be sorted in
+                                        decreasing order (The highest rated songs first) according to their bayesian
+                                        average rating with 2 fake ratings of 3 being added.
+                                    </li>
+                                    <li>
+                                        For either comparator, you do not need to write any tests where two songs will
+                                        be tied in the ordering (eg. you don't have to write a test where 2 songs have
+                                        the same bayesian average ratings)
+                                    </li>
+                                    <li>The returned Songs might be different song objects, but they will contain the
+                                        same title, artist, and ratings as the Songs that were added (eg. You must
+                                        check the values of the Songs and not rely on comparing the references
+                                        with ==)</li>
+                                    <li>If no songs have been added to the Playlist, this method returns null</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+
+                </ol>
+
+
+
+
+
+                {#                Incorrect Solutions#}
+
+
+                <br/>
+                <hr/>
+
+                <h3>AutoLab Feedback</h3>
+
+                <hr/>
+                <p>
+                    This is a testing only programming task. You are not required to implement the classes and method
+                    that you are testing and AutoLab will only grade your tests that you write. You should implement the
+                    tested classes/methods enough that your tests compile and run (eg. All the methods can return
+                    default values such as 0.0, "", null).
+                </p>
+
+                <ol>
+                    <li>Running your tests on a Correct Solution
+                        <ul>
+                            <li>Your tests will be run against a solution that is known to be correct. If your tests do
+                                not pass this correct solution, there is an error somewhere in your tests that must be
+                                fixed
+                                before you can move on with the assignment. This can be caused by misunderstanding the
+                                task
+                                requirements from this document, or rejecting alternate solutions (eg. Only accepting
+                                one
+                                possible answer when there are multiple correct return values)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Running your tests on several Incorrect Solutions
+                        <ul>
+                            <li>
+                                The next phase is to run your tests against incorrect solutions. This will assess the
+                                thoroughness of your tests. Your tests must be able to fail all of the incorrect
+                                solutions to pass this phase. If your tests pass an incorrect solution, it is an
+                                indicator that you need to add more testing
+                            </li>
+                            <li>
+                                Passing this phase does not necessarily mean that your testing is completely thorough.
+                                Satisfying AutoLab is the bare minimum testing requirement. The incorrect solutions will
+                                not cover every possible mistake, and it is sometimes possible to pass this phase
+                                with very weak testing. If you are struggling to earn credit for code that you believe
+                                is correct, you should write more than the required tests
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <p>
+                    Once you complete these phases of testing, you will have completed this Task and AutoLab will
+                    confirm this
+                    with a score of 1.0 for complete.
+                </p>
+                <hr/>
+
+                <table class="table table-bordered">
+                    <tbody>
+
+                    <tr class="table-warning">
+                        <td colspan="3">Wednesday, March 8 @ 9:00 <b>AM</b><br/>
+                            Expected Deadline
+                        </td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td colspan="3">Wednesday, March 15 @ 9:00 <b>AM</b><br/>
+                            Deadline
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+        <div class="col-0 col-sm-0 col-md-1"></div>
+    </div>
+</div>
+
+
+<script src="/static_files/lib/jquery-3.3.1.min.js"></script>
+<script src="/static_files/lib/popper-1.12.9.min.js"></script>
+<script src="/static_files/lib/bootstrap-4.0.0.min.js"></script>
+<script src="/static_files/lib/fontawesome.js"></script>
+
+</body>
+</html>
