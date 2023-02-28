@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
     <link rel="stylesheet" type="text/css" id="darkThemeCss" href="/static_files/darktheme.css" disabled/>
     <link rel="shortcut icon" type="image/x-icon" href="/static_files/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="/static_files/cse116.js"></script>
     <base target="_blank">
@@ -176,6 +177,44 @@
                     </li>
                 </ul>
 
+                <p>
+                    When creating your comparators, you will use syntax that we haven't covered yet in this course.
+                    To simplify these for this task, you should create these three classes in your
+                    ratings.datastructures package. You may copy this code into your project. If you don't use this
+                    code, your Playlist tests won't compile.
+                </p>
+
+                <pre><code class="java">package ratings.datastructures;
+
+public class Comparator&lt;T&gt; {
+    public boolean compare(T a, T b) {
+        return false;
+    }
+}</code></pre>
+
+                <pre><code class="java">package ratings.datastructures;
+
+import ratings.Song;
+
+public class SongTitleComparator extends Comparator&lt;Song&gt;{
+
+    public boolean compare(Song a, Song b) {
+        return false;
+    }
+
+}</code></pre>
+
+                <pre><code class="java">package ratings.datastructures;
+
+import ratings.Song;
+
+public class SongBayesianRatingComparator extends Comparator&lt;Song&gt; {
+
+    public boolean compare(Song a, Song b) {
+        return false;
+    }
+
+}</code></pre>
 
                 <p>
                     <b>TestDataStructures2:</b> Create a class named TestDataStructures2 in the tests package that
@@ -320,6 +359,8 @@
 <script src="/static_files/lib/popper-1.12.9.min.js"></script>
 <script src="/static_files/lib/bootstrap-4.0.0.min.js"></script>
 <script src="/static_files/lib/fontawesome.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>
