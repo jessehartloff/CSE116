@@ -275,6 +275,25 @@ div.comment_time {
     margin: 0 10%;
 }
 
+.table-big {
+    width: available;
+    margin: 0 0;
+    padding: 2px;
+}
+
+table.table-big td{
+    width: available;
+    margin: 0 0;
+    padding: 7px;
+}
+
+table.table-big th{
+    font-size: smaller;
+    width: available;
+    margin: 0 0;
+    padding: 4px;
+}
+
 .table-padded {
     width: 90%;
 }
