@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSE116: Computer Science 2</title>
+    <link rel="stylesheet" href="/static_files/lib/bootstrap-4.0.0.min.css">
+    <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
+    <link rel="stylesheet" type="text/css" id="darkThemeCss" href="/static_files/darktheme.css" disabled/>
+    <link rel="shortcut icon" type="image/x-icon" href="/static_files/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/static_files/cse116.js"></script>
+    <base target="_blank">
+</head>
+
+<body class="outer" onload="bodyLoaded();">
+<div class="container">
+    <div class="row">
+        <div class="col-0 col-sm-0 col-md-1"></div>
+        <div class="col-12 col-sm-12 col-md-10 main-hw-block">
+
+
+            <hr/>
+
+            <h1>Programming Task 5</h1>
+            <h2>Classes 2</h2>
+            <hr/>
+            <h5>Time Estimate: 3 hours</h5>
+            <hr/>
+
+            <div class="card-header section-testing">
+                <div>Requirements</div>
+            </div>
+
+            <div class="section-card card-testing hw-content">
+
+                <hr/>
+
+
+                <h3>
+                    Project Structure
+                </h3>
+
+                <hr/>
+                <p>
+                    You will continue to add functionality to your existing project from the previous task. There is
+                    no new repository to clone.
+                </p>
+
+                <br/>
+                <hr/>
+
+                <h3>
+                    Testing Requirements
+                </h3>
+
+                <hr/>
+                <p>
+                    There are no additional testing requirements for this task. Use the tests you wrote in programming
+                    task 4 (In the TestClasses2 class) to help you debug your code in this task. You are encouraged to
+                    write more than the tests that were required for task 4 to help you implement the rest of the
+                    functionality for this task. You may find that even writing code that passes your tests is not
+                    enough to earn credit for this task.
+                </p>
+
+                <br/>
+                <hr/>
+
+                <h3>
+                    Programming Requirements
+                </h3>
+
+                <hr/>
+                <p>
+                    Recall when you wrote your tests for the Song and Movie classes which had much of the same
+                    functionality. Specifically, your tests for the bayesianAverageRating method could be the same for
+                    both classes and you effectively had duplicate tests. Now, we;ll see that there's a better way
+                    for classes to share code with each other. Both Song and Movie will extend a Ratable class that
+                    will contain all the common code that these classes share.
+                </p>
+
+
+                <ul>
+                    <li>ratings.Ratable - In the ratings package, create a class named Ratable
+                        <ul>
+                            <li>
+                                This class will use the default constructor that takes no parameters (You don't have
+                                to write any constructor
+                            </li>
+                            <li>
+                                Remove all functionality related to title and ratings from the Song class and add to the
+                                Ratable class. This includes title and ratings (LinkedListNode of Ratings) instance
+                                variables and all of the following methods
+                                <ul>
+                                    <li>getTitle</li>
+                                    <li>setTitle</li>
+                                    <li>addRating</li>
+                                    <li>averageRating</li>
+                                    <li>didReviewerRateSong</li>
+                                    <li>removeRatingByReviewer</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>ratings.Song - Update the Song class to inherit from the Ratable class
+                        <ul>
+                            <li>
+                                You removed 2 instance variables and 6 methods from this class while writing the Ratable
+                                class. However, Song will now inherit all those variables and methods from the Ratable
+                                class
+                            </li>
+                            <li>
+                                You should verify that your Song class does inherit this functionality by running the
+                                TestClasses1 tests and verifying that they all still pass even though that code is not
+                                in the Song class itself.
+                            </li>
+                            <li>
+                                At this point, the Song class should only have instance variables for the artist and id
+                                as well as the following methods with all other state and behavior inherited from
+                                Ratable:
+                                <ul>
+                                    <li>A constructor that takes 3 Strings</li>
+                                    <li>getTitle</li>
+                                    <li>setTitle</li>
+                                    <li>getSongID</li>
+                                    <li>setSongID</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Since the Ratable class does not have a constructor, you should call setTitle in the
+                                Song constructor to set the value of the title instance variable. Alternatively, you
+                                may add a Ratable constructor that takes the title as a parameter and call the super
+                                constructor in the Song constructor.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>ratings.Movie - Implement the following in the Movie class that you've tested during task 4
+                        <ul>
+                            <li>
+                                Movie will inherit from the Ratable class
+                            </li>
+                            <li>
+                                Movie will have a constructor that takes a String and an ArrayList of Strings
+                                <ul>
+                                    <li>The String represents the title of the Movie and should be set using the
+                                        setTitle method inherited from Ratable</li>
+                                    <li>The ArrayList contains the names of the cast of the Movie and should be stored
+                                        in an instance variable</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Implement a getter for the cast named getCast that returns an ArrayList of Strings
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>ratings.Ratable - Update the Ratable class with the bayesianAverageRating method
+                        <ul>
+                            <li>
+                                Now that both Song and Movie inherit from Ratable, any functionality added to Ratable
+                                will be added to both Songs and Movies. In task 4, you tested a bayesianAverageRating
+                                method in both Song and Movie. In this task, you will only implement this method in
+                                Ratable and your tests for both Song and Movie will pass when you are finished.
+                            </li>
+                            <li>
+                                Implement bayesianAverageRating
+                                <ul>
+                                    <li>This method takes 2 ints as a parameters. The first int is the number of fake
+                                        ratings and the second is the value of those ratings</li>
+                                    <li>The method returns the Bayesian average of the Ratable if the extra rating were
+                                        added</li>
+                                    <li>Important: Do not actually add the fake ratings to you Linked List of Ratings.
+                                        This method should not have any side effects (ie. It should not change the
+                                        state of any objects on the heap). You can test for this by calling
+                                        bayesianAverageRating twice on the same Song/Movie with the same arguments
+                                        and make sure you get the same result both times.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>ratings.Ratable - Update the Ratable class with the bayesianAverageRating method
+                        <ul>
+                            <li>
+                                Now that both Song and Movie inherit from Ratable, any functionality added to Ratable
+                                will be added to both Songs and Movies. In task 4, you tested a bayesianAverageRating
+                                method in both Song and Movie. In this task, you will only implement this method in
+                                Ratable and your tests for both Song and Movie will pass when you are finished.
+                            </li>
+                            <li>
+                                Implement bayesianAverageRating
+                                <ul>
+                                    <li>This method takes 2 ints as a parameters. The first int is the number of fake
+                                        ratings and the second is the value of those ratings</li>
+                                    <li>The method returns the Bayesian average of the Ratable if the extra rating were
+                                        added</li>
+                                    <li>Important: Do not actually add the fake ratings to you Linked List of Ratings.
+                                        This method should not have any side effects (ie. It should not change the
+                                        state of any objects on the heap). You can test for this by calling
+                                        bayesianAverageRating twice on the same Song/Movie with the same arguments
+                                        and make sure you get the same result both times.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>ratings.datastructures.Comparator - Add the comparator class to your project in the
+                        ratings.datastructures package
+                        <ul>
+                            <li>This class will take a generic type parameter
+                            </li>
+                            <li>This class uses the default constructor - You do not have to write a constructor
+                            </li>
+                            <li>
+                                This class has a method named compare that takes 2 parameters, both of the type of the
+                                generic
+                                <ul>
+                                    <li>This method can return false on all inputs. It will be overridden by child
+                                        classes</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>ratings.datastructures.SongTitleComparator - Implement the SongTitleComparator that will be used
+                        to sort Songs by their title in alphabetical order
+                        <ul>
+                            <li>This class will inherit from the Comparator class with the generic type being Song
+                            </li>
+                            <li>Override the compare method to take two references to Song objects and returns a boolean
+                                <ul>
+                                    <li>
+                                        This method returns true if the first parameter should come before the second in
+                                    sorted order, and false otherwise
+                                    </li>
+                                    <li>Comparisons should be made using the Strings compareToIgnoreCase method. You
+                                        are not expected to check the characters of the Strings to determine their
+                                        order
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>ratings.datastructures.SongBayesianRatingComparator - Implement the
+                        SongBayesianRatingComparator that will be used
+                        to sort Songs by their bayesian average rating in decreasing order
+                        <ul>
+                            <li>This class will inherit from the Comparator class with the generic type being Song
+                            </li>
+                            <li>Override the compare method to take two references to Song objects and returns a boolean
+                                <ul>
+                                    <li>
+                                        This method returns true if the first parameter has a higher bayesian average
+                                        than the second in, and false otherwise
+                                    </li>
+                                    <li>
+                                        Use 2 extra ratings with value 3 for the bayesian averages
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+
+                <br/>
+                <hr/>
+
+                <h3>AutoLab Feedback</h3>
+
+                <hr/>
+                <p>
+                    Since the tests are provided for you in this task, there is only one phase of AutoLab feedback.
+                </p>
+
+                <ol>
+                    <li>Running my tests on Your Solution
+                        <ul>
+                            <li>
+                                AutoLab will run my tests against your code to check
+                                it for correctness. If you are running, and passing, the provided tests before
+                                submitting, you should pass all the tests in AutoLab.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <p>
+                    Once you passed the tests, you will have completed this Task and AutoLab will confirm this
+                    with a score of 1 for complete.
+                </p>
+                <hr/>
+
+                <table class="table table-bordered">
+                    <tbody>
+
+                    <tr class="table-warning">
+                        <td colspan="3">Wednesday, March 15 @ 9:00 <b>AM</b><br/>
+                            Expected Deadline
+                        </td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td colspan="3">Wednesday, March 29 @ 9:00 <b>AM</b><br/>
+                            Deadline
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+        <div class="col-0 col-sm-0 col-md-1"></div>
+    </div>
+</div>
+
+
+<script src="/static_files/lib/jquery-3.3.1.min.js"></script>
+<script src="/static_files/lib/popper-1.12.9.min.js"></script>
+<script src="/static_files/lib/bootstrap-4.0.0.min.js"></script>
+<script src="/static_files/lib/fontawesome.js"></script>
+
+</body>
+</html>
