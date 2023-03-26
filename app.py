@@ -55,6 +55,7 @@ def task6():
     resp.headers["X-Content-Type-Options"] = "nosniff"
     return resp
 
+
 @app.get('/task7')
 def task7():
     resp = make_response(render_template('hw/task7.html'))
