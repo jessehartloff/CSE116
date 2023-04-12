@@ -299,7 +299,6 @@ Metropolis,15,1
 Pirates of the Caribbean: The Curse of the Black Pearl,15,2
 Jarhead,15,3
 2001: A Space Odyssey,15,2
-Million Dollar Baby,15,0
 Miami Vice,15,5
 Armageddon,15,1
 Leon: The Professional,15,4
@@ -370,7 +369,6 @@ Die Hard,15,3
 The Man Who Knew Too Much,15,3
 Wag the Dog,15,2
 Big Fish,15,1
-Silent Hill,15,0
 The Hours,15,3
 The Conversation,15,4
 The Terminal,15,2
@@ -386,7 +384,6 @@ The Living Daylights,15,3
 The Sixth Sense,15,3
 Monty Python and the Holy Grail,15,2
 The Passion of Joan of Arc,15,2
-Almost Famous,15,0
 Mrs. Doubtfire,15,1
 Lolita,15,1
 Roman Holiday,15,3
@@ -428,7 +425,6 @@ Sunshine,15,3
 3-Iron,15,3
 Bean,15,1
 Rambo III,15,3
-Y Tu Mama Tambien,15,0
 Mirror,15,4
 La Vie en Rose,15,5
 Imagine Me & You,15,1
@@ -448,7 +444,6 @@ Hostel,15,1
 Re-Animator,15,3
 Captain Corelli's Mandolin,15,3
 The Forbidden Kingdom,15,1
-The Mummy: Tomb of the Dragon Emperor,15,0
 Fahrenheit 9/11,15,2
 Stuck on You,15,3
 Elephant,15,1
@@ -533,7 +528,6 @@ The Gendarme of St. Tropez,15,3
 Ghost Dog: The Way of the Samurai,15,3
 The Legend of Bagger Vance,15,1
 Boogie Nights,15,1
-Gosford Park,15,0
 The Chorus,15,1
 A Bridge Too Far,15,4
 The Woman in Red,15,3
@@ -864,7 +858,6 @@ Lost in Translation,20,4
 Dead Poets Society,20,2
 Syriana,20,1
 The 39 Steps,20,1
-Terminator 3: Rise of the Machines,20,0
 Batman Returns,20,3
 Rain Man,20,4
 Sissi,20,4
@@ -888,7 +881,6 @@ The Contract,20,2
 Rope,20,5
 The Beach,20,4
 The Diving Bell and the Butterfly,20,3
-License to Wed,20,0
 Armageddon,21,3
 Back to the Future Part III,21,3
 The 39 Steps,21,3
@@ -1184,7 +1176,6 @@ Lolita,25,5
 M,25,3
 Arlington Road,25,5
 Y Tu Mama Tambien,25,2
-Twelve Monkeys,26,0
 Walk the Line,26,4
 Lost in Translation,26,3
 Back to the Future Part II,26,2
@@ -1980,7 +1971,6 @@ Finding Neverland,52,4
 Whale Rider,52,4
 Speed 2: Cruise Control,52,1
 The Mummy: Tomb of the Dragon Emperor,52,5
-Bandidas,52,0
 Twilight,52,4
 Scarface,53,4
 Back to the Future Part II,53,4
@@ -2184,9 +2174,7 @@ Rebecca,59,3
 Syriana,59,2
 Terminator 3: Rise of the Machines,59,4
 The Science of Sleep,59,4
-Rain Man,59,0
 Once Were Warriors,59,4
-Wag the Dog,59,0
 The Hours,59,3
 The Sixth Sense,59,5
 Sleepless in Seattle,59,5
@@ -2197,7 +2185,6 @@ My Name Is Bruce,59,3
 Fools Rush In,59,2
 Say Anything...,59,1
 American Pie,59,1
-Fantastic Voyage,59,0
 The Great Outdoors,59,4
 Heathers,59,1
 Ringu,59,1
@@ -2265,9 +2252,7 @@ K-19: The Widowmaker,62,4
 In Time,62,3
 Star Wars,63,3
 Dancer in the Dark,63,5
-Pirates of the Caribbean: Dead Man's Chest,63,0
 48 Hrs.,63,4
-Zatoichi,63,0
 The 39 Steps,63,5
 Rain Man,63,3
 Sissi,63,3
@@ -2538,7 +2523,6 @@ Knockin' on Heaven's Door,73,2
 Ocean's Twelve,73,3
 Back to the Future Part II,73,3
 Star Trek IV: The Voyage Home,73,2
-Predator 2,73,0
 Star Trek V: The Final Frontier,73,3
 20000 Leagues Under the Sea,73,3
 The Big Blue,73,4
@@ -2575,7 +2559,6 @@ The Green Mile,73,3
 Reservoir Dogs,73,3
 Killing Zoe,73,3
 Love Actually,73,4
-One Flew Over the Cuckoo's Nest,73,0
 Ed Wood,73,3
 Once Were Warriors,73,5
 The Poseidon Adventure,73,3
@@ -2633,7 +2616,6 @@ Cutthroat Island,73,3
 Teenage Mutant Ninja Turtles III,73,2
 Imagine Me & You,73,3
 Parenthood,73,2
-28 Weeks Later,73,0
 Die Hard 2,73,3
 Rope,73,3
 School of Rock,73,3
@@ -2704,11 +2686,9 @@ Modern Times,73,2
 The Searchers,73,4
 Barry Lyndon,73,2
 88 Minutes,73,3
-Emma,73,0
 Beetlejuice,73,4
 Black Rain,73,4
 Revolutionary Road,73,3
-Scream,73,0
 2010,73,3
 Candy,73,3
 Friday the 13th,73,3
@@ -2736,7 +2716,6 @@ Superbad,73,1
 Transformers: Revenge of the Fallen,73,2
 K-19: The Widowmaker,73,3
 Mad Max 2: The Road Warrior,73,2
-Dude Where's My Car?,73,0
 My Best Friend's Wedding,73,4
 Deep Blue Sea,73,3
 Bad Boys II,73,3
@@ -2772,8 +2751,6 @@ Ocean's Eleven,75,4
 Live and Let Die,75,4
 The 39 Steps,75,4
 The Devil Wears Prada,75,3
-Miller's Crossing,75,0
-Notting Hill,75,0
 Once Were Warriors,75,4
 The Conversation,75,1
 The Living Daylights,75,4
@@ -2931,7 +2908,6 @@ K-19: The Widowmaker,78,5
 My Best Friend's Wedding,78,4
 48 Hrs.,79,2
 The 39 Steps,79,3
-My Own Private Idaho,79,0
 Big Fish,79,2
 Silent Hill,79,2
 The Conversation,79,2
@@ -3038,7 +3014,6 @@ The Searchers,83,4
 Battle Royale,83,4
 Spellbound,83,4
 Across the Universe,83,4
-A Bridge Too Far,83,0
 The Village,83,5
 My Best Friend's Wedding,83,4
 Three Colors: Red,84,4
@@ -3241,7 +3216,6 @@ Arlington Road,87,3
 Star Wars,88,3
 2001: A Space Odyssey,88,3
 Armageddon,88,2
-Run Lola Run,88,0
 Donnie Darko,88,4
 48 Hrs.,88,4
 Lost in Translation,88,2
@@ -3249,7 +3223,6 @@ Ocean's Twelve,88,3
 Back to the Future Part II,88,3
 A Clockwork Orange,88,3
 Rebecca,88,4
-Syriana,88,0
 Live and Let Die,88,3
 The 39 Steps,88,4
 Cat on a Hot Tin Roof,88,3
@@ -3297,7 +3270,6 @@ Rope,88,2
 Speed 2: Cruise Control,88,4
 Forces of Nature,88,4
 Fahrenheit 9/11,88,1
-Don Juan DeMarco,88,0
 My Name Is Bruce,88,3
 Fools Rush In,88,3
 Persepolis,88,2
@@ -3606,7 +3578,6 @@ A River Runs Through It,97,2
 Terminator 3: Rise of the Machines,97,4
 Batman Returns,97,1
 Once Were Warriors,97,1
-Silent Hill,97,0
 To Kill a Mockingbird,97,1
 Titanic,97,2
 Men in Black II,97,4
@@ -3620,7 +3591,6 @@ Stranger Than Fiction,97,4
 Bridge to Terabithia,97,1
 Meet the Robinsons,97,4
 Rope,97,2
-Two Brothers,97,0
 Aguirre: The Wrath of God,97,3
 Hard Target,97,4
 Say Anything...,97,1
@@ -4077,7 +4047,6 @@ Short Circuit,107,3
 License to Wed,107,4
 Modern Times,107,1
 Battle Royale,107,3
-Ghost Dog: The Way of the Samurai,107,0
 Three Colors: Red,108,3
 Lost in Translation,108,3
 Ocean's Eleven,108,3
@@ -4175,7 +4144,6 @@ The Fifth Element,111,2
 Jarhead,111,4
 Nausicaa of the Valley of the Wind,111,3
 Armageddon,111,3
-Back to the Future,111,0
 Three Colors: Red,111,4
 The Lord of the Rings: The Return of the King,111,3
 Donnie Darko,111,3
@@ -4183,7 +4151,6 @@ Donnie Darko,111,3
 Ocean's Eleven,111,4
 A Clockwork Orange,111,3
 Rebecca,111,4
-Syriana,111,0
 Live and Let Die,111,3
 The 39 Steps,111,4
 Terminator 3: Rise of the Machines,111,4
@@ -4763,7 +4730,6 @@ Fahrenheit 9/11,125,3
 Return of the Jedi,125,4
 My Name Is Bruce,125,4
 Aguirre: The Wrath of God,125,4
-Persepolis,125,0
 Say Anything...,125,4
 Reign Over Me,125,3
 Sicko,125,5
@@ -4914,13 +4880,10 @@ Run Lola Run,130,1
 Three Colors: Red,130,3
 Donnie Darko,130,2
 48 Hrs.,130,4
-Lost in Translation,130,0
 Back to the Future Part II,130,2
 20000 Leagues Under the Sea,130,1
-Star Trek: Generations,130,0
 Rebecca,130,3
 Syriana,130,3
-Stand by Me,130,0
 Zatoichi,130,4
 The 39 Steps,130,4
 Contempt,130,2
@@ -5050,13 +5013,11 @@ We're No Angels,132,5
 Romeo and Juliet,132,5
 Get Shorty,132,5
 Three Colors: Red,133,2
-Scarface,133,0
 Saw II,133,1
 The Killing,133,1
 Terminator 3: Rise of the Machines,133,4
 The Poseidon Adventure,133,2
 To Kill a Mockingbird,133,2
-The Sixth Sense,133,0
 Whale Rider,133,1
 The Good Shepherd,133,2
 Notes on a Scandal,133,5
@@ -5066,7 +5027,6 @@ The Motorcycle Diaries,133,1
 Fools Rush In,133,2
 Sister Act,133,2
 License to Wed,133,3
-This Is 40,133,0
 Four Rooms,134,1
 Dancer in the Dark,134,4
 Metropolis,134,2
@@ -5204,14 +5164,12 @@ The Chronicles of Riddick: Dark Fury,137,3
 The 39 Steps,138,4
 Terminator 3: Rise of the Machines,138,4
 Once Were Warriors,138,4
-The Passion of Joan of Arc,138,0
 Sleepless in Seattle,138,5
 The Talented Mr. Ripley,138,4
 School of Rock,138,3
 Say Anything...,138,3
 License to Wed,138,4
 Boogie Nights,138,4
-Bad Boys II,138,0
 Three Colors: Red,139,3
 Notes on a Scandal,139,4
 Rope,139,3
@@ -5225,7 +5183,6 @@ The Last Castle,139,2
 The Golden Compass,139,5
 Asterix at the Olympic Games,139,3
 The Chronicles of Riddick: Dark Fury,139,2
-Scary Movie,139,0
 Hang 'em High,139,1
 Boogie Nights,139,4
 Four Rooms,140,4
@@ -5553,9 +5510,7 @@ The Hours,151,3
 The Conversation,151,3
 To Kill a Mockingbird,151,3
 Titanic,151,3
-Jarhead,152,0
 Armageddon,152,3
-Three Colors: Red,152,0
 Scarface,152,3
 48 Hrs.,152,3
 Ocean's Eleven,152,4
@@ -5581,7 +5536,6 @@ The Thirteenth Floor,152,3
 Bridge to Terabithia,152,4
 Sunshine,152,2
 Rope,152,4
-The Island,152,0
 The Motorcycle Diaries,152,5
 Twin Peaks: Fire Walk with Me,152,4
 My Name Is Bruce,152,3
@@ -5638,15 +5592,12 @@ Say Anything...,155,5
 Closer,155,4
 The Chronicles of Riddick: Dark Fury,155,5
 Love Actually,156,5
-Monsters Inc.,156,0
 Lolita,156,4
 300,156,4
 Die Hard: With a Vengeance,156,4
-Captain Corelli's Mandolin,156,0
 Asterix at the Olympic Games,156,4
 American Pie 2,156,1
 Ghost Dog: The Way of the Samurai,156,4
-EVA,156,0
 Finding Nemo,157,2
 Back to the Future Part II,157,3
 Stand by Me,157,4
@@ -5832,10 +5783,8 @@ The Living Daylights,162,3
 The Passion of Joan of Arc,162,3
 Mrs. Doubtfire,162,3
 Rosemary's Baby,162,3
-Metropolis,163,0
 Three Colors: Red,163,4
 48 Hrs.,163,4
-Lost in Translation,163,0
 The 39 Steps,163,4
 Terminator 3: Rise of the Machines,163,3
 Sissi,163,4
@@ -5943,7 +5892,6 @@ Y Tu Mama Tambien,165,3
 Bowling for Columbine,165,2
 Imagine Me & You,165,3
 Parenthood,165,2
-28 Weeks Later,165,0
 Die Hard 2,165,3
 Rope,165,2
 Meet the Parents,165,2
@@ -5973,7 +5921,6 @@ Beetlejuice,165,1
 Black Rain,165,3
 Boogie Nights,165,3
 L'Avventura,165,3
-A Bridge Too Far,165,0
 The Pledge,165,5
 Sabrina,165,1
 The Village,165,1
@@ -5987,7 +5934,6 @@ K-19: The Widowmaker,165,3
 Mad Max 2: The Road Warrior,165,1
 Il Divo,165,1
 Legally Blonde,165,1
-The X Files: I Want to Believe,165,0
 Casper,165,2
 Metro,165,1
 Red Planet,165,4
@@ -5998,7 +5944,6 @@ Disclosure,165,1
 The 400 Blows,166,4
 Ocean's Twelve,166,3
 A River Runs Through It,166,4
-The Day After Tomorrow,166,0
 Casino,166,4
 The Hours,166,5
 Men in Black II,166,3
@@ -6184,7 +6129,6 @@ Batman Returns,176,3
 The Poseidon Adventure,176,2
 Silent Hill,176,3
 To Kill a Mockingbird,176,4
-The Grapes of Wrath,176,0
 Licence to Kill,176,2
 Gandhi,176,3
 Rocky Balboa,176,3
@@ -6202,8 +6146,6 @@ X-Men Origins: Wolverine,176,3
 The Great Outdoors,176,1
 Ringu,176,2
 Young Frankenstein,176,2
-Ghost Dog: The Way of the Samurai,176,0
-Severance,176,0
 We're No Angels,176,4
 MouseHunt,176,3
 Ken Park,176,4
@@ -6571,7 +6513,6 @@ Whale Rider,187,4
 Point Break,187,4
 Rocky Balboa,187,5
 Rocky,187,4
-Blood Diamond,187,0
 La Vie en Rose,187,3
 Rope,187,4
 Speed 2: Cruise Control,187,4
@@ -6582,7 +6523,6 @@ The Mummy: Tomb of the Dragon Emperor,187,4
 The Karate Kid,187,2
 Star Wars: Episode III - Revenge of the Sith,187,4
 Twin Peaks: Fire Walk with Me,187,3
-The Butterfly Effect,187,0
 Fools Rush In,187,5
 Two Brothers,187,4
 Aguirre: The Wrath of God,187,2
@@ -6986,7 +6926,6 @@ Rain Man,199,3
 La Strada,199,3
 Sissi,199,4
 Once Were Warriors,199,4
-Transamerica,199,0
 The Conversation,199,4
 Men in Black II,199,3
 Harry Potter and the Prisoner of Azkaban,199,3
@@ -7087,7 +7026,6 @@ Mad Max 2: The Road Warrior,201,4
 The X Files: I Want to Believe,201,3
 Metro,201,4
 Red Planet,201,4
-Wayne's World 2,201,0
 My Best Friend's Wedding,201,4
 Bad Boys II,201,5
 Terminator 3: Rise of the Machines,202,4
@@ -7145,20 +7083,10 @@ Fools Rush In,206,5
 Sister Act,206,3
 Persepolis,206,3
 Mr. Holland's Opus,206,3
-Kill Bill: Vol. 1,207,0
 Walk the Line,207,5
 Terminator 3: Rise of the Machines,207,5
-Cube,207,0
 Men in Black II,207,5
-Harry Potter and the Prisoner of Azkaban,207,0
-The City of Lost Children,207,0
-The Big Sleep,207,0
-The Great Dictator,207,0
-Rocky II,207,0
-Rocky III,207,0
 Meet the Parents,207,3
-Addicted to Love,207,0
-Romeo Must Die,207,0
 Dancer in the Dark,208,4
 Syriana,208,5
 Terminator 3: Rise of the Machines,208,4
@@ -8261,7 +8189,6 @@ Letters from Iwo Jima,236,5
 Bean,236,5
 The Rules of Attraction,236,4
 Nell,236,4
-Aguirre: The Wrath of God,236,0
 Hard Target,236,5
 Say Anything...,236,3
 The Glass House,236,3
@@ -8660,7 +8587,6 @@ The Village,243,4
 Transformers: Revenge of the Fallen,243,3
 Three Colors: Red,244,3
 The 39 Steps,244,5
-Sissi,244,0
 Once Were Warriors,244,5
 Bridge to Terabithia,244,3
 Rocky IV,244,4
@@ -8915,7 +8841,6 @@ Gandhi,253,3
 Almost Famous,253,2
 Lolita,253,3
 Rosemary's Baby,253,4
-Krull,253,0
 Sleepless in Seattle,253,4
 The Great Dictator,253,4
 Dawn of the Dead,253,4
@@ -9072,12 +8997,10 @@ Scarface,257,5
 The 39 Steps,257,3
 Terminator 3: Rise of the Machines,257,5
 Men in Black II,257,4
-The Big Sleep,257,0
 Hannibal Rising,257,4
 The Dreamers,257,5
 The Motorcycle Diaries,257,3
 Nell,257,3
-Fools Rush In,257,0
 Hard Target,257,5
 American Pie,257,1
 Space Jam,257,4
@@ -9120,7 +9043,6 @@ Metropolis,261,5
 Three Colors: Red,261,5
 48 Hrs.,261,3
 Syriana,261,4
-Stand by Me,261,0
 The 39 Steps,261,4
 Rain Man,261,3
 The Hours,261,4
@@ -9129,7 +9051,6 @@ Nosferatu,261,1
 The Passion of Joan of Arc,261,4
 M,261,3
 School of Rock,261,5
-The Searchers,261,0
 The Orphanage,261,3
 Metropolis,262,2
 Million Dollar Baby,262,2
@@ -9200,11 +9121,9 @@ Pitch Black,262,2
 The Chronicles of Riddick,262,2
 The First Wives Club,262,2
 License to Wed,262,3
-U-571,262,0
 Throne of Blood,262,3
 Beetlejuice,262,4
 Black Rain,262,4
-Revolutionary Road,262,0
 2010,262,4
 A Tale of Two Sisters,262,4
 Hot Fuzz,262,1
@@ -9546,7 +9465,6 @@ Star Trek IV: The Voyage Home,276,1
 Lucky Number Slevin,276,3
 The Conversation,276,4
 Harry Potter and the Prisoner of Azkaban,276,2
-Monty Python and the Holy Grail,276,0
 Cutthroat Island,276,3
 28 Weeks Later,276,1
 Hostel,276,3
@@ -9674,7 +9592,6 @@ Ghost Rider,282,4
 Notes on a Scandal,282,5
 Stranger Than Fiction,282,4
 Rocky V,282,1
-The Fountain,282,0
 Die Hard 2,282,3
 Rope,282,2
 Forces of Nature,282,1
@@ -9689,9 +9606,7 @@ The Golden Compass,282,4
 The Great Outdoors,282,3
 Ringu,282,4
 American Pie 2,282,3
-License to Wed,282,0
 The Searchers,282,4
-My Super Ex-Girlfriend,282,0
 Boogie Nights,282,4
 K-19: The Widowmaker,282,4
 Pirates of the Caribbean: Dead Man's Chest,283,4
@@ -10136,9 +10051,7 @@ The 39 Steps,293,2
 Eyes Wide Shut,293,3
 The Day After Tomorrow,293,3
 The Green Mile,293,4
-The Terminal,293,0
 Nosferatu,293,3
-Arlington Road,293,0
 The Dreamers,293,4
 Rocky IV,293,3
 La Vie en Rose,293,3
@@ -10430,8 +10343,6 @@ The Experiment,296,5
 Silent Hill,296,5
 The Contract,296,4
 Rush Hour,296,3
-Scary Movie,296,0
-8 Mile,297,0
 Run Lola Run,297,2
 Scarface,297,3
 Rebecca,297,5
@@ -10446,7 +10357,6 @@ The Good Shepherd,297,5
 Letters from Iwo Jima,297,5
 Bridge to Terabithia,297,4
 Bean,297,4
-28 Weeks Later,297,0
 Twin Peaks: Fire Walk with Me,297,2
 Hulk,297,4
 Fools Rush In,297,3
@@ -10512,7 +10422,6 @@ Mr. Smith Goes to Washington,299,5
 Flags of Our Fathers,299,4
 Elizabeth,299,4
 A Tale of Two Sisters,299,5
-The Guardian,299,0
 Torn Curtain,299,4
 A Bridge Too Far,299,4
 The Shipping News,299,4
@@ -10532,7 +10441,6 @@ The Great Outdoors,300,4
 Snatch,301,1
 Mean Streets,301,4
 The King of Comedy,301,2
-25th Hour,301,0
 Knockin' on Heaven's Door,302,3
 Back to the Future Part II,302,3
 Star Trek IV: The Voyage Home,302,3
@@ -10626,14 +10534,12 @@ The 39 Steps,304,3
 Terminator 3: Rise of the Machines,304,5
 The Science of Sleep,304,4
 Batman Returns,304,2
-Once Were Warriors,304,0
 To Kill a Mockingbird,304,1
 Men in Black II,304,5
 The Great Dictator,304,4
 Dawn of the Dead,304,4
 Point Break,304,5
 The Fountain,304,2
-Teenage Mutant Ninja Turtles III,304,0
 The Motorcycle Diaries,304,5
 The Karate Kid,304,5
 Sweet November,304,4
@@ -10966,8 +10872,6 @@ Ocean's Twelve,311,2
 Breakfast at Tiffany's,311,2
 Back to the Future Part II,311,3
 Star Trek IV: The Voyage Home,311,2
-Star Trek V: The Final Frontier,311,0
-The Fisher King,311,0
 A Clockwork Orange,311,2
 Lucky Number Slevin,311,2
 Mean Streets,311,2
@@ -10992,7 +10896,6 @@ The Science of Sleep,311,3
 Notorious,311,3
 Catwoman,311,1
 Jurassic Park,311,2
-Good bye Lenin!,311,0
 Night on Earth,311,3
 Seven Samurai,311,3
 The Devil Wears Prada,311,1
@@ -11025,7 +10928,6 @@ The Wrong Trousers,311,2
 A Close Shave,311,1
 Terminator Salvation,311,3
 Psycho,311,4
-The Poseidon Adventure,311,0
 Dogville,311,3
 Wag the Dog,311,3
 Big Fish,311,3
@@ -11052,7 +10954,6 @@ Harry Potter and the Goblet of Fire,311,1
 The Spy Who Loved Me,311,2
 The Shining,311,2
 A View to a Kill,311,2
-The Living Daylights,311,0
 Monty Python and the Holy Grail,311,1
 The Passion of Joan of Arc,311,4
 Almost Famous,311,3
@@ -11097,7 +10998,6 @@ Sweet Smell of Success,311,2
 Sherlock Jr.,311,2
 Mulholland Drive,311,2
 The Hidden Fortress,311,2
-Arlington Road,311,0
 Whale Rider,311,5
 The Third Man,311,2
 Escape from New York,311,3
@@ -11129,7 +11029,6 @@ Stalker,311,3
 Cutthroat Island,311,4
 Pan's Labyrinth,311,2
 The Departed,311,2
-Thelma & Louise,311,0
 Imagine Me & You,311,3
 Parenthood,311,3
 Rope,311,3
@@ -11139,7 +11038,6 @@ What's Eating Gilbert Grape,311,1
 Bring It On,311,4
 Night at the Museum,311,2
 Meet the Parents,311,1
-The Double Life of Veronique,311,0
 A Time to Kill,311,2
 The Motorcycle Diaries,311,2
 Re-Animator,311,3
@@ -11391,7 +11289,6 @@ Timecop,313,2
 Metro,313,3
 My Best Friend's Wedding,313,3
 Bad Boys II,313,4
-Crimson Tide,313,0
 Disclosure,313,3
 The 39 Steps,314,5
 The 39 Steps,315,1
@@ -11697,11 +11594,8 @@ Sister Act,331,5
 Pleasantville,331,4
 Million Dollar Baby,332,5
 Breaking the Waves,332,4
-Knockin' on Heaven's Door,332,0
 Ocean's Twelve,332,3
 Point Break,332,5
-Blood Diamond,332,0
-Rocky V,332,0
 Hostel,332,4
 The Sorcerer's Apprentice,332,5
 Once Were Warriors,333,5
@@ -12037,7 +11931,6 @@ Mrs. Doubtfire,346,1
 Frank Herbert's Dune,346,5
 The Hidden Fortress,346,2
 Arlington Road,346,4
-The Host,346,0
 Mr. Bean's Holiday,346,2
 Rocky III,346,3
 Rocky IV,346,4
@@ -12258,7 +12151,6 @@ Highlander II: The Quickening,353,3
 Superbad,353,2
 K-19: The Widowmaker,353,3
 Mad Max 2: The Road Warrior,353,1
-Metro,353,0
 My Best Friend's Wedding,353,3
 Bad Boys II,353,3
 In Time,353,4
@@ -12355,7 +12247,6 @@ Wings of Desire,356,3
 Dead Poets Society,356,3
 Good bye Lenin!,356,2
 Straw Dogs,356,3
-Saving Grace,356,0
 The Bourne Identity,356,5
 Metropolis,357,4
 Pirates of the Caribbean: Dead Man's Chest,357,5
@@ -12721,8 +12612,6 @@ Pleasantville,363,4
 Ringu,363,4
 License to Wed,363,3
 Young Frankenstein,363,3
-A River Runs Through It,364,0
-Beverly Hills Cop III,364,0
 Bridge to Terabithia,364,5
 48 Hrs.,365,5
 Batman Returns,365,4
@@ -12746,7 +12635,6 @@ My Best Friend's Wedding,366,4
 Bad Boys II,366,5
 Armageddon,367,4
 Star Trek V: The Final Frontier,367,2
-20000 Leagues Under the Sea,367,0
 Rebecca,367,3
 The 39 Steps,367,5
 Rain Man,367,4
@@ -12766,7 +12654,6 @@ Aguirre: The Wrath of God,367,4
 We Own the Night,367,3
 Sister Act,367,2
 Say Anything...,367,4
-Rush Hour,367,0
 Closer,367,4
 Barry Lyndon,367,4
 What Women Want,367,4
@@ -12990,9 +12877,6 @@ The Bourne Supremacy,378,3
 License to Wed,378,4
 Beetlejuice,378,4
 xXx,378,2
-K-19: The Widowmaker,378,0
-Bad Boys II,378,0
-Disclosure,378,0
 Just Visiting,378,4
 Three Colors: Red,379,4
 Terminator 3: Rise of the Machines,379,4
@@ -13018,7 +12902,6 @@ Breaking the Waves,380,3
 48 Hrs.,380,4
 Ocean's Eleven,380,4
 Minority Report,380,3
-A Clockwork Orange,380,0
 Back to the Future Part III,380,2
 Rebecca,380,5
 Stand by Me,380,2
@@ -13049,7 +12932,6 @@ The Living Daylights,380,3
 The Passion of Joan of Arc,380,4
 Mrs. Doubtfire,380,3
 Lolita,380,4
-Shrek the Third,380,0
 Chinatown,380,1
 M,380,4
 Krull,380,2
@@ -13886,7 +13768,6 @@ Batman Returns,394,3
 Rain Man,394,3
 Romeo + Juliet,394,3
 Reservoir Dogs,394,3
-Once Were Warriors,394,0
 Monsters Inc.,394,2
 The Hours,394,2
 The Conversation,394,3
@@ -13909,7 +13790,6 @@ Aguirre: The Wrath of God,394,4
 Say Anything...,394,1
 Jacob's Ladder,394,3
 The Chronicles of Riddick: Dark Fury,394,4
-American Pie Presents: The Naked Mile,394,0
 Weekend at Bernie's,394,2
 K-19: The Widowmaker,394,4
 Bad Boys II,394,3
@@ -14170,7 +14050,6 @@ Pleasantville,405,3
 The Curse of the Jade Scorpion,405,4
 The Chronicles of Riddick: Dark Fury,405,2
 Modern Times,405,3
-Battle Royale,405,0
 Girl with a Pearl Earring,405,4
 No Reservations,405,3
 54,405,3
@@ -14395,7 +14274,6 @@ The 39 Steps,410,4
 Terminator 3: Rise of the Machines,410,1
 Rain Man,410,4
 Reservoir Dogs,410,4
-Once Were Warriors,410,0
 Men in Black II,410,1
 Bridge to Terabithia,410,5
 K-19: The Widowmaker,410,4
@@ -14561,13 +14439,11 @@ Lolita,416,3
 Rosemary's Baby,416,4
 Run Lola Run,417,2
 Three Colors: Red,417,5
-Knockin' on Heaven's Door,417,0
 Ocean's Eleven,417,3
 Back to the Future Part II,417,3
 The 39 Steps,417,4
 Cat on a Hot Tin Roof,417,3
 Sissi,417,4
-Silent Hill,417,0
 Men in Black II,417,4
 The Passion of Joan of Arc,417,4
 M,417,5
@@ -14584,10 +14460,8 @@ Rambo III,417,3
 Rope,417,4
 Escape from the Planet of the Apes,417,4
 Stuck on You,417,3
-Twin Peaks: Fire Walk with Me,417,0
 My Name Is Bruce,417,5
 Say Anything...,417,5
-Mr. Holland's Opus,417,0
 Rush Hour,417,4
 Sicko,417,4
 The Bourne Supremacy,417,3
@@ -14808,7 +14682,6 @@ Girl with a Pearl Earring,423,3
 Beetlejuice,423,3
 Black Rain,423,3
 A Tale of Two Sisters,423,3
-The Guardian,423,0
 The 40 Year Old Virgin,423,4
 My Best Friend's Wedding,423,4
 Deep Blue Sea,423,3
@@ -14897,7 +14770,6 @@ xXx,427,4
 Highlander: The Final Dimension,427,4
 Manitou's Shoe,427,3
 The Happening,427,4
-Metro,427,0
 Wayne's World 2,427,2
 My Best Friend's Wedding,427,4
 Bad Boys II,427,3
@@ -14926,7 +14798,6 @@ The Talented Mr. Ripley,428,5
 Notes on a Scandal,428,4
 Bridge to Terabithia,428,4
 Rope,428,4
-Russian Dolls,428,0
 Fools Rush In,428,5
 Persepolis,428,5
 Mr. Holland's Opus,428,2
@@ -14936,11 +14807,9 @@ The Searchers,428,5
 Barry Lyndon,428,3
 Boogie Nights,428,4
 The Shipping News,428,4
-Dude Where's My Car?,428,0
 Bad Boys II,428,4
 EVA,428,3
 The Lord of the Rings,429,4
-The Vanishing,429,0
 License to Wed,429,3
 We're No Angels,429,2
 Metropolis,430,2
@@ -14976,7 +14845,6 @@ The Terminal,430,2
 To Kill a Mockingbird,430,3
 Titanic,430,4
 Men in Black II,430,4
-Nosferatu,430,0
 Ben-Hur,430,3
 Tomorrow Never Dies,430,4
 The Sixth Sense,430,5
@@ -15008,7 +14876,6 @@ The Kingdom,430,5
 Boogie Nights,430,3
 The Shipping News,430,5
 Ken Park,430,4
-K-19: The Widowmaker,430,0
 Bad Boys II,430,5
 Four Rooms,431,4
 Three Colors: Red,431,5
@@ -15408,7 +15275,6 @@ Ghost Rider,442,4
 Bridge to Terabithia,442,4
 Shortbus,442,4
 Parenthood,442,4
-Die Hard 2,442,0
 Rope,442,4
 What's Eating Gilbert Grape,442,1
 Twin Peaks: Fire Walk with Me,442,5
@@ -15712,9 +15578,7 @@ Enough,452,4
 8 Women,452,4
 My Name Is Bruce,452,4
 Fools Rush In,452,4
-The Grudge 2,452,0
 The Grudge 3,452,1
-The Constant Gardener,452,0
 Two Brothers,452,4
 Aguirre: The Wrath of God,452,3
 We Own the Night,452,2
@@ -15784,10 +15648,8 @@ Revolutionary Road,452,2
 Spellbound,452,4
 Seabiscuit,452,4
 Friday the 13th,452,3
-Sleuth,452,0
 Hot Fuzz,452,1
 Southland Tales,452,4
-The Gendarme of St. Tropez,452,0
 Cassandra's Dream,452,3
 Ghost Dog: The Way of the Samurai,452,3
 Layer Cake,452,3
@@ -15897,12 +15759,10 @@ The Wages of Fear,457,1
 Rebecca,457,3
 Syriana,457,3
 Live and Let Die,457,3
-The 39 Steps,457,0
 High Noon,457,3
 A River Runs Through It,457,5
 Terminator 3: Rise of the Machines,457,5
 True Romance,457,3
-Jurassic Park,457,0
 The Lost World: Jurassic Park,457,2
 Inspector Gadget,457,2
 Batman Returns,457,2
@@ -15934,8 +15794,6 @@ Rambo III,457,2
 Shortbus,457,1
 Y Tu Mama Tambien,457,2
 La Vie en Rose,457,2
-Parenthood,457,0
-Die Hard 2,457,0
 A Shot in the Dark,457,3
 Hitman,457,2
 The Vanishing,457,1
@@ -16113,7 +15971,6 @@ Pirates of the Caribbean: The Curse of the Black Pearl,461,2
 Jarhead,461,2
 2001: A Space Odyssey,461,2
 Million Dollar Baby,461,2
-Billy Elliot,461,0
 Leon: The Professional,461,3
 Run Lola Run,461,3
 Back to the Future,461,2
@@ -16123,7 +15980,6 @@ The Lord of the Rings: The Return of the King,461,1
 Donnie Darko,461,2
 Wings of Desire,461,1
 48 Hrs.,461,3
-Lost in Translation,461,0
 Knockin' on Heaven's Door,461,1
 Ocean's Eleven,461,2
 Ocean's Twelve,461,3
@@ -16228,7 +16084,6 @@ La Vie en Rose,461,3
 Changing Lanes,461,3
 Imagine Me & You,461,1
 Parenthood,461,2
-28 Weeks Later,461,0
 Die Hard 2,461,3
 Rope,461,2
 School of Rock,461,2
@@ -16592,7 +16447,6 @@ Kill Bill: Vol. 1,468,2
 Jarhead,468,3
 Pirates of the Caribbean: Dead Man's Chest,468,3
 2001: A Space Odyssey,468,2
-8 Mile,468,0
 Dirty Dancing,468,1
 Run Lola Run,468,2
 Snatch,468,3
@@ -17130,7 +16984,6 @@ The Guardian,475,2
 The Orphanage,475,1
 xXx,475,2
 K-19: The Widowmaker,475,4
-Mad Max 2: The Road Warrior,475,0
 Wayne's World 2,475,2
 My Best Friend's Wedding,475,4
 Bad Boys II,475,4
@@ -17146,7 +16999,6 @@ Asterix at the Olympic Games,476,4
 License to Wed,476,5
 Barry Lyndon,476,4
 Knockin' on Heaven's Door,477,2
-Star Trek: Generations,477,0
 Rocky III,477,5
 Rope,477,4
 The Vanishing,477,1
@@ -17721,7 +17573,6 @@ Three Colors: Red,500,3
 Knockin' on Heaven's Door,500,2
 Syriana,500,3
 The 39 Steps,500,1
-Jurassic Park,500,0
 Batman Returns,500,2
 The Green Mile,500,3
 Reservoir Dogs,500,3
@@ -17741,9 +17592,7 @@ Point Break,500,1
 Rocky Balboa,500,3
 Bridge to Terabithia,500,1
 Rocky II,500,2
-La Vie en Rose,500,0
 The Contract,500,3
-Rope,500,0
 Fahrenheit 9/11,500,1
 Twin Peaks: Fire Walk with Me,500,2
 An Unfinished Life,500,3
@@ -17760,7 +17609,6 @@ Ghost Dog: The Way of the Samurai,500,4
 Boogie Nights,500,3
 Manitou's Shoe,500,4
 Bad Boys II,500,3
-Scarface,501,0
 Terminator 3: Rise of the Machines,501,5
 Batman Returns,501,3
 The Grapes of Wrath,501,3
@@ -19043,7 +18891,6 @@ A River Runs Through It,527,4
 Terminator 3: Rise of the Machines,527,3
 Reservoir Dogs,527,1
 Psycho,527,2
-Monsters Inc.,527,0
 Wag the Dog,527,1
 Big Fish,527,1
 The Hours,527,3
@@ -19061,7 +18908,6 @@ Rope,527,3
 Twin Peaks: Fire Walk with Me,527,3
 Fools Rush In,527,4
 Say Anything...,527,4
-Reign Over Me,527,0
 The Bourne Supremacy,527,4
 License to Wed,527,4
 Across the Universe,527,3
@@ -19266,7 +19112,6 @@ Bring It On,530,3
 Meet the Parents,530,3
 Hostel,530,2
 Knockin' on Heaven's Door,531,2
-Back to the Future Part II,531,0
 Batman Returns,531,4
 Reservoir Dogs,531,3
 Wag the Dog,531,2
@@ -19280,17 +19125,14 @@ Mrs. Doubtfire,531,3
 Arlington Road,531,3
 Whale Rider,531,5
 Stranger Than Fiction,531,1
-Rambo III,531,0
 La Vie en Rose,531,1
 Rope,531,3
 The Motorcycle Diaries,531,3
-Two Brothers,531,0
 Mr. Holland's Opus,531,3
 Jacob's Ladder,531,4
 Space Jam,531,2
 Reign Over Me,531,3
 The Aviator,531,3
-The Chronicles of Riddick: Dark Fury,531,0
 License to Wed,531,3
 The Searchers,531,2
 Bad Boys II,531,3
@@ -19871,21 +19713,17 @@ Edward Scissorhands,547,3
 Breakfast at Tiffany's,547,3
 Back to the Future Part II,547,4
 Saw,547,5
-Minority Report,547,0
 Lucky Number Slevin,547,3
 Star Trek: Generations,547,3
 Amelie,547,5
 Mean Streets,547,1
-Rebecca,547,0
 Rumble Fish,547,4
 Stand by Me,547,4
 Zatoichi,547,5
 The Killing,547,4
-Live and Let Die,547,0
 Cat on a Hot Tin Roof,547,4
 Contempt,547,4
 Batman Begins,547,4
-Amadeus,547,0
 Strange Days,547,3
 High Noon,547,4
 Casablanca,547,1
@@ -19914,7 +19752,6 @@ Casino,547,1
 Once Were Warriors,547,5
 Flashdance,547,3
 Psycho,547,3
-Die Hard,547,0
 The Man Who Knew Too Much,547,2
 Dances with Wolves,547,5
 Wag the Dog,547,3
@@ -19994,7 +19831,6 @@ The Dreamers,547,5
 Rambo III,547,4
 Rocky III,547,1
 Rocky IV,547,2
-Y Tu Mama Tambien,547,0
 Mirror,547,2
 La Vie en Rose,547,4
 The Contract,547,4
@@ -20008,7 +19844,6 @@ A Shot in the Dark,547,4
 The Double Life of Veronique,547,2
 Fried Green Tomatoes,547,3
 The Island,547,4
-Speed 2: Cruise Control,547,0
 Forces of Nature,547,4
 Bill & Ted's Bogus Journey,547,3
 The Reaping,547,3
@@ -20057,7 +19892,6 @@ The Time Machine,547,1
 Reindeer Games,547,2
 Wet Hot American Summer,547,3
 The Glass House,547,4
-The House of the Spirits,547,0
 Capturing the Friedmans,547,2
 The Golden Compass,547,3
 Cold Mountain,547,5
@@ -20072,7 +19906,6 @@ The Bourne Identity,547,3
 The Bourne Supremacy,547,2
 Spanglish,547,3
 Joe Versus the Volcano,547,3
-Uncle Buck,547,0
 The Great Outdoors,547,2
 Deconstructing Harry,547,4
 Heathers,547,2
@@ -20102,7 +19935,6 @@ Flash Gordon,547,4
 54,547,1
 Flags of Our Fathers,547,4
 Team America: World Police,547,4
-Beetlejuice,547,0
 Last Year at Marienbad,547,3
 The Transporter,547,4
 Spellbound,547,3
@@ -20436,7 +20268,6 @@ Rocky II,557,2
 The Fountain,557,4
 Primal Fear,557,3
 Conquest of the Planet of the Apes,557,3
-The Mummy: Tomb of the Dragon Emperor,557,0
 The Wedding Planner,557,2
 Romeo Must Die,557,1
 Me Myself & Irene,557,2
@@ -21406,7 +21237,6 @@ The Conversation,574,3
 Titanic,574,3
 Men in Black II,574,5
 Harry Potter and the Prisoner of Azkaban,574,2
-Monty Python and the Holy Grail,574,0
 The Passion of Joan of Arc,574,3
 Sleepless in Seattle,574,5
 Whale Rider,574,3
@@ -21692,14 +21522,7 @@ Once Were Warriors,578,3
 Sleepless in Seattle,578,4
 Rocky Balboa,578,3
 Notes on a Scandal,578,4
-Stranger Than Fiction,578,0
-Say Anything...,578,0
 License to Wed,578,3
-8 Mile,579,0
-Dirty Dancing,579,0
-Escape from the Planet of the Apes,579,0
-Return of the Jedi,579,0
-Halloween,579,0
 Finding Nemo,580,3
 Dancer in the Dark,580,3
 Metropolis,580,1
@@ -21907,7 +21730,6 @@ Bad Boys II,580,4
 Man with a Movie Camera,580,2
 In Time,580,4
 Horrible Bosses,580,4
-The Net,581,0
 2001: A Space Odyssey,582,3
 Knockin' on Heaven's Door,582,3
 Live and Let Die,582,5
@@ -21973,7 +21795,6 @@ Reign Over Me,584,3
 License to Wed,584,3
 Beetlejuice,584,3
 Boogie Nights,584,4
-Turner & Hooch,584,0
 K-19: The Widowmaker,584,5
 My Best Friend's Wedding,584,3
 Bad Boys II,584,3
@@ -22070,7 +21891,6 @@ Men in Black II,586,5
 The Passion of Joan of Arc,586,4
 Krull,586,1
 Enough,586,4
-Rush Hour,586,0
 Boogie Nights,586,5
 Jarhead,587,4
 Pirates of the Caribbean: Dead Man's Chest,587,4
@@ -22081,7 +21901,6 @@ Star Trek II: The Wrath of Khan,587,4
 Edward Scissorhands,587,3
 Amelie,587,4
 Star Trek: First Contact,587,3
-Syriana,587,0
 Zatoichi,587,5
 The Killing,587,3
 Batman Begins,587,4
@@ -22982,14 +22801,12 @@ Rebecca,607,2
 Syriana,607,3
 Live and Let Die,607,4
 The 39 Steps,607,4
-Contempt,607,0
 Underworld,607,3
 High Noon,607,4
 A River Runs Through It,607,4
 Terminator 3: Rise of the Machines,607,5
 Notorious,607,3
 Jurassic Park,607,3
-Night on Earth,607,0
 Batman Returns,607,3
 Rain Man,607,4
 The Pianist,607,3
@@ -23442,7 +23259,6 @@ Fools Rush In,621,3
 The Bourne Supremacy,621,4
 40 Days and 40 Nights,621,4
 American Pie 2,621,4
-Benny & Joon,621,0
 Indecent Proposal,621,5
 Torn Curtain,621,4
 Carrie,621,4
@@ -23568,7 +23384,6 @@ Y Tu Mama Tambien,624,4
 Mirror,624,4
 Cutthroat Island,624,2
 Imagine Me & You,624,2
-Parenthood,624,0
 28 Weeks Later,624,1
 Die Hard 2,624,3
 Rope,624,4
@@ -23639,7 +23454,6 @@ Barry Lyndon,624,4
 U-571,624,4
 Girl with a Pearl Earring,624,4
 No Reservations,624,3
-Corpse Bride,624,0
 Critters,624,2
 Beetlejuice,624,4
 Benny & Joon,624,1
@@ -23664,7 +23478,6 @@ The Orphanage,624,1
 The Village,624,3
 The 40 Year Old Virgin,624,4
 Rising Sun,624,3
-Don't Look Now: We're Being Shot At,624,0
 K-19: The Widowmaker,624,3
 My Best Friend's Wedding,624,4
 Pale Rider,624,3
@@ -23738,7 +23551,6 @@ Big Fish,627,3
 The Hours,627,2
 Titanic,627,3
 Men in Black II,627,3
-The Passion of Joan of Arc,627,0
 Almost Famous,627,1
 M,627,3
 Duel,627,3
@@ -23768,7 +23580,6 @@ In Time,627,4
 Dancer in the Dark,628,3
 Pirates of the Caribbean: Dead Man's Chest,628,3
 Three Colors: Red,628,1
-Muriel's Wedding,628,0
 A River Runs Through It,628,5
 The Great Dictator,628,2
 Stranger Than Fiction,628,3
@@ -24712,7 +24523,6 @@ The 39 Steps,660,4
 Bad Boys II,660,4
 EVA,660,4
 Once Were Warriors,661,4
-Life Is Beautiful,661,0
 Out of the Past,661,2
 Escape from New York,661,4
 Notes on a Scandal,661,4
