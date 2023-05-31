@@ -22,7 +22,6 @@
             <hr/>
 
             <h1>Programming Task 3</h1>
-            <h2>Data Structures 1</h2>
             <hr/>
             <h5>Time Estimate: 7 hours</h5>
             <hr/>
@@ -55,7 +54,7 @@
 
                 <hr/>
                 <p>
-                    There are not testing requirements for this programming task. Instead, the tests are provided for
+                    There are no testing requirements for this programming task. Instead, the tests are provided for
                     you in the tests.TestDataStructures1 class. All of the tests are commented out since the code they test
                     does not exist which would prevent your project from compiling. As you complete parts of the
                     project, you should uncomment the corresponding tests and run this test class to check your
@@ -113,6 +112,9 @@
                                 The returned Linked List must return the Ratings in the order in which they were added.
                                 For example, the first Rating that was added must be the first value in the list.
                             </li>
+                            <li>
+                                If no ratings have been added, this method should return null
+                            </li>
                         </ul>
                     </li>
 
@@ -120,10 +122,10 @@
                     <li>A public method named averageRating that takes no parameters and returns a double
                         <ul>
                             <li>
-                                This method return the average of all the Rating for this Song
+                                This method returns the average of all the Rating for this Song
                             </li>
                             <li>
-                                Technically, ratings of -1 should be ignored, but I forgot to include a test for that,
+                                Technically, ratings of -1 should be ignored, but I didn't include a test for that,
                                 so you'll get away with it if you don't ignore them...
                             </li>
                         </ul>
@@ -131,10 +133,12 @@
 
 
 
-                    <li>A public method named didReviewerRateSong that takes a String representing the ID of a reviewer and returns a boolean
+                    <li>A public method named didReviewerRateSong that takes a String representing the ID of a
+                        reviewer and returns a boolean
                         <ul>
                             <li>
-                                This method returns true if the reviewer with the given ID has rated this Song, false otherwise.
+                                This method returns true if the reviewer with the given ID has rated this Song,
+                                false otherwise.
                             </li>
                         </ul>
                     </li>
@@ -145,14 +149,16 @@
                         <ul>
                             <li>
                                 You should call your didReviewerRateSong method from your addRating method to check if
-                                the reviewer rated this Song yet. If it returns true, don't add the new Rating to your Linked List
+                                the reviewer rated this Song yet. If it returns true, don't add the new Rating to your
+                                Linked List
                             </li>
                         </ul>
                     </li>
 
 
 
-                    <li>A public method named removeRatingByReviewer that takes a Reviewer as a parameter and returns void
+                    <li>A public method named removeRatingByReviewer that takes a Reviewer as a parameter and returns
+                        void
                         <ul>
                             <li>
                                 This method will remove any Rating made for this Song by the given Reviewer

@@ -22,10 +22,10 @@
 
             <hr/>
 
-            <h1>Programming Task 8</h1>
-            <h2>Classes 3</h2>
+            <h1>Programming Task 9</h1>
+            <h2>Data Structures 3</h2>
             <hr/>
-            <h5>Time Estimate: 5 hours</h5>
+            <h5>Time Estimate: 7 hours</h5>
             <hr/>
 
             <div class="card-header section-testing">
@@ -50,29 +50,6 @@
                 <br/>
                 <hr/>
 
-                <h3>
-                    Resources
-                </h3>
-
-                <hr/>
-
-                <p>
-                    In the previous task, you wrote code to load songs and movie data from files into data structures.
-                    In this task, we'll add another file type to read movie ratings from a file. We'll then use these
-                    ratings, and the fact that Song and Movie both inherit from Ratable, to write code that will find
-                    the top rated Songs and Movies.
-                </p>
-
-
-                <h2><a href="static_files/movie_ratings.csv">movie_ratings.csv</a></h2>
-
-                <p><b>Movie Ratings</b>: Download the file above which contains ratings for movies by title in the
-                    format "title,reviewerId,rating". You can use this data to create your smaller testing files.
-                </p>
-
-
-                <br/>
-                <hr/>
 
                 <h3>
                     Testing Requirements
@@ -80,100 +57,48 @@
 
                 <hr/>
                 <p>
-                    For the testing in this task, you will create and use data files for your tests. All of your data
-                    files must be in a directory named "data" in the root of your project. For example, if you have a
-                    test file named "movie_ratings.csv" you should write a test with the filename
-                    "data/movie_ratings.csv" and it will open the correct file from your data directory.
+                    Testing with files is not required for this task, though you still may find generating small test
+                    files useful when writing your tests. If you create test files for your test cases, all of your data
+                    files must be in a directory named "data" in the root of your project following the same structure
+                    as the previous 2 tasks.
                 </p>
 
                 <hr>
 
                 <p>
-                    Write tests in the tests.TestClasses3 class for the following functionality:
+                    Write tests in the tests.TestDataStructures3 class for the following functionality:
                 </p>
 
                 <ul>
-                    <li>A static method named readMovieRatings in the ratings.FileReader class that takes and ArrayList
-                        of Movies and a String as parameters. The methods returns an ArrayList of Movies. Write tests
-                        for this method in the tests.TestClasses3 class
+                    <li>A class named ratings.DegreesOfSeparation with the following features. Add tests for the
+                        functionality of this class in the tests.TestDataStructures3 class
                         <ul>
                             <li>
-                                The input ArrayList of Movies will contain Movie objects with their title and cast
-                                populated. These Movies should not have any ratings added to them. When your program,
-                                runs, it is intended for this ArrayList to be provided by your readMovies method
+                                DegreesOfSeparation has a constructor that takes an ArrayList of Movies
                             </li>
                             <li>
-                                The input String is the name of a file to be read. Test this method with a CSV file
-                                where each line matches the format from the movie_ratings.csv file that you can download
-                                above "title,reviewerId,rating"
+                                The DegreesOfSeparation class has a method named degreesOfSeparation that takes 2
+                                Strings and returns an int. The inputs are the names of 2 cast members, and the method
+                                returns their <a href="https://en.wikipedia.org/wiki/Six_degrees_of_separation">degrees
+                                of separation</a>. This number is how many people need to be traversed
+                                to move from one person to the other where two people are connected if they starred in
+                                a movie together. When computing the degrees of separation, only the
+                                Movies provided to the constructor will be used. If the two cast members are not
+                                connected, or if one of them is not in any of the provided movies, this method returns -1
                             </li>
                             <li>
-                                The method will return an ArrayList of Movies containing all of the ratings read from
-                                the input file. If a Movie from the input ArrayList does not have any ratings in the
-                                ratings file, it should not be included in the output ArrayList. If a Movie has been
-                                rated that is not included in the input ArrayList, the rating should be ignored
+                                Note: The degrees of separation of a person to themselves is 0. If two people have acted
+                                in a movie together, their separation is 1. If two people were never in a movie
+                                together, their separation is the number of movies that separate them. For example, in
+                                the data provided in movies.csv, Chris Pratt and Kevin Bacon have 2 degrees of
+                                separation because Chris Pratt was in Moneyball with Brad Pitt and Brad Pitt was in
+                                Sleepers with Kevin Bacon (Now, Chris Pratt was in The Guardians of the Galaxy Holiday
+                                Special with Kevin Bacon so their separation is 1, but that movie is not in the
+                                movies.csv dataset)
                             </li>
                             <li>
-                                Movies will have unique titles. Any movies with identical titles have been removed
-                                from the source data. Do not write tests where the input ArrayList contains multiple
-                                Movies with the same title
-                            </li>
-                            <li>
-                                If the input file does not exist, the method will return an empty ArrayList
-                            </li>
-                            <li>
-                                The Movies in the returned ArrayList may appear in any order. Your tests should accept
-                                any order of the returned Movies
-                            </li>
-                            <li>
-                                The ratings for each Movie must be in the order in which they appear in the file. When
-                                testing the Linked List of Ratings for a Movie, you can assume that they in the same
-                                order in which they appear in the file (This will make it simpler to test the Linked
-                                List)
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                 <ul>
-                    <li>A class named ratings.MediaLibrary with the following features. Add tests for the functionality
-                        of this class in the tests.TestClasses3 class
-                        <ul>
-                            <li>
-                                MediaLibrary has a constructor that takes no parameters
-                            </li>
-                            <li>
-                                MediaLibrary has a method named populateLibrary that returns void and takes 3 Strings
-                                as parameters representing filenames for songs with ratings, movies (title and cast),
-                                then movie ratings in this order. These three files will match the three static method
-                                you've written in your FileReader class. The expected behavior of this method will
-                                match the expected behavior of those three methods. This method will read all the data
-                                from all
-                                three files and store all of the Songs and Movies as part of the state of the
-                                MediaLibrary object
-                            </li>
-                            <li>
-                                MediaLibrary has a method named topKRatables that takes an int and returns an ArrayList
-                                of Ratable. This method will return the top k ratables that have been loaded using
-                                populateLibrary where k is the input int (eg. topKRatables(10) returns a top 10 list.
-                                The ratables will be ranked by their bayesian average rating with 2 extra ratings of
-                                value 3
-                            </li>
-                            <li>
-                                Note: All these methods should be tested together. To test whether populateLibrary
-                                read the data properly, you must call the topKRatables as there is no other way -
-                                that is defined in this document and can be used in testing - to access the state of
-                                the MediaLibrary object
-                            </li>
-                            <li>
-                                Note: Throughout your testing, you may assume that Songs and Movies have unique titles. When
-                                testing topKRatables, if the returned ArrayList contains the correct titles in the
-                                correct order, your test should pass (ie. you don't have to check any other instance
-                                variables like the ratings Linked List)
-                            </li>
-                            <li>
-                                Note: You don't have to write tests where any 2 Songs or Movies have the same bayesian average
-                                rating. This would be tedious to test since the order can depend on truncation
-                                errors and their would be multiple correct orderings that would all be correct
+                                Note: The movies.csv file provided in task 7 does not contain every single movie.
+                                Some of the degrees of separation, and Bacon Numbers, might be slightly off
                             </li>
                         </ul>
                     </li>
@@ -191,7 +116,7 @@
                 <hr/>
 
                 <p>
-                    Implement all the functionality you tested above
+                    Implement all the ratings.DegreesOfSeparation class you tested above
                 </p>
 
 
@@ -226,22 +151,6 @@
                 <hr/>
 
 
-                <table class="table table-bordered">
-                    <tbody>
-
-                    <tr class="table-warning">
-                        <td colspan="3">Wednesday, April 12 @ 9:00 <b>AM</b><br/>
-                            Expected Deadline
-                        </td>
-                    </tr>
-                    <tr class="table-danger">
-                        <td colspan="3">Wednesday, April 19 @ 9:00 <b>AM</b><br/>
-                            Deadline
-                        </td>
-                    </tr>
-
-                    </tbody>
-                </table>
             </div>
 
 

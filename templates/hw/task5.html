@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
     <link rel="stylesheet" type="text/css" id="darkThemeCss" href="/static_files/darktheme.css" disabled/>
     <link rel="shortcut icon" type="image/x-icon" href="/static_files/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="/static_files/cse116.js"></script>
     <base target="_blank">
@@ -22,9 +23,8 @@
             <hr/>
 
             <h1>Programming Task 5</h1>
-            <h2>Classes 2</h2>
             <hr/>
-            <h5>Time Estimate: 3 hours</h5>
+            <h5>Time Estimate: 8 hours</h5>
             <hr/>
 
             <div class="card-header section-testing">
@@ -53,14 +53,58 @@
                     Testing Requirements
                 </h3>
 
+
                 <hr/>
+
                 <p>
-                    There are no additional testing requirements for this task. Use the tests you wrote in programming
-                    task 4 (In the TestClasses2 class) to help you debug your code in this task. You are encouraged to
-                    write more than the tests that were required for task 4 to help you implement the rest of the
-                    functionality for this task. You may find that even writing code that passes your tests is not
-                    enough to earn credit for this task.
+                    <b>TestDataStructures2:</b> Create a class named TestDataStructures2 in the tests package that
+                    will test the following functionality. You are encouraged to divide your tests cases into
+                    multiple/many individual test methods within this class.
                 </p>
+
+                <ul>
+                    <li>ratings.Playlist - Create a Playlist
+                        class and test the following functionality
+                        <ul>
+                            <li>
+                                A constructor that takes as a parameter a reference to an object of type
+                                Comparator&lt;Song&gt;. In your testing, you can pass either a new SongTitleComparator
+                                or a new SongBayesianRatingComparator:
+                            </li>
+                            <li>A method named addSong that takes a reference to a Song as a parameter and returns void
+                            </li>
+                            <li>
+                                A method named getSongList that takes no parameters and returns a LinkedListNode of
+                                Songs
+                                <ul>
+                                    <li>The returned node will be the head of a linked list containing all the Songs
+                                    that were added in sorted order according to the comparator provided to the
+                                        constructor</li>
+                                    <li>
+                                        If you provided a SongTitleComparator, the Songs will be sorted alphabetically
+                                    </li>
+                                    <li>
+                                        If you provided a SongBayesianRatingComparator, the Songs will be sorted in
+                                        decreasing order (The highest rated songs first) according to their bayesian
+                                        average rating with 2 fake ratings of 3 being added.
+                                    </li>
+                                    <li>
+                                        For either comparator, you do not need to write any tests where two songs will
+                                        be tied in the ordering (eg. you don't have to write a test where 2 songs have
+                                        the same bayesian average ratings)
+                                    </li>
+                                    <li>The returned Songs might be different song objects, but they will contain the
+                                        same title, artist, and ratings as the Songs that were added (eg. You must
+                                        check the values of the Songs and not rely on comparing the references
+                                        with ==)</li>
+                                    <li>If no songs have been added to the Playlist, this method returns null</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
 
                 <br/>
                 <hr/>
@@ -70,178 +114,139 @@
                 </h3>
 
                 <hr/>
+
                 <p>
-                    Recall when you wrote your tests for the Song and Movie classes which had much of the same
-                    functionality. Specifically, your tests for the bayesianAverageRating method could be the same for
-                    both classes and you effectively had duplicate tests. Now, we;ll see that there's a better way
-                    for classes to share code with each other. Both Song and Movie will extend a Ratable class that
-                    will contain all the common code that these classes share.
+                    The code in this task will rely on several classes that we saw in lecture. Add the following
+                    classes to your project to set up for this task:
                 </p>
 
 
                 <ul>
-                    <li>ratings.Ratable - In the ratings package, create a class named Ratable
-                        <ul>
-                            <li>
-                                This class will use the default constructor that takes no parameters (You don't have
-                                to write any constructor
-                            </li>
-                            <li>
-                                Remove all functionality related to title and ratings from the Song class and add to the
-                                Ratable class. This includes title and ratings (LinkedListNode of Ratings) instance
-                                variables and all of the following methods
-                                <ul>
-                                    <li>getTitle</li>
-                                    <li>setTitle</li>
-                                    <li>addRating</li>
-                                    <li>getRatings</li>
-                                    <li>averageRating</li>
-                                    <li>didReviewerRateSong</li>
-                                    <li>removeRatingByReviewer</li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <li>Copy the code for a BinaryTreeNode into your ratings.datastructures package. The code is
+                        provided here for convenience.
                     </li>
-
-                    <li>ratings.Song - Update the Song class to inherit from the Ratable class
-                        <ul>
-                            <li>
-                                You removed 2 instance variables and 6 methods from this class while writing the Ratable
-                                class. However, Song will now inherit all those variables and methods from the Ratable
-                                class
-                            </li>
-                            <li>
-                                You should verify that your Song class does inherit this functionality by running the
-                                TestClasses1 tests and verifying that they all still pass even though that code is not
-                                in the Song class itself.
-                            </li>
-                            <li>
-                                At this point, the Song class should only have instance variables for the artist and id
-                                as well as the following methods with all other state and behavior inherited from
-                                Ratable:
-                                <ul>
-                                    <li>A constructor that takes 3 Strings</li>
-                                    <li>getArtist</li>
-                                    <li>setArtist</li>
-                                    <li>getSongID</li>
-                                    <li>setSongID</li>
-                                </ul>
-                            </li>
-                            <li>
-                                Since the Ratable class does not have a constructor, you should call setTitle in the
-                                Song constructor to set the value of the title instance variable. Alternatively, you
-                                may add a Ratable constructor that takes the title as a parameter and call the super
-                                constructor in the Song constructor.
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>ratings.Movie - Implement the following in the Movie class that you've tested during task 4
-                        <ul>
-                            <li>
-                                Movie will inherit from the Ratable class
-                            </li>
-                            <li>
-                                Movie will have a constructor that takes a String and an ArrayList of Strings
-                                <ul>
-                                    <li>The String represents the title of the Movie and should be set using the
-                                        setTitle method inherited from Ratable</li>
-                                    <li>The ArrayList contains the names of the cast of the Movie and should be stored
-                                        in an instance variable</li>
-                                </ul>
-                            </li>
-                            <li>
-                                Implement a getter for the cast named getCast that returns an ArrayList of Strings
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>ratings.Ratable - Update the Ratable class with the bayesianAverageRating method
-                        <ul>
-                            <li>
-                                Now that both Song and Movie inherit from Ratable, any functionality added to Ratable
-                                will be added to both Songs and Movies. In task 4, you tested a bayesianAverageRating
-                                method in both Song and Movie. In this task, you will only implement this method in
-                                Ratable and your tests for both Song and Movie will pass when you are finished.
-                            </li>
-                            <li>
-                                Implement bayesianAverageRating
-                                <ul>
-                                    <li>This method takes 2 ints as a parameters. The first int is the number of fake
-                                        ratings and the second is the value of those ratings</li>
-                                    <li>The method returns the Bayesian average of the Ratable if the extra rating were
-                                        added</li>
-                                    <li>Important: Do not actually add the fake ratings to you Linked List of Ratings.
-                                        This method should not have any side effects (ie. It should not change the
-                                        state of any objects on the heap). You can test for this by calling
-                                        bayesianAverageRating twice on the same Song/Movie with the same arguments
-                                        and make sure you get the same result both times.
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>ratings.datastructures.Comparator - Add the comparator class to your project in the
-                        ratings.datastructures package
-                        <ul>
-                            <li>This class will take a generic type parameter
-                            </li>
-                            <li>This class uses the default constructor - You do not have to write a constructor
-                            </li>
-                            <li>
-                                This class has a method named compare that takes 2 parameters, both of the type of the
-                                generic
-                                <ul>
-                                    <li>This method can return false on all inputs. It will be overridden by child
-                                        classes</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>ratings.datastructures.SongTitleComparator - Implement the SongTitleComparator that will be used
-                        to sort Songs by their title in alphabetical order
-                        <ul>
-                            <li>This class will inherit from the Comparator class with the generic type being Song
-                            </li>
-                            <li>Override the compare method to take two references to Song objects and returns a boolean
-                                <ul>
-                                    <li>
-                                        This method returns true if the first parameter should come before the second in
-                                    sorted order, and false otherwise
-                                    </li>
-                                    <li>Comparisons should be made using the Strings compareToIgnoreCase method. You
-                                        are not expected to check the characters of the Strings to determine their
-                                        order
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>ratings.datastructures.SongBayesianRatingComparator - Implement the
-                        SongBayesianRatingComparator that will be used
-                        to sort Songs by their bayesian average rating in decreasing order
-                        <ul>
-                            <li>This class will inherit from the Comparator class with the generic type being Song
-                            </li>
-                            <li>Override the compare method to take two references to Song objects and returns a boolean
-                                <ul>
-                                    <li>
-                                        This method returns true if the first parameter has a higher bayesian average
-                                        than the second in, and false otherwise
-                                    </li>
-                                    <li>
-                                        Use 2 extra ratings with value 3 for the bayesian averages
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
+                    <li>An object of this type will be returned by one of your methods and will be tested in AutoLab.
+                    All these methods must exist and be named exactly as they are here or there will be errors during
+                        grading. It's recommended that you copy this code to avoid potential issues</li>
                 </ul>
 
+                <pre><code class="java">package ratings.datastructures;
+
+public class BinaryTreeNode&lt;A> {
+    private A value;
+    private BinaryTreeNode&lt;A> left;
+    private BinaryTreeNode&lt;A> right;
+
+    public BinaryTreeNode(A value,BinaryTreeNode&lt;A> left,BinaryTreeNode&lt;A> right){
+        this.value=value;
+        this.right=right;
+        this.left=left;
+    }
+
+    public A getValue() {
+        return value;
+    }
+
+    public void setValue(A value) {
+        this.value = value;
+    }
+
+    public BinaryTreeNode&lt;A> getLeft() {
+        return left;
+    }
+
+    public void setLeft(BinaryTreeNode&lt;A> left) {
+        this.left = left;
+    }
+
+    public BinaryTreeNode&lt;A> getRight() {
+        return right;
+    }
+
+    public void setRight(BinaryTreeNode&lt;A> right) {
+        this.right = right;
+    }
+}
+</code></pre>
+
+
+
+                <p>
+                    Create a Playlist class in the ratings package with the following functionality. This class will
+                    use a Binary Search Tree (BST) to store a playlist of Songs in sorted order.
+                </p>
+
+
+                <ul>
+                    <li>A constructor that takes a Comparator of Songs
+                        <ul>
+                            <li>
+                                You will use this Comparator in BST to sort the Songs of the Playlist. You should
+                                create any instance variables you'll need when this constructor is called
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li>A method named addSong that takes a reference to a Song and returns void
+                        <ul>
+                            <li>
+                                This method will add the Song to the Playlist by inserting it into a BST with the
+                                comparator from the constructor
+                            </li>
+                            <li>
+                                Note that you are allowed to use the BST code provided in lecture
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>A method named getSongTree that takes no parameters and returns the
+                        ratings.datastructures.BinaryTreeNode of Songs that is the root node of your BST
+                    </li>
+
+
+
+
+                    <li>A method named getSongList that takes a BinaryTreeNode of Songs as a parameter and returns a
+                        ratings.datastructures.LinkedListNode of Songs
+                        <ul>
+                            <li>
+                                This method traverses the tree from the parameter and returns all the Songs in the tree
+                                in a Linked List in sorted order (Assuming the parameter is the root of a BST)
+                            </li>
+                            <li>
+                                Note: This method is expected to contain the majority of the difficulty of this task
+                            </li>
+                            <li>
+                                You should write the next method before this one
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>A method named getSongList that takes no parameters and returns a
+                        ratings.datastructures.LinkedListNode of Songs
+                        <ul>
+                            <li>
+                                This method traverses your BST and returns all the Songs in the tree
+                                in a Linked List in sorted order
+                            </li>
+                            <li>
+                                This method should be one line since you can call your other getSongList method with
+                                the root of your BST as the argument
+                            </li>
+                            <li>
+                                This is the method that you tested earlier in this task. You should write this method while
+                                writing the other getSongList method so you can run your tests and utilize the debugger
+                                while writing your code
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                </ul>
 
                 <br/>
                 <hr/>
@@ -250,43 +255,29 @@
 
                 <hr/>
                 <p>
-                    Since the tests are provided for you in this task, there is only one phase of AutoLab feedback.
+                    The feedback in AutoLab will be given in 3 phases. If you don't complete a phase, then feedback for
+                    the following phase(s) will not be given.
                 </p>
 
                 <ol>
+                    <li>Running your tests on a Correct Solution
+
+                    </li>
+                    <li>Running your tests on several Incorrect Solutions
+
+                    </li>
                     <li>Running my tests on Your Solution
-                        <ul>
-                            <li>
-                                AutoLab will run my tests against your code to check
-                                it for correctness. If you are running, and passing, the provided tests before
-                                submitting, you should pass all the tests in AutoLab.
-                            </li>
-                        </ul>
+
                     </li>
                 </ol>
 
                 <p>
-                    Once you passed the tests, you will have completed this Task and AutoLab will confirm this
-                    with a score of 1 for complete.
+                    Once you complete all 3 phases, you will have completed this Task and AutoLab will confirm this
+                    with a score of 1.0 for complete.
                 </p>
                 <hr/>
 
-                <table class="table table-bordered">
-                    <tbody>
 
-                    <tr class="table-warning">
-                        <td colspan="3">Wednesday, March 15 @ 9:00 <b>AM</b><br/>
-                            Expected Deadline
-                        </td>
-                    </tr>
-                    <tr class="table-danger">
-                        <td colspan="3">Wednesday, March 29 @ 9:00 <b>AM</b><br/>
-                            Deadline
-                        </td>
-                    </tr>
-
-                    </tbody>
-                </table>
             </div>
 
 
@@ -300,6 +291,8 @@
 <script src="/static_files/lib/popper-1.12.9.min.js"></script>
 <script src="/static_files/lib/bootstrap-4.0.0.min.js"></script>
 <script src="/static_files/lib/fontawesome.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>

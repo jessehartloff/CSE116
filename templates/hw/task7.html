@@ -22,8 +22,8 @@
 
             <hr/>
 
-            <h1>Programming Task 7</h1>
-            <h2>Testing 3</h2>
+            <h1>Programming Task 8</h1>
+            <h2>Classes 3</h2>
             <hr/>
             <h5>Time Estimate: 5 hours</h5>
             <hr/>
@@ -57,29 +57,19 @@
                 <hr/>
 
                 <p>
-                    In this task, you will work with real data related to songs and movies. You will create and store
-                    data files that you'll use in your tests in a directory named "data" in your top level project
-                    directory. We'll use 2 different resources to obtain data.
+                    In the previous task, you wrote code to load songs and movie data from files into data structures.
+                    In this task, we'll add another file type to read movie ratings from a file. We'll then use these
+                    ratings, and the fact that Song and Movie both inherit from Ratable, to write code that will find
+                    the top rated Songs and Movies.
                 </p>
 
-                <h2><a href="https://ubratingsongs.com">Rate Songs Here</a></h2>
 
-                <p><b>Song Ratings</b>: Use the link above to rate songs and find CSE116's favorite songs for Spring
-                    2023. Enter your UBIT to add and rate songs. You can also find a link to download "ratings.csv"
-                    which contains all the ratings made on this app as a CSV file in the format
-                    "songID,artist,title,reviewerID,rating". Data from this file can used in your tests
+                <h2><a href="static_files/movie_ratings.csv">movie_ratings.csv</a></h2>
+
+                <p><b>Movie Ratings</b>: Download the file above which contains ratings for movies by title in the
+                    format "title,reviewerId,rating". You can use this data to create your smaller testing files.
                 </p>
 
-                <h2><a href="static_files/movies.csv">movies.csv</a></h2>
-
-<p>Raw data downloaded from - https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?resource=download
-    Copyright - CC0: Public Domain</p>
-
-                <p><b>Movies</b>: Download the file above which contains data for 4575 movies. The format of the file
-                    is "movieTitle,castMember0,castMember1,castMember2,etc" where there can be number of cast members
-                    (There must be at least 1 cast member for every movie in the file). You should use this file, and
-                    create smaller testing files for testing.
-                </p>
 
                 <br/>
                 <hr/>
@@ -92,44 +82,52 @@
                 <p>
                     For the testing in this task, you will create and use data files for your tests. All of your data
                     files must be in a directory named "data" in the root of your project. For example, if you have a
-                    test file named "movies.csv" you should write a test with the filename "data/movies.csv" and it will
-                    open the correct file from your data directory.
+                    test file named "movie_ratings.csv" you should write a test with the filename
+                    "data/movie_ratings.csv" and it will open the correct file from your data directory.
                 </p>
-
-                <img src="/static_files/data.png" alt="where to put the data directory" class="embed-responsive">
 
                 <hr>
 
                 <p>
-                    Create a FileReader class in the ratings package and test the following static methods.
+                    Write tests in the tests.TestClasses3 class for the following functionality:
                 </p>
 
-
                 <ul>
-                    <li>A static method named readSongs that takes a String as a parameter and returns and ArrayList of
-                        Songs. Write tests for this method in a test class named tests.TestClasses3
+                    <li>A static method named readMovieRatings in the ratings.FileReader class that takes and ArrayList
+                        of Movies and a String as parameters. The methods returns an ArrayList of Movies. Write tests
+                        for this method in the tests.TestClasses3 class
                         <ul>
                             <li>
-                                The input String is the name of a file to be read. Test this method with a CSV file
-                                where each line matches the format from the ratings.csv file that you can download from
-                                the song rating app "songID,artist,title,reviewerID,rating"
+                                The input ArrayList of Movies will contain Movie objects with their title and cast
+                                populated. These Movies should not have any ratings added to them. When your program,
+                                runs, it is intended for this ArrayList to be provided by your readMovies method
                             </li>
                             <li>
-                                The method will return an ArrayList of Songs containing all of the information from the
-                                input file. If a song appears in the file more than once, this means that it has been
-                                rated by multiple reviewers. In this case, only one Song object should be returned for
-                                that Song and it should contain all of the ratings from the file
+                                The input String is the name of a file to be read. Test this method with a CSV file
+                                where each line matches the format from the movie_ratings.csv file that you can download
+                                above "title,reviewerId,rating"
+                            </li>
+                            <li>
+                                The method will return an ArrayList of Movies containing all of the ratings read from
+                                the input file. If a Movie from the input ArrayList does not have any ratings in the
+                                ratings file, it should not be included in the output ArrayList. If a Movie has been
+                                rated that is not included in the input ArrayList, the rating should be ignored
+                            </li>
+                            <li>
+                                Movies will have unique titles. Any movies with identical titles have been removed
+                                from the source data. Do not write tests where the input ArrayList contains multiple
+                                Movies with the same title
                             </li>
                             <li>
                                 If the input file does not exist, the method will return an empty ArrayList
                             </li>
                             <li>
-                                The Songs in the returned ArrayList may appear in any order. Your tests must accept any
-                                order of the returned Songs
+                                The Movies in the returned ArrayList may appear in any order. Your tests should accept
+                                any order of the returned Movies
                             </li>
                             <li>
-                                The ratings for each Song must be in the order in which they appear in the file. When
-                                testing the Linked List of Ratings for a Song, you can assume that they in the same
+                                The ratings for each Movie must be in the order in which they appear in the file. When
+                                testing the Linked List of Ratings for a Movie, you can assume that they in the same
                                 order in which they appear in the file (This will make it simpler to test the Linked
                                 List)
                             </li>
@@ -137,29 +135,45 @@
                     </li>
                 </ul>
                  <ul>
-                    <li>A static method named readMovies that takes a String as a parameter and returns and ArrayList
-                        of Movies. Write tests for this method in a test class named tests.TestDataStructures3
+                    <li>A class named ratings.MediaLibrary with the following features. Add tests for the functionality
+                        of this class in the tests.TestClasses3 class
                         <ul>
                             <li>
-                                The input String is the name of a file to be read. Test this method with a CSV file
-                                where each line matches the format from the movies.csv file that you can download above
-                                "movieTitle,castMember0,castMember1,castMember2,etc" where there can be number
-                                of cast members, but there must be at least one cast member per movie
+                                MediaLibrary has a constructor that takes no parameters
                             </li>
                             <li>
-                                The method will return an ArrayList of Movies containing all of the information from the
-                                input file
+                                MediaLibrary has a method named populateLibrary that returns void and takes 3 Strings
+                                as parameters representing filenames for songs with ratings, movies (title and cast),
+                                then movie ratings in this order. These three files will match the three static method
+                                you've written in your FileReader class. The expected behavior of this method will
+                                match the expected behavior of those three methods. This method will read all the data
+                                from all
+                                three files and store all of the Songs and Movies as part of the state of the
+                                MediaLibrary object
                             </li>
                             <li>
-                                If the input file does not exist, the method will return an empty ArrayList
+                                MediaLibrary has a method named topKRatables that takes an int and returns an ArrayList
+                                of Ratable. This method will return the top k ratables that have been loaded using
+                                populateLibrary where k is the input int (eg. topKRatables(10) returns a top 10 list.
+                                The ratables will be ranked by their bayesian average rating with 2 extra ratings of
+                                value 3
                             </li>
                             <li>
-                                The Movies in the returned ArrayList may appear in any order. Your tests must accept any
-                                order of the returned Movies
+                                Note: All these methods should be tested together. To test whether populateLibrary
+                                read the data properly, you must call the topKRatables as there is no other way -
+                                that is defined in this document and can be used in testing - to access the state of
+                                the MediaLibrary object
                             </li>
                             <li>
-                                The cast for each Movie must be in the order in which they appear in the file. You
-                                should assume this order when testing the cast ArrayLists
+                                Note: Throughout your testing, you may assume that Songs and Movies have unique titles. When
+                                testing topKRatables, if the returned ArrayList contains the correct titles in the
+                                correct order, your test should pass (ie. you don't have to check any other instance
+                                variables like the ratings Linked List)
+                            </li>
+                            <li>
+                                Note: You don't have to write tests where any 2 Songs or Movies have the same bayesian average
+                                rating. This would be tedious to test since the order can depend on truncation
+                                errors and their would be multiple correct orderings that would all be correct
                             </li>
                         </ul>
                     </li>
@@ -177,8 +191,7 @@
                 <hr/>
 
                 <p>
-                    Implement the readSongs and readMovies static methods. (Yes, you are actually writing the methods
-                    that you are testing this time)
+                    Implement all the functionality you tested above
                 </p>
 
 
@@ -213,22 +226,6 @@
                 <hr/>
 
 
-                <table class="table table-bordered">
-                    <tbody>
-
-                    <tr class="table-warning">
-                        <td colspan="3">Wednesday, April 5 @ 9:00 <b>AM</b><br/>
-                            Expected Deadline
-                        </td>
-                    </tr>
-                    <tr class="table-danger">
-                        <td colspan="3">Wednesday, April 12 @ 9:00 <b>AM</b><br/>
-                            Deadline
-                        </td>
-                    </tr>
-
-                    </tbody>
-                </table>
             </div>
 
 

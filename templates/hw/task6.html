@@ -23,7 +23,6 @@
             <hr/>
 
             <h1>Programming Task 6</h1>
-            <h2>Data Structures 2</h2>
             <hr/>
             <h5>Time Estimate: 6 hours</h5>
             <hr/>
@@ -43,8 +42,42 @@
 
                 <hr/>
                 <p>
-                    You will continue to add functionality to your existing project from the previous task. There is
+                    You will continue to add functionality to your existing project from the previous tasks. There is
                     no new repository to clone.
+                </p>
+
+                <br/>
+                <hr/>
+
+                <h3>
+                    Resources
+                </h3>
+
+                <hr/>
+
+                <p>
+                    In this task, you will work with real data related to songs and movies. You will create and store
+                    data files that you'll use in your tests in a directory named "data" in your top level project
+                    directory. We'll use 2 different resources to obtain data.
+                </p>
+
+                <h2><a href="https://ubratingsongs.com">Rate Songs Here</a></h2>
+
+                <p><b>Song Ratings</b>: Use the link above to rate songs and find CSE116's favorite songs for Spring
+                    2023. Enter your UBIT to add and rate songs. You can also find a link to download "ratings.csv"
+                    which contains all the ratings made on this app as a CSV file in the format
+                    "songID,artist,title,reviewerID,rating". Data from this file can used in your tests
+                </p>
+
+                <h2><a href="static_files/movies.csv">movies.csv</a></h2>
+
+                <p>Raw data downloaded from - <a href="https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?resource=download">https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?resource=download</a>
+    Copyright - CC0: Public Domain</p>
+
+                <p><b>Movies</b>: Download the file above which contains data for 4575 movies. The format of the file
+                    is "movieTitle,castMember0,castMember1,castMember2,etc" where there can be number of cast members
+                    (There must be at least 1 cast member for every movie in the file). You should use this file, and
+                    create smaller testing files for testing.
                 </p>
 
                 <br/>
@@ -56,15 +89,85 @@
 
                 <hr/>
                 <p>
-                    There are no additional testing requirements for this task. Use the tests you wrote in programming
-                    task 4 (In the TestDataStructures2 class) to help you debug your code in this task. You are
-                    encouraged to write more than the tests that were required for task 4 to help you implement the
-                    rest of the functionality for this task. You may find that even writing code that passes your
-                    tests is not enough to earn credit for this task.
+                    For the testing in this task, you will create and use data files for your tests. All of your data
+                    files must be in a directory named "data" in the root of your project. For example, if you have a
+                    test file named "movies.csv" you should write a test with the filename "data/movies.csv" and it will
+                    open the correct file from your data directory.
                 </p>
 
+                <img src="/static_files/data.png" alt="where to put the data directory" class="embed-responsive">
+
+                <hr>
+
+                <p>
+                    Create a FileReader class in the ratings package and test the following static methods.
+                </p>
+
+
+                <ul>
+                    <li>A static method named readSongs that takes a String as a parameter and returns and ArrayList of
+                        Songs. Write tests for this method in a test class named tests.TestFiles
+                        <ul>
+                            <li>
+                                The input String is the name of a file to be read. Test this method with a CSV file
+                                where each line matches the format from the ratings.csv file that you can download from
+                                the song rating app "songID,artist,title,reviewerID,rating"
+                            </li>
+                            <li>
+                                The method will return an ArrayList of Songs containing all of the information from the
+                                input file. If a song appears in the file more than once, this means that it has been
+                                rated by multiple reviewers. In this case, only one Song object should be returned for
+                                that Song and it should contain all of the ratings from the file
+                            </li>
+                            <li>
+                                If the input file does not exist, the method will return an empty ArrayList
+                            </li>
+                            <li>
+                                The Songs in the returned ArrayList may appear in any order. Your tests must accept any
+                                order of the returned Songs
+                            </li>
+                            <li>
+                                The ratings for each Song must be in the order in which they appear in the file. When
+                                testing the Linked List of Ratings for a Song, you can assume that they in the same
+                                order in which they appear in the file (This will make it simpler to test the Linked
+                                List)
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                 <ul>
+                    <li>A static method named readMovies that takes a String as a parameter and returns and ArrayList
+                        of Movies. Write tests for this method in the test class named tests.TestFiles
+                        <ul>
+                            <li>
+                                The input String is the name of a file to be read. Test this method with a CSV file
+                                where each line matches the format from the movies.csv file that you can download above
+                                "movieTitle,castMember0,castMember1,castMember2,etc" where there can be number
+                                of cast members, but there must be at least one cast member per movie
+                            </li>
+                            <li>
+                                The method will return an ArrayList of Movies containing all of the information from the
+                                input file
+                            </li>
+                            <li>
+                                If the input file does not exist, the method will return an empty ArrayList
+                            </li>
+                            <li>
+                                The Movies in the returned ArrayList may appear in any order. Your tests must accept any
+                                order of the returned Movies
+                            </li>
+                            <li>
+                                The cast for each Movie must be in the order in which they appear in the file. You
+                                should assume this order when testing the cast ArrayLists
+                            </li>
+                        </ul>
+                    </li>
+                 </ul>
+
                 <br/>
+
                 <hr/>
+
 
                 <h3>
                     Programming Requirements
@@ -73,137 +176,10 @@
                 <hr/>
 
                 <p>
-                    The code in this task will rely on several classes that we saw in lecture. Add the following
-                    classes to your project to set up for this task:
+                    Implement the readSongs and readMovies static methods.
                 </p>
 
 
-                <ul>
-                    <li>Copy the code for a BinaryTreeNode into your ratings.datastructures package. The is code
-                        provided here for convenience.
-                    </li>
-                    <li>An object of this type will be returned by one of your methods and will be tested in AutoLab.
-                    All these methods must exist and be named exactly as they are here or there will be errors during
-                        grading. It's recommended that you copy this code to avoid potential issues</li>
-                </ul>
-
-                <pre><code class="java">package ratings.datastructures;
-
-public class BinaryTreeNode&lt;A> {
-    private A value;
-    private BinaryTreeNode&lt;A> left;
-    private BinaryTreeNode&lt;A> right;
-
-    public BinaryTreeNode(A value,BinaryTreeNode&lt;A> left,BinaryTreeNode&lt;A> right){
-        this.value=value;
-        this.right=right;
-        this.left=left;
-    }
-
-    public A getValue() {
-        return value;
-    }
-
-    public void setValue(A value) {
-        this.value = value;
-    }
-
-    public BinaryTreeNode&lt;A> getLeft() {
-        return left;
-    }
-
-    public void setLeft(BinaryTreeNode&lt;A> left) {
-        this.left = left;
-    }
-
-    public BinaryTreeNode&lt;A> getRight() {
-        return right;
-    }
-
-    public void setRight(BinaryTreeNode&lt;A> right) {
-        this.right = right;
-    }
-}
-</code></pre>
-
-
-
-                <p>
-                    Create a Playlist class in the ratings package with the following functionality. This class will
-                    use a Binary Search Tree (BST) to store a playlist of Songs in sorted order.
-                </p>
-
-
-                <ul>
-                    <li>A constructor that takes a Comparator of Songs
-                        <ul>
-                            <li>
-                                You will use this Comparator in BST to sort the Songs of the Playlist. You should
-                                create any instance variables you'll need when this constructor is called
-                            </li>
-                        </ul>
-                    </li>
-
-
-
-                    <li>A method named addSong that takes a reference to a Song and returns void
-                        <ul>
-                            <li>
-                                This method will add the Song to the Playlist by inserting it into a BST with the
-                                comparator from the constructor
-                            </li>
-                            <li>
-                                Note that you are allowed to use the BST code provided in lecture
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>A method named getSongTree that takes no parameters and returns the
-                        ratings.datastructures.BinaryTreeNode of Songs that is the root node of your BST
-                    </li>
-
-
-
-
-                    <li>A method named getSongList that takes a BinaryTreeNode of Songs as a parameter and returns a
-                        ratings.datastructures.LinkedListNode of Songs
-                        <ul>
-                            <li>
-                                This method traverses the tree from the parameter and returns all the Songs in the tree
-                                in a Linked List in sorted order (Assuming the parameter is the root of a BST)
-                            </li>
-                            <li>
-                                Note: This method is expected to contain the majority of the difficulty of this task
-                            </li>
-                            <li>
-                                You should write the next method before this one
-                            </li>
-                        </ul>
-                    </li>
-
-
-                    <li>A method named getSongList that takes no parameters and returns a
-                        ratings.datastructures.LinkedListNode of Songs
-                        <ul>
-                            <li>
-                                This method traverses your BST and returns all the Songs in the tree
-                                in a Linked List in sorted order
-                            </li>
-                            <li>
-                                This method should be one line since you can call your other getSongList method with
-                                the root of your BST as the argument
-                            </li>
-                            <li>
-                                This is the method that you tested in task 4. You should write this method while
-                                writing the other getSongList method so you can run your tests and utilize the debugger
-                                while writing your code
-                            </li>
-                        </ul>
-                    </li>
-
-
-
-                </ul>
 
                 <br/>
                 <hr/>
@@ -212,43 +188,29 @@ public class BinaryTreeNode&lt;A> {
 
                 <hr/>
                 <p>
-                    Since the tests are provided for you in this task, there is only one phase of AutoLab feedback.
+                    The feedback in AutoLab will be given in 3 phases. If you don't complete a phase, then feedback for
+                    the following phase(s) will not be given.
                 </p>
 
                 <ol>
+                    <li>Running your tests on a Correct Solution
+
+                    </li>
+                    <li>Running your tests on several Incorrect Solutions
+
+                    </li>
                     <li>Running my tests on Your Solution
-                        <ul>
-                            <li>
-                                AutoLab will run my tests against your code to check
-                                it for correctness. If you are running, and passing, the provided tests before
-                                submitting, you should pass all the tests in AutoLab.
-                            </li>
-                        </ul>
+
                     </li>
                 </ol>
 
                 <p>
-                    Once you passed the tests, you will have completed this Task and AutoLab will confirm this
-                    with a score of 1 for complete.
+                    Once you complete all 3 phases, you will have completed this Task and AutoLab will confirm this
+                    with a score of 1.0 for complete.
                 </p>
                 <hr/>
 
-                <table class="table table-bordered">
-                    <tbody>
 
-                    <tr class="table-warning">
-                        <td colspan="3">Wednesday, March 29 @ 9:00 <b>AM</b><br/>
-                            Expected Deadline
-                        </td>
-                    </tr>
-                    <tr class="table-danger">
-                        <td colspan="3">Wednesday, April 5 @ 9:00 <b>AM</b><br/>
-                            Deadline
-                        </td>
-                    </tr>
-
-                    </tbody>
-                </table>
             </div>
 
 
