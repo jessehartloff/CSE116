@@ -53,36 +53,21 @@
                 </h3>
 
                 <hr/>
+
                 <p>
-                    There are no testing requirements for this programming task. Instead, the tests are provided for
-                    you in the tests.TestClasses1 class. All of the tests are commented out since the code they test
-                    does not exist which would prevent your project from compiling. As you complete parts of the
-                    project, you should uncomment the corresponding tests and run this test class to check your
-                    functionality. (You can highlight several lines of code and press command+/ on mac or
-                    <a href="https://stackoverflow.com/questions/45432031/intellij-shortcut-to-comment-line">
-                        ctrl+shift+/ on Windows</a> to comment/uncomment all highlighted lines)
+                    Note: You can see feedback in Autolab for your tests without completing the programming portion of
+                    this task, but you must at least create the classes and methods that you test. You can "stub out"
+                    these methods by having them always return a fixed value, but they must exist so the grading code
+                    will compile and run.
                 </p>
 
                 <p>
-                    You will be writing your own tests for most/all future tasks. You should use these tests as an
-                    example of how to approach testing your code.
-                </p>
-
-                <br/>
-                <hr/>
-
-                <h3>
-                    Programming Requirements
-                </h3>
-
-                <hr/>
-                <p>
-                    Implement the following three classes with all of the listed functionality:
+                    Write tests in the tests.TestClasses1 class for the following functionality:
                 </p>
 
 
                 <ul>
-                    <li>ratings.Song - In the ratings package, create a class named Song
+                    <li>ratings.Song - In the ratings package, test a class named Song
                         <ul>
                             <li>
                                 This class will have a constructor that takes 3 parameters in this order:
@@ -93,7 +78,7 @@
                                 </ol>
                             </li>
                             <li>
-                                Implement getter and setter methods for the three constructor parameters named:
+                                Song will have getter and setter methods for the three constructor parameters named:
                                 <ol>
                                     <li>getTitle</li>
                                     <li>setTitle</li>
@@ -104,12 +89,13 @@
                                 </ol>
                             </li>
                             <li>
-                                For this task, you don't need to implement any additional methods in the Song class.
+                                For this task, you don't need to implement any additional methods in the Song class
+                                (We will add to this class in later tasks)
                             </li>
                         </ul>
                     </li>
 
-                    <li>ratings.Rating - In the ratings package, create a class named Rating
+                    <li>ratings.Rating - In the ratings package, Test a class named Rating
                         <ul>
                             <li>
                                 This class will have a constructor that takes 2 parameters in this order:
@@ -119,7 +105,7 @@
                                 </ol>
                             </li>
                             <li>
-                                Implement getter and setter methods for the two constructor parameters named:
+                                Rating will have getter and setter methods for the two constructor parameters named:
                                 <ol>
                                     <li>getReviewerID</li>
                                     <li>setReviewerID</li>
@@ -130,17 +116,13 @@
                             <li>
                                 Ratings must be in the range 1-5. If someone calls setRatings with an invalid rating,
                                 the rating should be set to -1 to indicate that an error has occurred.
-                                (eg. setRating(100) should result in the rating being set to -1)
-                            </li>
-                            <li>
-                                It is good practice to have your constructor call your setter methods. If your
-                                constructor calls setRating, you only have to write code that checks for invalid ratings
-                                once and call that code whenever needed.
+                                (eg. setRating(100) should result in the rating being set to -1). This check must also
+                                apply when the constructor is called with an invalid rating.
                             </li>
                         </ul>
                     </li>
 
-                    <li>ratings.Reviewer - In the ratings package, create a class named Reviewer
+                    <li>ratings.Reviewer - In the ratings package, Test a class named Reviewer
                         <ul>
                             <li>
                                 This class will have a constructor that takes 1 parameter:
@@ -149,22 +131,34 @@
                                 </ol>
                             </li>
                             <li>
-                                Implement getter and setter methods for the constructor parameter named:
+                                Reviewer will have getter and setter methods for the constructor parameter named:
                                 <ol>
                                     <li>getReviewerID</li>
                                     <li>setReviewerID</li>
                                 </ol>
                             </li>
                             <li>
-                                Implement a method named rateSong that takes an int as a parameter and returns a new
-                                Rating object with this reviewer's ID and the rating from the parameter.
+                                Implement a method named rateSong that takes an int as a parameter and returns a
+                                reference to a new Rating object (Using the Rating class described above) with this
+                                reviewer's ID and the rating from the parameter of this method.
                             </li>
                         </ul>
                     </li>
 
 
-
                 </ul>
+
+                <br/>
+                <hr/>
+
+                <h3>
+                    Programming Requirements
+                </h3>
+
+                <hr/>
+                <p>
+                    Implement the Song, Rating, and Reviewer classes with all of the functionality you've tested above.
+                </p>
 
 
                 <br/>
@@ -174,23 +168,24 @@
 
                 <hr/>
                 <p>
-                    Since the tests are provided for you in this task, there is only one phase of AutoLab feedback.
+                    The feedback in AutoLab will be given in 3 phases. If you don't complete a phase, then feedback for
+                    the following phase(s) will not be given.
                 </p>
 
                 <ol>
+                    <li>Running your tests on a Correct Solution
+
+                    </li>
+                    <li>Running your tests on several Incorrect Solutions
+
+                    </li>
                     <li>Running my tests on Your Solution
-                        <ul>
-                            <li>
-                                AutoLab will run my tests against your code to check
-                                it for correctness. If you are running, and passing, the provided tests before
-                                submitting, you should pass all the tests in AutoLab.
-                            </li>
-                        </ul>
+
                     </li>
                 </ol>
 
                 <p>
-                    Once you passed the tests, you will have completed this Task and AutoLab will confirm this
+                    Once you complete all 3 phases, you will have completed this Task and AutoLab will confirm this
                     with a score of 1.0 for complete.
                 </p>
                 <hr/>
