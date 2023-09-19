@@ -10,6 +10,12 @@ def cse116():
     return resp
 
 
+@app.get('/quiz')
+def task1():
+    resp = make_response(render_template('quiz.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
 @app.get('/task1')
 def task1():
     resp = make_response(render_template('hw/task1.html'))
