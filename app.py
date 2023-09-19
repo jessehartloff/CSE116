@@ -11,7 +11,7 @@ def cse116():
 
 
 @app.get('/quiz')
-def task1():
+def quiz():
     resp = make_response(render_template('quiz.html'))
     resp.headers["X-Content-Type-Options"] = "nosniff"
     return resp
