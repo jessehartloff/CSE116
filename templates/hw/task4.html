@@ -60,6 +60,9 @@
                     multiple/many individual test methods within this class.
                 </p>
 
+                <p>Note: You must at least create the 2 comparator classes at the end of the programming requirements
+                    before getting feedback on your tests since the grader will not compile if those classes do not
+                    exist.</p>
 
 
                 <ul>
@@ -82,16 +85,16 @@
                                     <li>If a Song has no ratings and this method is called with 0 additional ratings, return 0.0</li>
                                     <li>Why? When comparing songs (Or anything), it's common to have many songs that are only rated
                                         by a single reviewer who gave it a 5/5. This song would have a perfect average rating
-                                        of 5.0 and would be rated higher than a song that has been rated 10000 times
+                                        of 5.0 and would be rated higher than a song that has been rated 100 times
                                         with an average rating of 4.99. The second song is well-loved by many
-                                        people, and you would [likely] rather have that song in your playlist rather
+                                        people, and you would [likely] rather have that song in your playlist
                                         than the song that only 1 person likes and no one else is aware of. We adjust
                                         this by adding a few fake ratings to each song. In the example of 2 ratings of
                                         3 being added, the first song would be lowered to an average of 3.67 while the
                                         second song's rating would still be 4.99. This provides a more useful
                                         rating system than directly taking the average of all ratings</li>
                                     <li>Do not test with invalid inputs! Your value of the additional ratings should
-                                        have values of 1, 2, 3, 4, or 5 and the number of extra ratings should be >= 0 in
+                                        be 1, 2, 3, 4, or 5 and the number of extra ratings should be >= 0 in
                                         all your test cases. You have enough testing to do without worrying bout the
                                         behavior on invalid inputs</li>
                                 </ul>
@@ -104,7 +107,7 @@
                             <li>A constructor that takes a String and an ArrayList of Strings:
                                 <ul>
                                     <li>The String represents the title of the Movie</li>
-                                    <li>The ArrayList contains the name of the cast members of the Movie as Strings</li>
+                                    <li>The ArrayList contains the names of the cast members of the Movie as Strings</li>
                                 </ul>
                             </li>
                             <li>A Method named getTitle that takes no parameters and returns the title String given
@@ -120,7 +123,7 @@
                                     <li>This method might not return the same exact ArrayList provided to the
                                         constructor, but it will contain the same <em>names</em> in the same order.
                                     However, the names might not have the same combination of upper/lower-case letters.
-                                    Any String in the returned ArrayList containing the correct letter should be
+                                    Any String in the returned ArrayList containing the correct letters should be
                                         considered correct regardless of upper/lower-case</li>
                                     <li>Example: In the constructor, you provide the ArrayList
                                         ["Chris Pratt", "Zoe Saldana", "Dave Bautista"]. All of the following are
@@ -133,7 +136,7 @@
                                 </ul>
                             </li>
                             <li>Methods named addRating and bayesianAverageRating with the same parameters and return
-                                type as the methods in the Song class with the same names:
+                                types as the methods in the Song class with the same names:
                                 <ul>
                                     <li>These methods will behave identically to the methods in your
                                         Song class</li>
@@ -145,8 +148,6 @@
                     </li>
                 </ul>
 
-                <p>Note: You must at least create the 3 comparator classes at the end of the programming requirements
-                    before getting feedback on your tests since the grader will error if those classes do not exist.</p>
 
                 <br/>
                 <hr/>
@@ -270,7 +271,7 @@
                 </ul>
 
                 <p>
-                    Finally, implement the following methods for which you did not write tests. These classes will be
+                    Finally, implement the following classes/methods for which you did not write tests. These classes will be
                     tested in AutoLab, but you are not expected to have tests of your own for these classes.
                 </p>
                 <ul>
