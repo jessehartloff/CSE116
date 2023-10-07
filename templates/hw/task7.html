@@ -56,7 +56,7 @@
                 <hr/>
 
                 <p>
-                    In the previous task, you wrote code to load songs and movie data from files into data structures.
+                    In the previous task, you wrote code to load song and movie data from files into data structures.
                     In this task, we'll add another file type to read movie ratings from a file. We'll then use these
                     ratings, and the fact that Song and Movie both inherit from Ratable, to write code that will find
                     the top rated Songs and Movies.
@@ -85,6 +85,8 @@
                     "data/movie_ratings.csv" and it will open the correct file from your data directory.
                 </p>
 
+
+
                 <hr>
 
                 <p>
@@ -104,7 +106,7 @@
                             <li>
                                 The input String is the name of a file to be read. Test this method with a CSV file
                                 where each line matches the format from the movie_ratings.csv file that you can download
-                                above "title,reviewerId,rating"
+                                above (ie. "title,reviewerId,rating")
                             </li>
                             <li>
                                 The method will return an ArrayList of Movies containing all of the ratings read from
@@ -133,6 +135,14 @@
                         </ul>
                     </li>
                 </ul>
+
+                <p>
+                    Testing Note: You should at least create the MediaLibrary class and its methods so you can see
+                    feedback for your readMovieRatings tests. The methods do not have to return the correct results,
+                    but if they don't exist then the grading code won't compile.
+                </p>
+
+
                  <ul>
                     <li>A class named ratings.MediaLibrary with the following features. Add tests for the functionality
                         of this class in the tests.TestClasses3 class
@@ -143,7 +153,7 @@
                             <li>
                                 MediaLibrary has a method named populateLibrary that returns void and takes 3 Strings
                                 as parameters representing filenames for songs with ratings, movies (title and cast),
-                                then movie ratings in this order. These three files will match the three static method
+                                then movie ratings in this order. These three files will match the three static methods
                                 you've written in your FileReader class. The expected behavior of this method will
                                 match the expected behavior of those three methods. This method will read all the data
                                 from all
@@ -152,10 +162,12 @@
                             </li>
                             <li>
                                 MediaLibrary has a method named topKRatables that takes an int and returns an ArrayList
-                                of Ratable. This method will return the top k ratables that have been loaded using
-                                populateLibrary where k is the input int (eg. topKRatables(10) returns a top 10 list.
+                                of Ratables. This method will return the top k ratables that have been loaded using
+                                populateLibrary where k is the input int (eg. topKRatables(10) returns a top 10 list).
                                 The ratables will be ranked by their bayesian average rating with 2 extra ratings of
-                                value 3
+                                value 3 in decreasing order (eg. The Ratable with the highest bayesian average should
+                                be at index 0). If k is greater than the number of Ratables, return all Ratables (eg.
+                                If k is 100 and there are only 3 Ratables in the library, return all 3).
                             </li>
                             <li>
                                 Note: All these methods should be tested together. To test whether populateLibrary
@@ -164,15 +176,17 @@
                                 the MediaLibrary object
                             </li>
                             <li>
-                                Note: Throughout your testing, you may assume that Songs and Movies have unique titles. When
+                                Note: Throughout your testing, you may assume that Songs and Movies have unique titles.
+                                When
                                 testing topKRatables, if the returned ArrayList contains the correct titles in the
                                 correct order, your test should pass (ie. you don't have to check any other instance
-                                variables like the ratings Linked List)
+                                variables like the ratings Linked List, song ids, artists, or cast members)
                             </li>
                             <li>
-                                Note: You don't have to write tests where any 2 Songs or Movies have the same bayesian average
+                                Note: You don't have to write tests where any 2 Songs or Movies have the same bayesian
+                                average
                                 rating. This would be tedious to test since the order can depend on truncation
-                                errors and their would be multiple correct orderings that would all be correct
+                                errors and there would be multiple correct orderings that would all be correct
                             </li>
                         </ul>
                     </li>
