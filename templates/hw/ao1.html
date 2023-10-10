@@ -47,9 +47,8 @@
                     code
                     that will be executed conditionally. Instead you will apply object-orientation programming
                     approaches to
-                    make decisions based on types instead of values. Specifically, you are expected to use the state
-                    pattern to
-                    complete this assignment.
+                    make decisions based on <em>types</em> instead of <em>values</em>. Specifically, you are expected
+                    to use the state pattern to complete this assignment.
                 </p>
                 <p>
                     The following are banned in your submissions:
@@ -142,23 +141,25 @@
                         The calculator initially displays 0.0
                     </li>
                     <li>
-                        Pressing the number buttons will append that number to the end of the number. For this
+                        Pressing the number buttons will append that number to the end of the displayed number. For this
                         objective, you may assume all the numbers entered will be whole numbers (ie. the decimal button
                         will never be pressed when testing for the first application objective). For example, starting
-                        the calculator and pressing [4, 6, then 1] should result in displayNumber returning 461.0.
+                        the calculator and pressing [4, 6, then 1] should result in displayNumber() returning 461.0.
                         When testing the the number buttons, only call the numberPressed method with an input in the
                         range 0-9. These are the only inputs that the GUI can call the method with and all others
                         should be considered invalid and should not be tested
                     </li>
                     <li>
-                        Test the 4 operator buttons (+, -, *, /). The user can enter a number, press an operator button,
-                        enter another number, then press enter and the displayed number should be the result of the
+                        Test the 4 operator buttons (+, -, *, /). The user can enter a number (With any number of
+                        digits), press an operator button,
+                        enter another number (With any number of digits), then press equals and the displayed
+                        number should be the result of the
                         operation. Ex. If the user presses [2, 5, /, 5, =], displayNumber() should return 5.0
                     </li>
                     <li>
                         After pressing =, another operation can be entered which will use the result of the previous
                         operation as its left hand side value Ex. [2, 0, +, 1, 5, =, /, 1, 0, =] results in 3.5 being
-                        displayed. Ex.  [3, +, 4, =, *, 2, =] results in 14.0 being displayed
+                        displayed. [3, +, 4, =, *, 2, =] results in 14.0 being displayed
                     </li>
                 </ul>
 
@@ -168,7 +169,7 @@
                 the numbers as both Strings and Doubles to build this functionality. When a digit is pressed,
                 concatenate
                 the digit to the end of the String then convert the String to Double and store this separately for the
-                displayNumber method.
+                displayNumber method. (Or convert the String to a double in the displayNumber method)
                 </p>
 
 
@@ -180,7 +181,7 @@
                 </h5>
 
                 <p>
-                    Implement the tested functionality without using control flow
+                    Implement the tested functionality without using any control flow
                 </p>
 
 
@@ -205,10 +206,13 @@
 
                 <ul>
                     <li>
+                        The clear button returns the calculator to it's initial state with 0.0 being displayed
+                    </li>
+                    <li>
                         Test the decimal button allowing for floating point inputs. The first time the decimal button
                         is pressed when number is being entered will determine where the decimal point will be placed.
                         All subsequent presses of the decimal button for that same number will have no effect.
-                        Ex. [1, 2, ., 5, ., ., 0, ., 5] should display 12.505
+                        Ex. [1, 2, ., ., 5, ., ., 0, ., 5] should display 12.505
                     </li>
                     <li>
                         Entering decimal as the first button when entering a number will have 0 as its whole number
@@ -217,9 +221,6 @@
                     <li>
                         Pressing equals multiple times in a row will repeat the previous operation
                         Ex. [8, 0, -, 1, 0, =, =, =, =] results in 40.0 being displayed
-                    </li>
-                    <li>
-                        The clear button returns the calculator to it's initial state with 0.0 being displayed
                     </li>
                 </ul>
 
@@ -231,7 +232,7 @@
                 </h5>
 
                 <p>
-                    Implement the tested functionality without using control flow
+                    Implement the tested functionality without using any control flow
                 </p>
 
                 <hr>
@@ -258,17 +259,6 @@
                 <hr/>
 
 
-                <table class="table table-bordered">
-                    <tbody>
-
-                    <tr class="table-danger">
-                        <td colspan="3">Wednesday, May 3 @ 9:00 <b>AM</b><br/>
-                            Deadline
-                        </td>
-                    </tr>
-
-                    </tbody>
-                </table>
             </div>
 
 
