@@ -66,6 +66,13 @@ def task8():
     return resp
 
 
+@app.get('/ao1')
+def ao1():
+    resp = make_response(render_template('hw/ao1.html'))
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    return resp
+
+
 
 @app.get('/quiz1/1')
 def quiz1_1():
