@@ -1,0 +1,12 @@
+
+
+{% macro homework(content) -%}
+    <tr class="homework">
+        <td colspan="3">
+            <a href="hw/{{ content.url }}">
+                {{ content.title }}
+            </a>
+        </td>
+    </tr>
+{%- endmacro %}
+

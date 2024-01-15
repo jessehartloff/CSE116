@@ -1,0 +1,55 @@
+{
+  "title": "Spring Break",
+  "theme": "intro",
+  "homework": [  ],
+  "lab": "No Lab",
+  "content": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "date": "February ",
+      "title": "____________",
+      "slides": "_______.pdf",
+      "reading_list": [
+        {
+          "url": "_____",
+          "text": "_____"
+        }
+      ]
+    },
+    {
+      "type": "deadline",
+      "day": "Wednesday",
+      "date": "February 1",
+      "time": "10am",
+      "assignment": "Task0",
+      "deadline_type": "final"
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "date": "February ",
+      "title": "________",
+      "slides": "_______.pdf",
+      "reading_list": [
+        {
+          "url": "_____",
+          "text": "_____"
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "day": "Friday",
+      "date": "February ",
+      "title": "___________",
+      "slides": "_______.pdf",
+      "reading_list": [
+        {
+          "url": "_____",
+          "text": "_____"
+        }
+      ]
+    }
+  ]
+}
