@@ -1,0 +1,22 @@
+{
+  "title": "Week 15: Final",
+  "theme": "intro",
+  "homework": [],
+  "lab": "No Lab",
+  "content": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "date": "May 6",
+      "title": "Review",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Friday",
+      "date": "May 10 @ 11:45am - 2:45pm",
+      "title": "Final Exam",
+      "reading_list": []
+    }
+  ]
+}

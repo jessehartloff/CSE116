@@ -1,0 +1,55 @@
+{
+  "title": "Week 4: Classes/OOP 1 - Classes",
+  "theme": "oop",
+  "homework": [
+    {
+      "title": "Programming Task 2: Classes",
+      "url": "task2.html",
+      "released": false
+    }
+  ],
+  "lab": "Practice",
+  "content": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "date": "February 12",
+      "title": "Classes and Objects",
+      "slides": "week3_1_Classes.pdf",
+      "reading_list": [
+        {
+          "url": "https://medium.com/@nickteixeira/stack-vs-heap-whats-the-difference-and-why-should-i-care-5abc78da1a88",
+          "text": "Program Stack and Heap"
+        },
+        {
+          "url": "https://www.w3schools.com/java/java_classes.asp",
+          "text": "Java Classes"
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "date": "February 14",
+      "title": "Classes and Objects",
+      "slides": "week3_2_Classes.pdf",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Friday",
+      "date": "February 16",
+      "title": "Testing Classes and Examples",
+      "slides": "week3_3_Execution_Heap.pdf",
+      "reading_list": []
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "February 16",
+      "time": "11:59pm",
+      "assignment": "Task 1",
+      "deadline_type": "expected"
+    }
+  ]
+}

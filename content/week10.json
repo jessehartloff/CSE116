@@ -1,0 +1,61 @@
+{
+  "title": "Week 10: Classes/OOP - Polymorphism",
+  "theme": "oop",
+  "homework": [
+    {
+      "title": "Programming Task 7: Polymorphism",
+      "url": "task7.html",
+      "released": false
+    }
+  ],
+  "lab": "2nd Chance - Inheritance/Trees Interviews & Quizzes",
+  "content": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "date": "April 1",
+      "title": "Polymorphism",
+      "slides": "Week9_1_Polymorphism.pdf",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "date": "April 3",
+      "title": "Polymorphism",
+      "slides": "Week9_2_Polymorphism_2.pdf",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Friday",
+      "date": "April 5",
+      "title": "Polymorphism Example",
+      "reading_list": []
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "April 5",
+      "time": "11:59pm",
+      "assignment": "Task 6",
+      "deadline_type": "expected"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "April 5",
+      "time": "11:59pm",
+      "assignment": "Task 5",
+      "deadline_type": "late"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "April 5",
+      "time": "11:59pm",
+      "assignment": "Task 4",
+      "deadline_type": "final"
+    }
+  ]
+}

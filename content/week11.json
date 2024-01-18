@@ -1,0 +1,62 @@
+{
+  "title": "Week 11: Data Structures 3 - Graphs",
+  "theme": "ds",
+  "homework": [
+    {
+      "title": "Programming Task 8: Graphs",
+      "url": "task8.html",
+      "released": false
+    }
+  ],
+  "lab": "1st Chance - Polymorphism Interview & Quiz",
+  "content": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "date": "April 8",
+      "title": "Graphs",
+      "slides": "Week10_1_Graphs.pdf",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "date": "April 10",
+      "title": "Graph with BFS",
+      "slides": "Week10_2_Pathfinding.pdf",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Friday",
+      "date": "April 12",
+      "title": "Graph Examples",
+      "slides": "Week10_3_Graphs.pdf",
+      "reading_list": []
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "April 12",
+      "time": "11:59pm",
+      "assignment": "Task 7",
+      "deadline_type": "expected"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "April 12",
+      "time": "11:59pm",
+      "assignment": "Task 6",
+      "deadline_type": "late"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "April 12",
+      "time": "11:59pm",
+      "assignment": "Task 5",
+      "deadline_type": "final"
+    }
+  ]
+}

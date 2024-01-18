@@ -1,0 +1,59 @@
+{
+  "title": "Week 13: AO2 - Algorithms",
+  "theme": "outro",
+  "homework": [
+    {
+      "title": "Application Objective Task 2",
+      "url": "ao2.html",
+      "released": false
+    }
+  ],
+  "lab": "2nd Chance - Polymorphism/Graphs Interviews & Quizzes",
+  "content": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "date": "April 22",
+      "title": "Algorithms",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "date": "April 24",
+      "title": "Algorithms",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Friday",
+      "date": "April 26",
+      "title": "Algorithms",
+      "reading_list": []
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "April 26",
+      "time": "11:59pm",
+      "assignment": "Task 8",
+      "deadline_type": "late"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "April 26",
+      "time": "11:59pm",
+      "assignment": "Task 7",
+      "deadline_type": "final"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "April 26",
+      "time": "11:59pm",
+      "assignment": "Application Objective Task 1",
+      "deadline_type": "final"
+    }
+  ]
+}

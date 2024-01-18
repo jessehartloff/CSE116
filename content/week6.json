@@ -1,0 +1,58 @@
+{
+  "title": "Week 6: Testing 2 - Testing Strategies",
+  "theme": "testing",
+  "homework": [],
+  "lab": "1st Chance - Linked List Interview & Quiz",
+  "content": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "date": "February 26",
+      "title": "Testing Tips",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "date": "February 28",
+      "title": "Testing Data Structures",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Friday",
+      "date": "March 1",
+      "title": "Debugger and Testing",
+      "reading_list": [
+        {
+          "url": "https://www.jetbrains.com/help/idea/debugging-your-first-java-application.html#stopping-debugger",
+          "text": "Debugging in IntelliJ"
+        }
+      ]
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "March 1",
+      "time": "11:59pm",
+      "assignment": "Task 3",
+      "deadline_type": "expected"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "March 1",
+      "time": "11:59pm",
+      "assignment": "Task 2",
+      "deadline_type": "late"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "March 1",
+      "time": "11:59pm",
+      "assignment": "Task 1",
+      "deadline_type": "final"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Week 5: Data Structures 1 - Linked Lists",
+  "theme": "ds",
+  "homework": [
+    {
+      "title": "Programming Task 3: Linked Lists",
+      "url": "task3.html",
+      "released": false
+    }
+  ],
+  "lab": "1st Chance - Classes Interview & Quiz",
+  "content": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "date": "February 19",
+      "title": "Linked List Structure",
+      "slides": "Week4_1_Linked_List.pdf",
+      "reading_list": [
+        {
+          "url": "https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm",
+          "text": "Linked List"
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "date": "February 21",
+      "title": "Linked List Algorithms",
+      "slides": "Week4_2_Linked_List.pdf",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Friday",
+      "date": "February 23",
+      "title": "Stack and Queue",
+      "slides": "Week4_3_Stack_Queue.pdf",
+      "reading_list": [
+        {
+          "url": "https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm",
+          "text": "Stack"
+        },
+        {
+          "url": "https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm",
+          "text": "Queue"
+        }
+      ]
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "February 23",
+      "time": "11:59pm",
+      "assignment": "Task 2",
+      "deadline_type": "expected"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "February 23",
+      "time": "11:59pm",
+      "assignment": "Task 1",
+      "deadline_type": "late"
+    }
+  ]
+}
