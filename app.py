@@ -24,9 +24,9 @@ def cse116():
     return resp
 
 
-@app.get('/hw/<hw>')
-def hw():
-    resp = make_response(render_template('hw/' + str(hw) + '.html'))
+@app.get('/hw/<hw_url>')
+def hw(hw_url):
+    resp = make_response(render_template('hw/' + str(hw_url)))
     resp.headers["X-Content-Type-Options"] = "nosniff"
     return resp
 
