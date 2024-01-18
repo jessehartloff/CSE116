@@ -1,60 +1,45 @@
 {
-  "title": "Week 1: Introduction to Java",
-  "theme": "intro",
-  "homework": [
-    {
-      "title": "task ",
-      "url": "task.html"
-    }
-  ],
-  "lab": "No Lab",
+  "title": "Week 14: Review",
+  "theme": "outro",
+  "homework": [],
+  "lab": "Review",
   "content": [
     {
       "type": "lecture",
       "day": "Monday",
-      "date": "February ",
-      "title": "____________",
-      "slides": "_______.pdf",
-      "reading_list": [
-        {
-          "url": "_____",
-          "text": "_____"
-        }
-      ]
-    },
-    {
-      "type": "deadline",
-      "day": "Wednesday",
-      "date": "February 1",
-      "time": "10am",
-      "assignment": "Task0",
-      "deadline_type": "final"
+      "date": "April 29",
+      "title": "Review",
+      "reading_list": []
     },
     {
       "type": "lecture",
       "day": "Wednesday",
-      "date": "February ",
-      "title": "________",
-      "slides": "_______.pdf",
-      "reading_list": [
-        {
-          "url": "_____",
-          "text": "_____"
-        }
-      ]
+      "date": "May 1",
+      "title": "Review",
+      "reading_list": []
     },
     {
       "type": "lecture",
       "day": "Friday",
-      "date": "February ",
-      "title": "___________",
-      "slides": "_______.pdf",
-      "reading_list": [
-        {
-          "url": "_____",
-          "text": "_____"
-        }
-      ]
+      "date": "May 3",
+      "title": "Review",
+      "reading_list": []
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "May 3",
+      "time": "11:59pm",
+      "assignment": "Task 8",
+      "deadline_type": "final"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "May 3",
+      "time": "11:59pm",
+      "assignment": "Application Objective Task 2",
+      "deadline_type": "final"
     }
   ]
 }

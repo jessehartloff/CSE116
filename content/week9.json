@@ -1,60 +1,52 @@
 {
-  "title": "Week 1: Introduction to Java",
-  "theme": "intro",
+  "title": "Week 9: Testing 3 - Testing and Files ",
+  "theme": "testing",
   "homework": [
     {
-      "title": "task ",
-      "url": "task.html"
+      "title": "Programming Task 6: Files",
+      "url": "task6.html",
+      "released": false
     }
   ],
-  "lab": "No Lab",
+  "lab": "1st Chance - Trees Interview & Quiz",
   "content": [
     {
       "type": "lecture",
       "day": "Monday",
-      "date": "February ",
-      "title": "____________",
-      "slides": "_______.pdf",
-      "reading_list": [
-        {
-          "url": "_____",
-          "text": "_____"
-        }
-      ]
-    },
-    {
-      "type": "deadline",
-      "day": "Wednesday",
-      "date": "February 1",
-      "time": "10am",
-      "assignment": "Task0",
-      "deadline_type": "final"
+      "date": "March 25",
+      "title": "Files and Exceptions",
+      "slides": "Week8_Reading_Files.pdf",
+      "reading_list": []
     },
     {
       "type": "lecture",
       "day": "Wednesday",
-      "date": "February ",
-      "title": "________",
-      "slides": "_______.pdf",
-      "reading_list": [
-        {
-          "url": "_____",
-          "text": "_____"
-        }
-      ]
+      "date": "March 27",
+      "title": "Testing With Files",
+      "reading_list": []
     },
     {
       "type": "lecture",
       "day": "Friday",
-      "date": "February ",
-      "title": "___________",
-      "slides": "_______.pdf",
-      "reading_list": [
-        {
-          "url": "_____",
-          "text": "_____"
-        }
-      ]
+      "date": "March 29",
+      "title": "Debugger Tips",
+      "reading_list": []
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "March 29",
+      "time": "11:59pm",
+      "assignment": "Task 5",
+      "deadline_type": "expected"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "March 29",
+      "time": "11:59pm",
+      "assignment": "Task 4",
+      "deadline_type": "late"
     }
   ]
 }

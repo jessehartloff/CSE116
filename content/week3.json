@@ -1,58 +1,50 @@
 {
-  "title": "Week 1: Introduction to Java",
-  "theme": "intro",
+  "title": "Week 3: Testing 1 - Unit Testing",
+  "theme": "testing",
   "homework": [
     {
-      "title": "task ",
-      "url": "task.html"
+      "title": "Programming Task 1: Unit Testing",
+      "url": "task1.html",
+      "released": true
     }
   ],
-  "lab": "No Lab",
+  "lab": "Practice",
   "content": [
     {
       "type": "lecture",
       "day": "Monday",
-      "date": "February ",
-      "title": "____________",
-      "slides": "_______.pdf",
+      "date": "February 5",
+      "title": "Unit Testing",
+      "slides": "week2_1_Unit_Testing.pdf",
       "reading_list": [
         {
-          "url": "_____",
-          "text": "_____"
+          "url": "https://en.wikipedia.org/wiki/Unit_testing",
+          "text": "Wikipedia: Unit Testing"
         }
       ]
-    },
-    {
-      "type": "deadline",
-      "day": "Wednesday",
-      "date": "February 1",
-      "time": "10am",
-      "assignment": "Task0",
-      "deadline_type": "final"
     },
     {
       "type": "lecture",
       "day": "Wednesday",
-      "date": "February ",
-      "title": "________",
-      "slides": "_______.pdf",
-      "reading_list": [
-        {
-          "url": "_____",
-          "text": "_____"
-        }
-      ]
+      "date": "February 7",
+      "title": "Testing Strings/doubles",
+      "slides": "week2_2_Unit_Testing.pdf",
+      "reading_list": []
     },
     {
       "type": "lecture",
       "day": "Friday",
-      "date": "February ",
-      "title": "___________",
-      "slides": "_______.pdf",
+      "date": "February 9",
+      "title": "Testing and Recursion",
+      "slides": "week2_3_Recursion.pdf",
       "reading_list": [
         {
-          "url": "_____",
-          "text": "_____"
+          "url": "https://en.wikipedia.org/wiki/Recursion",
+          "text": "Wikipedia: Recursion"
+        },
+        {
+          "url": "https://smartpuffin.com/unit-tests-tutorial/",
+          "text": "Unit Testing Tips"
         }
       ]
     }

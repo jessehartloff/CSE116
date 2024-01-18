@@ -1,60 +1,59 @@
 {
-  "title": "Week 1: Introduction to Java",
-  "theme": "intro",
+  "title": "Week 13: AO2 - Algorithms",
+  "theme": "outro",
   "homework": [
     {
-      "title": "task ",
-      "url": "task.html"
+      "title": "Application Objective Task 2",
+      "url": "ao2.html",
+      "released": false
     }
   ],
-  "lab": "No Lab",
+  "lab": "2nd Chance - Polymorphism/Graphs Interviews & Quizzes",
   "content": [
     {
       "type": "lecture",
       "day": "Monday",
-      "date": "February ",
-      "title": "____________",
-      "slides": "_______.pdf",
-      "reading_list": [
-        {
-          "url": "_____",
-          "text": "_____"
-        }
-      ]
-    },
-    {
-      "type": "deadline",
-      "day": "Wednesday",
-      "date": "February 1",
-      "time": "10am",
-      "assignment": "Task0",
-      "deadline_type": "final"
+      "date": "April 22",
+      "title": "Algorithms",
+      "reading_list": []
     },
     {
       "type": "lecture",
       "day": "Wednesday",
-      "date": "February ",
-      "title": "________",
-      "slides": "_______.pdf",
-      "reading_list": [
-        {
-          "url": "_____",
-          "text": "_____"
-        }
-      ]
+      "date": "April 24",
+      "title": "Algorithms",
+      "reading_list": []
     },
     {
       "type": "lecture",
       "day": "Friday",
-      "date": "February ",
-      "title": "___________",
-      "slides": "_______.pdf",
-      "reading_list": [
-        {
-          "url": "_____",
-          "text": "_____"
-        }
-      ]
+      "date": "April 26",
+      "title": "Algorithms",
+      "reading_list": []
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "April 26",
+      "time": "11:59pm",
+      "assignment": "Task 8",
+      "deadline_type": "late"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "April 26",
+      "time": "11:59pm",
+      "assignment": "Task 7",
+      "deadline_type": "final"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "April 26",
+      "time": "11:59pm",
+      "assignment": "Application Objective Task 1",
+      "deadline_type": "final"
     }
   ]
 }

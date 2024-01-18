@@ -1,9 +1,8 @@
 {
-  "title": "Week 2: Intro to Java",
+  "title": "Week 2: Introduction to Java",
   "theme": "intro",
   "homework": [],
-  "lab": "IntelliJ Setup"
-  ,
+  "lab": "IntelliJ Setup",
   "content": [
     {
       "type": "lecture",
@@ -22,12 +21,24 @@
       "type": "lecture",
       "day": "Wednesday",
       "date": "January 31",
-      "title": "Course Intro",
-      "slides": "the_slides.pdf",
+      "title": "Java Data Structures",
+      "slides": "week2_1_Java.pdf",
       "reading_list": [
         {
-          "url": "https://good_read.com/the_internet",
-          "text": "It's a good thing to read"
+          "url": "https://www.w3schools.com/java/java_arraylist.asp",
+          "text": "Java ArrayList"
+        },
+        {
+          "url": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html",
+          "text": "JavaDocs ArrayList"
+        },
+        {
+          "url": "https://www.w3schools.com/java/java_hashmap.asp",
+          "text": "Java HashMap"
+        },
+        {
+          "url": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html",
+          "text": "JavaDocs HashMap"
         }
       ]
     },
@@ -35,14 +46,8 @@
       "type": "lecture",
       "day": "Friday",
       "date": "February 2",
-      "title": "Course Intro",
-      "slides": "the_slides.pdf",
-      "reading_list": [
-        {
-          "url": "https://good_read.com/the_internet",
-          "text": "It's a good thing to read"
-        }
-      ]
+      "title": "Java Examples",
+      "reading_list": []
     }
   ]
 }

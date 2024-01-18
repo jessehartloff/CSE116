@@ -1,60 +1,59 @@
 {
-  "title": "Week 1: Introduction to Java",
-  "theme": "intro",
+  "title": "Week 7: Classes/OOP 2 - Inheritance",
+  "theme": "oop",
   "homework": [
     {
-      "title": "task ",
-      "url": "task.html"
+      "title": "Programming Task 4: Inheritance",
+      "url": "task4.html",
+      "released": false
     }
   ],
-  "lab": "No Lab",
+  "lab": "2nd Chance - Classes/Linked List Interviews & Quizzes",
   "content": [
     {
       "type": "lecture",
       "day": "Monday",
-      "date": "February ",
-      "title": "____________",
-      "slides": "_______.pdf",
+      "date": "March 4",
+      "title": "Inheritance",
+      "slides": "Week6_1_Inheritance.pdf",
       "reading_list": [
         {
-          "url": "_____",
-          "text": "_____"
+          "url": "https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html",
+          "text": "Inheritance"
         }
       ]
-    },
-    {
-      "type": "deadline",
-      "day": "Wednesday",
-      "date": "February 1",
-      "time": "10am",
-      "assignment": "Task0",
-      "deadline_type": "final"
     },
     {
       "type": "lecture",
       "day": "Wednesday",
-      "date": "February ",
-      "title": "________",
-      "slides": "_______.pdf",
-      "reading_list": [
-        {
-          "url": "_____",
-          "text": "_____"
-        }
-      ]
+      "date": "March 6",
+      "title": "Inheritance and Override",
+      "slides": "Week6_2_Inheritance.pdf",
+      "reading_list": []
     },
     {
       "type": "lecture",
       "day": "Friday",
-      "date": "February ",
-      "title": "___________",
-      "slides": "_______.pdf",
-      "reading_list": [
-        {
-          "url": "_____",
-          "text": "_____"
-        }
-      ]
+      "date": "March 8",
+      "title": "Sorting with Comparators",
+      "slides": "Week6_3_Comparators.pdf",
+      "reading_list": []
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "March 8",
+      "time": "11:59pm",
+      "assignment": "Task 3",
+      "deadline_type": "late"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "March 8",
+      "time": "11:59pm",
+      "assignment": "Task 2",
+      "deadline_type": "final"
     }
   ]
 }
