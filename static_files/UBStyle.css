@@ -129,7 +129,7 @@ p, li {
 }
 
 td.date{
-    /*width: 20%;*/
+    width: 20%;
     white-space: nowrap;
 }
 
