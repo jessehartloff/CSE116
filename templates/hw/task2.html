@@ -1,211 +1,298 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CSE116: Computer Science 2</title>
-    <link rel="stylesheet" href="/static_files/lib/bootstrap-4.0.0.min.css">
-    <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
-    <link rel="stylesheet" type="text/css" id="darkThemeCss" href="/static_files/darktheme.css" disabled/>
-    <link rel="shortcut icon" type="image/x-icon" href="/static_files/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="/static_files/cse116.js"></script>
-    <base target="_blank">
-</head>
+{% extends 'hw/hw.html' %}
 
-<body class="outer" onload="bodyLoaded();">
-<div class="container">
-    <div class="row">
-        <div class="col-0 col-sm-0 col-md-1"></div>
-        <div class="col-12 col-sm-12 col-md-10 main-hw-block">
+{% block title %}CSE116: Task 2{% endblock %}
 
+{% block header %}
+    <h1>Programming Task 2</h1>
+    <hr/>
+    <h5>Time Estimate: 5 hours</h5>
+    <hr/>
+{% endblock %}
 
-            <hr/>
+{% block task %}
 
-            <h1>Programming Task 2</h1>
-            <hr/>
-            <h5>Time Estimate: 5 hours</h5>
-            <hr/>
-
-            <div class="card-header section-testing">
-                <div>Requirements</div>
-            </div>
-
-            <div class="section-card card-testing hw-content">
-
-                <hr/>
-
-
-                <h3>
-                    Project Structure
-                </h3>
-
-                <hr/>
-                <p>
-                    You will continue to add functionality to your existing project from the previous task. There is
-                    no new repository to clone.
-                </p>
-
-                <br/>
-                <hr/>
-
-                <h3>
-                    Testing Requirements
-                </h3>
-
-                <hr/>
-
-                <p>
-                    Note: You can see feedback in Autolab for your tests without completing the programming portion of
-                    this task, but you must at least create the classes and methods that you test. You can "stub out"
-                    these methods by having them always return a fixed value, but they must exist so the grading code
-                    will compile and run.
-                </p>
-
-                <p>
-                    Write tests in the tests.TestClasses1 class for the following functionality:
-                </p>
-
-
-                objective 1
-                objective 2
-                etc.
-                <ul>
-                    <li>ratings.Song - In the ratings package, test a class named Song
-                        <ul>
-                            <li>
-                                This class will have a constructor that takes 3 parameters in this order:
-                                <ol>
-                                    <li>A String representing the title of the Song</li>
-                                    <li>A String representing the artist of the Song</li>
-                                    <li>A String representing the Songs ID</li>
-                                </ol>
-                            </li>
-                            <li>
-                                Song will have getter and setter methods for the three constructor parameters named:
-                                <ol>
-                                    <li>getTitle</li>
-                                    <li>setTitle</li>
-                                    <li>getArtist</li>
-                                    <li>setArtist</li>
-                                    <li>getSongID <-- Note that both characters in ID are capital</li>
-                                    <li>setSongID</li>
-                                </ol>
-                            </li>
-                            <li>
-                                For this task, you don't need to implement any additional methods in the Song class
-                                (We will add to this class in later tasks)
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>ratings.Rating - In the ratings package, Test a class named Rating
-                        <ul>
-                            <li>
-                                This class will have a constructor that takes 2 parameters in this order:
-                                <ol>
-                                    <li>A String representing the ID of the reviewer who gave the rating</li>
-                                    <li>An int representing the rating that the reviewer gave</li>
-                                </ol>
-                            </li>
-                            <li>
-                                Rating will have getter and setter methods for the two constructor parameters named:
-                                <ol>
-                                    <li>getReviewerID</li>
-                                    <li>setReviewerID</li>
-                                    <li>getRating</li>
-                                    <li>setRating</li>
-                                </ol>
-                            </li>
-                            <li>
-                                Ratings must be in the range 1-5. If someone calls setRatings with an invalid rating,
-                                the rating should be set to -1 to indicate that an error has occurred.
-                                (eg. setRating(100) should result in the rating being set to -1). This check must also
-                                apply when the constructor is called with an invalid rating.
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>ratings.Reviewer - In the ratings package, Test a class named Reviewer
-                        <ul>
-                            <li>
-                                This class will have a constructor that takes 1 parameter:
-                                <ol>
-                                    <li>A String representing the ID of the reviewer</li>
-                                </ol>
-                            </li>
-                            <li>
-                                Reviewer will have getter and setter methods for the constructor parameter named:
-                                <ol>
-                                    <li>getReviewerID</li>
-                                    <li>setReviewerID</li>
-                                </ol>
-                            </li>
-                            <li>
-                                Implement a method named rateSong that takes an int as a parameter and returns a
-                                reference to a new Rating object (Using the Rating class described above) with this
-                                reviewer's ID and the rating from the parameter of this method.
-                            </li>
-                        </ul>
-                    </li>
-
-
-                </ul>
-
-                <br/>
-                <hr/>
-
-                <h3>
-                    Programming Requirements
-                </h3>
-
-                <hr/>
-                <p>
-                    Implement the Song, Rating, and Reviewer classes with all of the functionality you've tested above.
-                </p>
-
-
-                <br/>
-                <hr/>
-
-                <h3>Autolab Feedback</h3>
-
-                <hr/>
-                <p>
-                    The feedback in Autolab will be given in 3 phases. If you don't complete a phase, then feedback for
-                    the following phase(s) will not be given.
-                </p>
-
-                <ol>
-                    <li>Running your tests on a Correct Solution
-
-                    </li>
-                    <li>Running your tests on several Incorrect Solutions
-
-                    </li>
-                    <li>Running my tests on Your Solution
-
-                    </li>
-                </ol>
-
-                <p>
-                    Once you complete all 3 phases, you will have completed this Task and Autolab will confirm this
-                    with a score of 1.0 for complete.
-                </p>
-                <hr/>
-
-            </div>
-
-
-        </div>
-        <div class="col-0 col-sm-0 col-md-1"></div>
+    <div class="card-header section-testing">
+        <div>Requirements</div>
     </div>
-</div>
+
+    <div class="section-card card-testing hw-content">
+
+        <hr/>
 
 
-<script src="/static_files/lib/jquery-3.3.1.min.js"></script>
-<script src="/static_files/lib/popper-1.12.9.min.js"></script>
-<script src="/static_files/lib/bootstrap-4.0.0.min.js"></script>
-<script src="/static_files/lib/fontawesome.js"></script>
+        <h3>
+            Project Structure
+        </h3>
 
-</body>
-</html>
+        <hr/>
+        <p>
+            You will continue to add functionality to your existing project from the previous task. There is
+            no new repository to clone.
+        </p>
+
+        <br/>
+        <hr/>
+        <h3>Specification</h3>
+        <hr/>
+
+        <p>In this task, you will test and implement the following specs:</p>
+
+        <p>
+            Note: All methods are public and non-static, unless otherwise noted, from this point forward in the
+            course.
+        </p>
+
+        <ul>
+            <li>ratings.Song - In the ratings package, a class named Song
+                <ul>
+                    <li>
+                        This class will have a constructor that takes 3 parameters in this order:
+                        <ol>
+                            <li>A String representing the title of the Song</li>
+                            <li>A String representing the artist of the Song</li>
+                            <li>A String representing the Songs ID</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Song will have getter and setter methods for the three constructor parameters named:
+                        <ol>
+                            <li>getTitle</li>
+                            <li>setTitle</li>
+                            <li>getArtist</li>
+                            <li>setArtist</li>
+                            <li>getSongID <-- Note that both characters in ID are capital</li>
+                            <li>setSongID</li>
+                        </ol>
+                    </li>
+                    <li>
+                        For this task, you don't need to implement any additional methods in the Song class
+                        (We will add to this class in later tasks)
+                    </li>
+                </ul>
+            </li>
+
+            <li>ratings.Rating - In the ratings package, a class named Rating
+                <ul>
+                    <li>
+                        This class will have a constructor that takes 2 parameters in this order:
+                        <ol>
+                            <li>A String representing the ID of the reviewer who gave the rating</li>
+                            <li>An int representing the rating that the reviewer gave</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Rating will have getter and setter methods for the two constructor parameters named:
+                        <ol>
+                            <li>getReviewerID</li>
+                            <li>setReviewerID</li>
+                            <li>getRating</li>
+                            <li>setRating</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Ratings must be in the range 1-5. If someone calls setRatings with an invalid rating,
+                        the rating should be set to -1 to indicate that an error has occurred.
+                        (eg. setRating(100) should result in the rating being set to -1). This check must also
+                        apply when the constructor is called with an invalid rating.
+                    </li>
+                </ul>
+            </li>
+
+            <li>ratings.Reviewer - In the ratings package, a class named Reviewer
+                <ul>
+                    <li>
+                        This class will have a constructor that takes 1 parameter:
+                        <ol>
+                            <li>A String representing the ID of the reviewer</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Reviewer will have getter and setter methods for the constructor parameter named:
+                        <ol>
+                            <li>getReviewerID</li>
+                            <li>setReviewerID</li>
+                        </ol>
+                    </li>
+                    <li>
+                        rateSong - Reviewer will have a method named rateSong that takes an int as a parameter
+                        and returns a reference to a new Rating object (Using the Rating class described
+                        above) with this reviewer's ID and the rating from the parameter of this method.
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
+
+        <p>
+            Note: You can see feedback in Autolab for your testing utilities and tests without completing the
+            programming portion of
+            this task, but you must at least create the classes and methods that you test. You can "stub out"
+            these methods by having them always return a fixed value, but they must exist so the grading code,
+            and your tests, can compile and run.
+        </p>
+
+        <br/>
+        <hr/>
+        <h3>Testing Utilities</h3>
+        <hr/>
+
+        <p>
+            To help you write your tests, you will write several testing utility methods. These methods are
+            meant to help you write your unit tests. These methods will compare Song, Rating, and Reviewer
+            objects for equality. When writing test cases, you should create an object with the values that you
+            expect, call the method to be tested to create an object of the same type, then call your utility
+            method to check if the 2 objects contain all the same values.
+        </p>
+
+        <p>
+            Create a class named TestClasses1 in the tests package (tests.TestClasses1) and write the
+            following methods in that class (Note: Do not add the @Test annotation to these methods since they
+            are not tests):
+        </p>
+
+        <ul>
+            <li>compareSongs - Write a method named compareSongs in the tests.TestClasses1 class that
+                <ul>
+                    <li>
+                        Takes [references to] 2 Song objects as parameters
+                    </li>
+                    <li>
+                        Returns a boolean that is true if the title, artist, and id of both Songs are exactly
+                        the same. The method either returns false, or fails a JUnit assert, if the Songs do not
+                        have all the same values
+                    </li>
+                    <li>
+                        If the 2 Songs do not have all the same values you can either: return false, or have
+                        an assert that fails. This gives you the option of using assertTrue, assertEquals, etc.
+                        in your utility methods instead of returning false when the test should fail. It is
+                        recommended that you write this method with assert statements, then add "return true"
+                        as the last line of the method. The method will never return false, but if any assert
+                        fails the test will fail without reaching your "return true" line. If you chose to not
+                        use asserts and instead return false when the Songs are not identical, be sure to add
+                        assertTrue in your test cases when you call this method. (This structure is the same for
+                        all utility methods)
+                    </li>
+                </ul>
+            </li>
+            <li>compareRatings - Write a method named compareRatings in the tests.TestClasses1 class that
+                <ul>
+                    <li>
+                        Takes [references to] 2 Rating objects
+                    </li>
+                    <li>
+                        Returns a boolean that is true if the rating and reviewerID of both Ratings are exactly
+                        the same. The method either returns false, or fails a JUnit assert, if the Ratings do
+                        not have all the same values
+                    </li>
+                </ul>
+            </li>
+            <li>compareReviewers - Write a method named compareReviewers in the tests.TestClasses1 class that
+                <ul>
+                    <li>
+                        Takes [references to] 2 Reviewer objects
+                    </li>
+                    <li>
+                        Returns a boolean that is true if the reviewerID of both Reviewers are exactly
+                        the same. The method either returns false, or fails a JUnit assert, if the Reviewers do
+                        not have the same reviewerID
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <br/>
+        <hr/>
+        <h3>
+            Testing Requirements
+        </h3>
+        <hr/>
+
+        <p>
+            Add test methods to the tests.TestClasses1 class, using the @Test annotation, that tests all the
+            methods in the Specification section. You should call your testing utility methods to save time while
+            writing these tests.
+        </p>
+
+        <br/>
+        <hr/>
+        <h3>
+            Programming Requirements
+        </h3>
+        <hr/>
+
+        <p>
+            Implement the Song, Rating, and Reviewer classes with all the functionality from the specification.
+            As you're writing this code, you should run your tests to see how you are progressing. It's
+            recommended that you write your tests first, submit to Autolab to make sure your have good testing,
+            then use those verified tests to check your code.
+        </p>
+
+
+        <br/>
+        <hr/>
+        <h3>Autolab Feedback</h3>
+        <hr/>
+
+        <p>
+            The feedback in Autolab will be given in 4 phases. If you don't complete a phase, then feedback for
+            the following phase(s) will not be provided.
+        </p>
+
+        <ol>
+            <li>Testing your testing utility methods
+                <ul>
+                    <li>
+                        Each of your testing utility methods will be checked with a variety of test cases to ensure that
+                        they make all the required checks. This phase will ensure that your utility methods are accurate
+                        before you start using them in your tests
+                    </li>
+                </ul>
+            </li>
+            <li>Running your tests on a correct solution
+                <ul>
+                    <li>Your tests will be run against a solution that is known to be correct. If your tests do
+                        not pass this correct solution, there is an error somewhere in your tests that must be
+                        fixed
+                        before you can move on with the assignment. If your tests don't get past this check, you
+                        should re-read this document and make sure you implemented your tests and code according
+                        the specification. You should also make sure that if there are multiple correct outputs
+                        to the input in your tests cases that you accept any of the outputs as correct
+                    </li>
+                </ul>
+            </li>
+            <li>Checking your tests for feature coverage
+                <ul>
+                    <li>
+                        The next phase is to check if your tests check for a variety of features defined by
+                        different inputs. You should write at least one test case for each feature to pass this
+                        phase
+                    </li>
+                    <li>
+                        Passing this phase does not necessarily mean that your testing is completely thorough.
+                        Satisfying Autolab is the bare minimum testing requirement. Not all possible inputs are
+                        checked, and it is sometimes possible to pass this phase
+                        with weak testing. If you are struggling to earn credit for code that you believe
+                        is correct, you should write more than the required tests
+                    </li>
+                </ul>
+            </li>
+            <li>Running my tests on your solution
+                <ul>
+                    <li>
+                        Once Autolab is happy with your tests, it will run my tests against your code to check
+                        it for correctness. If your testing is thorough, and your code passes your tests, then
+                        you should pass this phase. If you pass your tests, but fail one of mine, it is an
+                        indicator that you should write more tests to help expose your bug
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+        <p>
+            Once you complete all 4 phases, you will have completed this Task and Autolab will confirm this
+            with a score of 1.0 for complete.
+        </p>
+    </div>
+{% endblock %}
