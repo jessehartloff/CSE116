@@ -155,16 +155,14 @@
                         Takes [references to] 2 LinkedListNode&lt;Rating&gt; objects as parameters
                     </li>
                     <li>
-                        Returns a boolean that is true if the title, artist, and id of all Songs in both lists are
+                        Returns a boolean that is true if the rating and reviewer id of all Ratings in both lists are
                         exactly the same and are in the same order. The method either returns false, or fails a JUnit
-                        assert, if the lists do not contain all the same values for their songs in the same order
+                        assert, if the lists do not contain all the same values of their ratings objects in the same
+                        order
                     </li>
                     <li>
-                        Note that you cannot use == or .equals to compare 2 Songs. You must check all 3 of their values
-                        separately. Luckily, you already wrote, and tested, a compareSongs method that does exactly
-                        this. Since the method is in a different class and is non-static, you'll need to create a new
-                        TestClasses1 object and call your method through that object. Note that you do not have to
-                        import TestClasses1 since it's in the same package as TestDataStructures1
+                        Note that you cannot use == or .equals to compare 2 Ratings. You must check the rating and
+                        reviewer id values separately
                     </li>
                 </ul>
             </li>
