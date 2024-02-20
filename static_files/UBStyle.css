@@ -2,6 +2,14 @@
     margin-top: 20px;
 }
 
+code {
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: unset;
+    background-color: #ddd;
+    font-family: "JetBrains Mono",Consolas,"Liberation Mono","Courier New",monospace;
+}
+
 .table {
     /* Remove the annoying space under each table */
     margin-bottom: 0;
