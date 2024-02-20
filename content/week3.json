@@ -5,10 +5,10 @@
     {
       "title": "Programming Task 1: Unit Testing",
       "url": "task1.html",
-      "released": false
+      "released": true
     }
   ],
-  "lab": "Practice",
+  "lab": "Practice Quiz and Interview",
   "content": [
     {
       "type": "lecture",

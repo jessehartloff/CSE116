@@ -2,62 +2,6 @@
 
 {% block content %}
 {% block task %}{% endblock %}
-                <br/>
-                <hr/>
 
-                <h3>Autolab Feedback</h3>
 
-                <hr/>
-                <p>
-                    The feedback in Autolab will be given in 3 phases. If you don't complete a phase, then feedback for
-                    the following phase(s) will not be given.
-                </p>
-
-                <ol>
-                    <li>Running your tests on a Correct Solution
-                        <ul>
-                            <li>Your tests will be run against a solution that is known to be correct. If your tests do
-                                not pass this correct solution, there is an error somewhere in your tests that must be
-                                fixed
-                                before you can move on with the assignment. This can be caused by misunderstanding the
-                                task
-                                requirements from this document, or rejecting alternate solutions (eg. Only accepting
-                                one
-                                possible answer when there is a tie for bestKey)
-                            </li>
-                        </ul>
-                    </li>
-                    <li>Running your tests on several Incorrect Solutions
-                        <ul>
-                            <li>
-                                The next phase is to run your tests against incorrect solutions. This will assess the
-                                thoroughness of your tests. Your tests must be able to fail all of the incorrect
-                                solutions to pass this phase. If your tests pass an incorrect solution, it is an
-                                indicator that you need to add more testing
-                            </li>
-                            <li>
-                                Passing this phase does not necessarily mean that your testing is completely thorough.
-                                Satisfying Autolab is the bare minimum testing requirement. The incorrect solutions will
-                                not cover every possible mistake, and it is sometimes possible to pass this phase
-                                with very weak testing. If you are struggling to earn credit for code that you believe
-                                is correct, you should write more than the required tests
-                            </li>
-                        </ul>
-                    </li>
-                    <li>Running my tests on Your Solution
-                        <ul>
-                            <li>
-                                Once Autolab is happy with your tests, it will run my tests against your code to check
-                                it for correctness. If your testing is thorough, and your code passes your tests, then
-                                you should pass this phase. If you pass your tests, but fail one of mine, it is an
-                                indicator that you should write more tests to help expose your bug
-                            </li>
-                        </ul>
-                    </li>
-                </ol>
-
-                <p>
-                    Once you complete all 3 phases, you will have completed this Task and Autolab will confirm this
-                    with a score of 1.0 for complete.
-                </p>
-            </div>{% endblock %}
+{% endblock %}

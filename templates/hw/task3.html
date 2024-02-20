@@ -1,205 +1,276 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CSE116: Computer Science 2</title>
-    <link rel="stylesheet" href="/static_files/lib/bootstrap-4.0.0.min.css">
-    <link rel="stylesheet" type="text/css" href="/static_files/UBStyle.css"/>
-    <link rel="stylesheet" type="text/css" id="darkThemeCss" href="/static_files/darktheme.css" disabled/>
-    <link rel="shortcut icon" type="image/x-icon" href="/static_files/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="/static_files/cse116.js"></script>
-    <base target="_blank">
-</head>
+{% extends 'hw/hw.html' %}
 
-<body class="outer" onload="bodyLoaded();">
-<div class="container">
-    <div class="row">
-        <div class="col-0 col-sm-0 col-md-1"></div>
-        <div class="col-12 col-sm-12 col-md-10 main-hw-block">
+{% block title %}CSE116: Task 3{% endblock %}
 
+{% block header %}
+    <h1>Programming Task 3</h1>
+    <hr/>
+    <h5>Time Estimate: 6 hours</h5>
+    <hr/>
+{% endblock %}
 
-            <hr/>
+{% block task %}
 
-            <h1>Programming Task 3</h1>
-            <hr/>
-            <h5>Time Estimate: 6 hours</h5>
-            <hr/>
-
-            <div class="card-header section-testing">
-                <div>Requirements</div>
-            </div>
-
-            <div class="section-card card-testing hw-content">
-
-                <hr/>
-
-
-                <h3>
-                    Project Structure
-                </h3>
-
-                <hr/>
-                <p>
-                    You will continue to add functionality to your existing project from the previous task. There is
-                    no new repository to clone.
-                </p>
-
-                <br/>
-                <hr/>
-
-                <h3>
-                    Testing Requirements
-                </h3>
-
-                <hr/>
-
-                <p>
-                    You will write tests for methods in the ratings.Song class. Use the provided
-                    ratings.datastructures.LinkedListNode class whenever a linked list is needed.
-                    The song class will contain the following methods that can be used to help you while testing:
-                </p>
-
-                <ul>
-
-                    <li>A public method named <code>addRating</code> that takes a [reference to a] an object of type Rating as a
-                        parameter (The type of the input is Rating) and returns void
-                        <ul>
-                            <li>
-                                This method will be called when a Reviewer rates this Song. All
-                                added Ratings will be stored in a Linked List as an instance variable
-                            </li>
-                            <li>
-                                This method will append new ratings to the end of the linked list
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>A public method named <code>getRatings</code> that takes no parameters and returns a LinkedListNode of
-                        Ratings
-                        <ul>
-                            <li>
-                                This method returns the head of a Linked List containing all Ratings that have been
-                                added to this Song
-                            </li>
-                            <li>
-                                The returned Linked List must return the Ratings in the order in which they were added.
-                                For example, the first Rating that was added must be the first value in the list
-                            </li>
-                            <li>
-                                If no ratings have been added, this method will return null
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>A public method named <code>setRatings</code> that takes a LinkedListNode of Ratings and returns void
-                        <ul>
-                            <li>
-                                This is a setter that replaces the stored linked list of ratings (The instance variable)
-                                with the one provided as a parameter
-                            </li>
-                        </ul>
-                    </li>
-
-                </ul>
-
-                <p>
-                Write tests in the <code>tests.TestDataStructures1</code> class for the following functionality. All methods will
-                    be in the ratings.Song class:
-                </p>
-
-
-                <ul>
-
-                    <li>A public method named <code>averageRating</code> that takes no parameters and returns a double
-                        <ul>
-                            <li>
-                                This method returns the average of all the Rating of this Song
-                            </li>
-                            <li>
-                                If the list is empty, the method returns 0.0
-                            </li>
-                            <li>
-                                Any invalid rating, ratings of -1, will be ignored during this calculation
-                            </li>
-                        </ul>
-                    </li>
-
-
-                    <li>A public method named <code>removeRatingByReviewer</code> that takes a Reviewer as a parameter and returns
-                        void
-                        <ul>
-                            <li>
-                                This method will remove a Rating made for this Song by the given Reviewer
-                            </li>
-                            <li>
-                                If the reviewer did not rate this song, this method has no effect
-                            </li>
-                            <li>
-                                If the linked list contains multiple ratings by the reviewer, the method only removes
-                                the first instance from the list (ie. the method does not have to handle removing
-                                multiple ratings in a single call)
-                            </li>
-                        </ul>
-                    </li>
-
-
-                </ul>
-
-                <br/>
-                <hr/>
-
-                <h3>
-                    Programming Requirements
-                </h3>
-
-                <hr/>
-
-                <p>
-                    Implement all the methods in the Song class that are describe above.
-                </p>
-
-                <br/>
-                <hr/>
-
-                <h3>Autolab Feedback</h3>
-
-                <hr/>
-                <p>
-                    The feedback in Autolab will be given in 3 phases. If you don't complete a phase, then feedback for
-                    the following phase(s) will not be given.
-                </p>
-
-                <ol>
-                    <li>Running your tests on a Correct Solution
-
-                    </li>
-                    <li>Running your tests on several Incorrect Solutions
-
-                    </li>
-                    <li>Running my tests on Your Solution
-
-                    </li>
-                </ol>
-
-                <p>
-                    Once you complete all 3 phases, you will have completed this Task and Autolab will confirm this
-                    with a score of 1.0 for complete.
-                </p>
-                <hr/>
-            </div>
-
-
-        </div>
-        <div class="col-0 col-sm-0 col-md-1"></div>
+    <div class="card-header section-testing">
+        <div>Requirements</div>
     </div>
-</div>
+
+    <div class="section-card card-testing hw-content">
+
+        <hr/>
 
 
-<script src="/static_files/lib/jquery-3.3.1.min.js"></script>
-<script src="/static_files/lib/popper-1.12.9.min.js"></script>
-<script src="/static_files/lib/bootstrap-4.0.0.min.js"></script>
-<script src="/static_files/lib/fontawesome.js"></script>
+        <h3>
+            Project Structure
+        </h3>
 
-</body>
-</html>
+        <hr/>
+        <p>
+            You will continue to add functionality to your existing project from the previous task. There is
+            no new repository to clone.
+        </p>
+
+        <br/>
+        <hr/>
+        <h3>Specification</h3>
+        <hr/>
+
+        <p>In this task, you will test and implement the following specs.</p>
+
+
+        <p>
+            Note: Use the provided ratings.datastructures.LinkedListNode class whenever a linked list is needed. You do
+            not have to modify this class
+        </p>
+
+        <p>
+            ratings.Song - The following methods will be added to the Song class:
+        </p>
+
+        <ul>
+            <li>A method named addRating that takes a [reference to] an object of type Rating as a
+                parameter (The type of the input is Rating) and returns void
+                <ul>
+                    <li>
+                        This method will be called when a Reviewer rates this Song. All
+                        added Ratings will be stored in a Linked List as an instance variable
+                    </li>
+                    <li>
+                        This method will append new ratings to the end of the linked list
+                    </li>
+                    <li>Note: Since the Rating class checks for valid ratings, any added ratings can only have a rating
+                        value of 1, 2, 3, 4, 5, or -1</li>
+                </ul>
+            </li>
+
+
+            <li>A method named getRatings that takes no parameters and returns a LinkedListNode of
+                Ratings
+                <ul>
+                    <li>
+                        This method returns the head of a Linked List containing all Ratings that have been
+                        added to this Song
+                    </li>
+                    <li>
+                        The returned Linked List must return the Ratings in the order in which they were added.
+                        For example, the first Rating that was added must be the first value in the list
+                    </li>
+                    <li>
+                        If no ratings have been added, this method will return null
+                    </li>
+                </ul>
+            </li>
+
+            <li>A method named setRatings that takes a LinkedListNode of Ratings and returns void
+                <ul>
+                    <li>
+                        This is a setter that replaces the stored linked list of ratings (The instance variable)
+                        with the one provided as a parameter. This assignment is done by reference (ie. any prior
+                        ratings are replaced by the new list of ratings)
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>A method named averageRating that takes no parameters and returns a double
+                <ul>
+                    <li>
+                        This method returns the average of all the Ratings of this Song
+                    </li>
+                    <li>
+                        If the list is empty, the method returns 0.0
+                    </li>
+                    <li>
+                        Any invalid rating, ratings of -1, will be ignored during this calculation (eg. A Song with
+                        ratings [1, 5, -1, -1] has an average rating of 3.0)
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>A method named removeRatingByReviewer that takes a Reviewer as a parameter and returns
+                void
+                <ul>
+                    <li>
+                        This method will remove a Rating made for this Song by the given Reviewer by id
+                    </li>
+                    <li>
+                        If the reviewer did not rate this song, this method has no effect
+                    </li>
+                    <li>
+                        If the linked list contains multiple ratings by the reviewer, the method only removes
+                        the first instance from the list (ie. the method does not have to handle removing
+                        multiple ratings in a single call)
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <p>
+            Note: You can see feedback in Autolab for your testing utilities and tests without completing the
+            programming portion of
+            this task, but you must at least create every method from this specification. You can "stub
+            out"
+            these methods by having them always return a fixed value, but they must exist so the grading code,
+            and your tests, can compile and run.
+        </p>
+
+        <br/>
+        <hr/>
+        <h3>Testing Utilities</h3>
+        <hr/>
+
+
+        <p>
+            Create a class named TestDataStructures1 in the tests package (tests.TestDataStructures1) and write the
+            following utility method in that class (Note: Do not add the @Test annotation to this method since it is
+            not itself a tests):
+        </p>
+
+        <ul>
+            <li>compareListsOfRatings - Write a method named compareSongs in the tests.TestDataStructures1 class that:
+                <ul>
+                    <li>
+                        Takes [references to] 2 LinkedListNode&lt;Rating&gt; objects as parameters
+                    </li>
+                    <li>
+                        Returns a boolean that is true if the rating and reviewer id of all Ratings in both lists are
+                        exactly the same and are in the same order. The method either returns false, or fails a JUnit
+                        assert, if the lists do not contain all the same values of their ratings objects in the same
+                        order
+                    </li>
+                    <li>
+                        Note that you cannot use == or .equals to compare 2 Ratings. You must check the rating and
+                        reviewer id values separately
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+
+        <br/>
+        <hr/>
+        <h3>
+            Testing Requirements
+        </h3>
+        <hr/>
+        <p>
+            Write tests in the tests.TestDataStructures1 class for the averageRating and removeRatingByReviewer methods.
+            You may assume that the addRating, getRatings, and setRatings methods behave as expected with tests
+            specifically for these methods, though you will need to call at least 2 of these methods in your tests, so
+            they will implicitly be tested. All 5 methods will still be tested in the next phase, so it can help if you
+            test all of them even though it's not explicitly required.
+        </p>
+        <p>
+            It is highly recommended that you create your expected linked lists and call your compareListsOfRatings to
+            check if getRatings returns a list with all the same values as the expected list
+        </p>
+
+
+
+        <br/>
+        <hr/>
+        <h3>
+            Programming Requirements
+        </h3>
+        <hr/>
+
+        <p>
+            Implement all 5 methods from the specification in your Song class.
+            As you're writing this code, you should run your tests to see how you are progressing. It's
+            recommended that you write your tests first, submit to Autolab to make sure you have good testing,
+            then use those verified tests to check your code.
+        </p>
+
+
+        <br/>
+        <hr/>
+        <h3>Autolab Feedback</h3>
+        <hr/>
+
+        <p>
+            The feedback in Autolab will be given in 4 phases. If you don't complete a phase, then feedback for
+            the following phase(s) will not be provided.
+        </p>
+
+        <ol>
+            <li>Testing your testing utility methods
+                <ul>
+                    <li>
+                        Your testing utility method will be checked with a variety of test cases to
+                        ensure
+                        that
+                        it makes all the required checks. This phase will ensure that your utility method is
+                        accurate
+                        before you start using it in your tests
+                    </li>
+                </ul>
+            </li>
+            <li>Running your tests on a correct solution
+                <ul>
+                    <li>Your tests will be run against a solution that is known to be correct. If your tests do
+                        not pass this correct solution, there is an error somewhere in your tests that must be
+                        fixed
+                        before you can move on with the assignment. If your tests don't get past this check, you
+                        should re-read this document and make sure you implemented your tests and code according
+                        the specification. You should also make sure that if there are multiple correct outputs
+                        to the input in your tests cases that you accept any of the outputs as correct
+                    </li>
+                </ul>
+            </li>
+            <li>Checking your tests for feature coverage
+                <ul>
+                    <li>
+                        The next phase is to check if your tests check for a variety of features defined by
+                        different inputs. You should write at least one test case for each feature to pass this
+                        phase
+                    </li>
+                    <li>
+                        Passing this phase does not necessarily mean that your testing is completely thorough.
+                        Satisfying Autolab is the bare minimum testing requirement. Not all possible inputs are
+                        checked, and it is sometimes possible to pass this phase
+                        with weak testing. If you are struggling to earn credit for code that you believe
+                        is correct, you should write more than the required tests
+                    </li>
+                </ul>
+            </li>
+            <li>Running my tests on your solution
+                <ul>
+                    <li>
+                        Once Autolab is happy with your tests, it will run my tests against your code to check
+                        it for correctness. If your testing is thorough, and your code passes your tests, then
+                        you should pass this phase. If you pass your tests, but fail one of mine, it is an
+                        indicator that you should write more tests to help expose your bug
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+        <p>
+            Once you complete all 4 phases, you will have completed this Task and Autolab will confirm this
+            with a score of 1.0 for complete.
+        </p>
+    </div>
+{% endblock %}
