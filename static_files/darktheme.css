@@ -12,6 +12,14 @@
     --link-hover-color: #bfccff;
 }
 
+code {
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: unset;
+    background-color: #353535;
+    font-family: "JetBrains Mono",Consolas,"Liberation Mono","Courier New",monospace;
+}
+
 
 /* The whole page */
 body.outer {
