@@ -2,6 +2,20 @@
     margin-top: 20px;
 }
 
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('JetBrainsMono-Regular.ttf');
+}
+
+code {
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: unset;
+    background-color: #d5d5d5;
+    font-family: "JetBrains Mono",Consolas,"Liberation Mono","Courier New",monospace;
+}
+
 .table {
     /* Remove the annoying space under each table */
     margin-bottom: 0;
