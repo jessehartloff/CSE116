@@ -5,7 +5,7 @@
     {
       "title": "Application Objective Task 2",
       "url": "ao2.html",
-      "released": false
+      "released": true
     }
   ],
   "lab": "2nd Chance - Polymorphism/Graphs Interviews & Quizzes",
@@ -14,21 +14,21 @@
       "type": "lecture",
       "day": "Monday",
       "date": "April 22",
-      "title": "Algorithms",
+      "title": "Weighted Graphs",
       "reading_list": []
     },
     {
       "type": "lecture",
       "day": "Wednesday",
       "date": "April 24",
-      "title": "Algorithms",
+      "title": "Weighted Graphs",
       "reading_list": []
     },
     {
       "type": "lecture",
       "day": "Friday",
       "date": "April 26",
-      "title": "Algorithms",
+      "title": "Merge Sort",
       "reading_list": []
     },
     {
