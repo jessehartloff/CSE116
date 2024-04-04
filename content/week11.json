@@ -14,9 +14,14 @@
       "type": "lecture",
       "day": "Monday",
       "date": "April 8",
-      "title": "Graphs",
+      "title": "Eclipse Day - No live lecture or lab [Watch the Lecture Video Below]",
       "slides": "Week10_1_Graphs.pdf",
-      "reading_list": []
+      "reading_list": [
+        {
+          "url": "https://www.youtube.com/watch?v=mQYZJa44i2Q",
+          "text": "Lecture Video [Watch before Wednesday's lecture]"
+        }
+      ]
     },
     {
       "type": "lecture",
