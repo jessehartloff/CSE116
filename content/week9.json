@@ -1,5 +1,5 @@
 {
-  "title": "Lecture 10: Classes/OOP - Polymorphism",
+  "title": "Lecture 9: Classes/OOP - Polymorphism",
   "theme": "oop",
   "homework": [
     {
@@ -13,7 +13,7 @@
     {
       "type": "deadline",
       "day": "Monday",
-      "date": "June 10",
+      "date": "June 24",
       "time": "11:59pm",
       "assignment": "Task 4",
       "deadline_type": "final"
@@ -21,7 +21,7 @@
     {
       "type": "deadline",
       "day": "Tuesday",
-      "date": "June 11",
+      "date": "June 25",
       "time": "8:00am",
       "assignment": "Task 6",
       "deadline_type": "late"
