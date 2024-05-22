@@ -22,13 +22,9 @@
       "type": "lecture",
       "day": "Thursday",
       "date": "June 27",
-      "title": "Eclipse Day - No live lecture or lab [Watch the Lecture Video Below]",
+      "title": "Graphs",
       "slides": "Week10_1_Graphs.pdf",
       "reading_list": [
-        {
-          "url": "https://www.youtube.com/watch?v=mQYZJa44i2Q",
-          "text": "Lecture Video [Watch before Wednesday's lecture]"
-        }
       ]
     },
     {
