@@ -1,66 +1,46 @@
 {
-  "title": "Week 11: Data Structures 3 - Graphs",
-  "theme": "ds",
-  "homework": [
-    {
-      "title": "Programming Task 8: Graphs",
-      "url": "task8.html",
-      "released": true
-    }
-  ],
-  "lab": "1st Chance - Polymorphism Interview & Quiz",
+  "title": "Lecture 11: Final",
+  "theme": "intro",
+  "homework": [],
+  "lab": "Review",
   "content": [
     {
-      "type": "lecture",
+      "type": "deadline",
       "day": "Monday",
-      "date": "April 8",
-      "title": "Eclipse Day - No live lecture or lab [Watch the Lecture Video Below]",
-      "slides": "Week10_1_Graphs.pdf",
-      "reading_list": [
-        {
-          "url": "https://www.youtube.com/watch?v=mQYZJa44i2Q",
-          "text": "Lecture Video [Watch before Wednesday's lecture]"
-        }
-      ]
-    },
-    {
-      "type": "lecture",
-      "day": "Wednesday",
-      "date": "April 10",
-      "title": "Graph with BFS",
-      "slides": "Week10_2_Pathfinding.pdf",
-      "reading_list": []
-    },
-    {
-      "type": "lecture",
-      "day": "Friday",
-      "date": "April 12",
-      "title": "Graph Examples",
-      "slides": "Week10_3_Graphs.pdf",
-      "reading_list": []
-    },
-    {
-      "type": "deadline",
-      "day": "Friday",
-      "date": "April 12",
-      "time": "11:59pm",
-      "assignment": "Task 7",
-      "deadline_type": "expected"
-    },
-    {
-      "type": "deadline",
-      "day": "Friday",
-      "date": "April 12",
+      "date": "July 1",
       "time": "11:59pm",
       "assignment": "Task 6",
+      "deadline_type": "final"
+    },
+    {
+      "type": "deadline",
+      "day": "Tuesday",
+      "date": "July 2",
+      "time": "8:00am",
+      "assignment": "Task 8",
       "deadline_type": "late"
     },
     {
+      "type": "lecture",
+      "day": "Tuesday",
+      "date": "July 2",
+      "title": "Final Exam",
+      "reading_list": []
+    },
+    {
       "type": "deadline",
-      "day": "Friday",
-      "date": "April 12",
+      "day": "Saturday",
+      "date": "July 6",
       "time": "11:59pm",
-      "assignment": "Task 5",
+      "assignment": "Task 7",
+      "deadline_type": "final"
+    },
+    {
+      "type": "deadline",
+      "day": "Monday",
+      "date": "July 7",
+      "time": "11:59pm",
+      "assignment": "Task 8",
       "deadline_type": "final"
     }
   ]

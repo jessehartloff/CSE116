@@ -1,5 +1,5 @@
 {
-  "title": "Week 3: Testing 1 - Unit Testing",
+  "title": "Lecture 3: Testing 1 - Unit Testing",
   "theme": "testing",
   "homework": [
     {
@@ -8,12 +8,11 @@
       "released": true
     }
   ],
-  "lab": "Practice Quiz and Interview",
   "content": [
     {
       "type": "lecture",
-      "day": "Monday",
-      "date": "February 5",
+      "day": "Tuesday",
+      "date": "June 4",
       "title": "Unit Testing",
       "slides": "week2_1_Unit_Testing.pdf",
       "reading_list": [
@@ -25,16 +24,12 @@
     },
     {
       "type": "lecture",
-      "day": "Wednesday",
-      "date": "February 7",
       "title": "Testing Strings/doubles",
       "slides": "week2_2_Unit_Testing.pdf",
       "reading_list": []
     },
     {
       "type": "lecture",
-      "day": "Friday",
-      "date": "February 9",
       "title": "Testing and Recursion",
       "slides": "week2_3_Recursion.pdf",
       "reading_list": [

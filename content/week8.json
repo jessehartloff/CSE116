@@ -1,67 +1,64 @@
 {
-  "title": "Week 8: Data Structures 2 - Trees",
-  "theme": "ds",
+  "title": "Lecture 9: Testing 3 - Testing and Files ",
+  "theme": "testing",
   "homework": [
     {
-      "title": "Programming Task 5: Trees",
-      "url": "task5.html",
+      "title": "Programming Task 6: Files",
+      "url": "task6.html",
       "released": true
     }
   ],
-  "lab": "1st Chance - Inheritance Interview & Quiz",
+  "lab": "1st Chance - Trees Interview & Quiz",
   "content": [
     {
-      "type": "lecture",
-      "day": "Monday",
-      "date": "March 11",
-      "title": "Binary Trees and Traversals",
-      "slides": "Week7_1_Trees.pdf",
-      "reading_list": [
-        {
-          "url": "https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm",
-          "text": "Trees"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Tree_traversal",
-          "text": "Tree Traversals (Wikipedia)"
-        }
-      ]
+      "type": "deadline",
+      "day": "Thursday",
+      "date": "June 20",
+      "time": "8:00am",
+      "assignment": "Task 5",
+      "deadline_type": "expected"
     },
     {
       "type": "lecture",
-      "day": "Wednesday",
-      "date": "March 13",
-      "title": "Binary Search Trees (BSTs)",
-      "slides": "Week7_2_BST.pdf",
-      "reading_list": [
-        {
-          "url": "https://www.tutorialspoint.com/data_structures_algorithms/binary_search_tree.htm",
-          "text": "BST"
-        }
-      ]
+      "day": "Thursday",
+      "date": "June 20",
+      "title": "Files and Exceptions",
+      "slides": "Week8_Reading_Files.pdf",
+      "reading_list": []
     },
     {
       "type": "lecture",
-      "day": "Friday",
-      "date": "March 15",
-      "title": "Binary Tree Examples",
+      "title": "Testing With Files",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "title": "Debugger Tips",
       "reading_list": []
     },
     {
       "type": "deadline",
-      "day": "Friday",
-      "date": "March 15",
-      "time": "11:59pm",
-      "assignment": "Task 4",
+      "day": "Saturday",
+      "date": "June 22",
+      "time": "8:00am",
+      "assignment": "Task 6",
       "deadline_type": "expected"
     },
     {
       "type": "deadline",
-      "day": "Friday",
-      "date": "March 15",
+      "day": "Saturday",
+      "date": "June 22",
       "time": "11:59pm",
       "assignment": "Task 3",
       "deadline_type": "final"
+    },
+    {
+      "type": "deadline",
+      "day": "Sunday",
+      "date": "June 23",
+      "time": "8:00am",
+      "assignment": "Task 5",
+      "deadline_type": "late"
     }
   ]
 }

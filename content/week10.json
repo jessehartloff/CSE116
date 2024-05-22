@@ -1,61 +1,71 @@
 {
-  "title": "Week 10: Classes/OOP - Polymorphism",
-  "theme": "oop",
+  "title": "Lecture 11: Data Structures 3 - Graphs",
+  "theme": "ds",
   "homework": [
     {
-      "title": "Programming Task 7: Polymorphism",
-      "url": "task7.html",
+      "title": "Programming Task 8: Graphs",
+      "url": "task8.html",
       "released": true
     }
   ],
-  "lab": "2nd Chance - Inheritance/Trees Interviews & Quizzes",
+  "lab": "1st Chance - Polymorphism Interview & Quiz",
   "content": [
     {
+      "type": "deadline",
+      "day": "Thursday",
+      "date": "June 27",
+      "time": "8:00am",
+      "assignment": "Task 7",
+      "deadline_type": "expected"
+    },
+    {
       "type": "lecture",
-      "day": "Monday",
-      "date": "April 1",
-      "title": "Polymorphism",
-      "slides": "Week9_1_Polymorphism.pdf",
+      "day": "Thursday",
+      "date": "June 27",
+      "title": "Eclipse Day - No live lecture or lab [Watch the Lecture Video Below]",
+      "slides": "Week10_1_Graphs.pdf",
+      "reading_list": [
+        {
+          "url": "https://www.youtube.com/watch?v=mQYZJa44i2Q",
+          "text": "Lecture Video [Watch before Wednesday's lecture]"
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "title": "Graph with BFS",
+      "slides": "Week10_2_Pathfinding.pdf",
       "reading_list": []
     },
     {
       "type": "lecture",
-      "day": "Wednesday",
-      "date": "April 3",
-      "title": "Polymorphism",
-      "slides": "Week9_2_Polymorphism_2.pdf",
-      "reading_list": []
-    },
-    {
-      "type": "lecture",
-      "day": "Friday",
-      "date": "April 5",
-      "title": "Polymorphism Example",
+      "title": "Graph Examples",
+      "slides": "Week10_3_Graphs.pdf",
       "reading_list": []
     },
     {
       "type": "deadline",
-      "day": "Friday",
-      "date": "April 5",
-      "time": "11:59pm",
-      "assignment": "Task 6",
+      "day": "Saturday",
+      "date": "June 29",
+      "time": "8:00am",
+      "assignment": "Task 8",
       "deadline_type": "expected"
     },
     {
       "type": "deadline",
-      "day": "Friday",
-      "date": "April 5",
+      "day": "Saturday",
+      "date": "June 29",
       "time": "11:59pm",
       "assignment": "Task 5",
-      "deadline_type": "late"
+      "deadline_type": "final"
     },
     {
       "type": "deadline",
-      "day": "Friday",
-      "date": "April 5",
-      "time": "11:59pm",
-      "assignment": "Task 4",
-      "deadline_type": "final"
+      "day": "Sunday",
+      "date": "June 30",
+      "time": "8:00am",
+      "assignment": "Task 7",
+      "deadline_type": "late"
     }
   ]
 }
