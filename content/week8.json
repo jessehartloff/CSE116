@@ -1,5 +1,5 @@
 {
-  "title": "Lecture 8: Testing 3 - Testing and Files ",
+  "title": "Lecture 8: Midterm Exam, then Testing 3 - Testing and Files ",
   "theme": "testing",
   "homework": [
     {
@@ -22,6 +22,14 @@
       "type": "lecture",
       "day": "Thursday",
       "date": "June 20",
+      "title": "Midterm Exam - First 1.5 hours of lecture",
+      "reading_list": [
+      ]
+    },
+    {
+      "type": "lecture",
+      "day": "Thursday",
+      "date": "June 20",
       "title": "Files and Exceptions",
       "slides": "Week8_Reading_Files.pdf",
       "reading_list": []
@@ -29,11 +37,6 @@
     {
       "type": "lecture",
       "title": "Testing With Files",
-      "reading_list": []
-    },
-    {
-      "type": "lecture",
-      "title": "Debugger Tips",
       "reading_list": []
     },
     {
