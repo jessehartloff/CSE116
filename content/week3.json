@@ -13,7 +13,7 @@
     {
       "type": "lecture",
       "day": "Monday",
-      "date": "February 5",
+      "date": "September 9",
       "title": "Unit Testing",
       "slides": "week2_1_Unit_Testing.pdf",
       "reading_list": [
@@ -26,7 +26,7 @@
     {
       "type": "lecture",
       "day": "Wednesday",
-      "date": "February 7",
+      "date": "September 11",
       "title": "Testing Strings/doubles",
       "slides": "week2_2_Unit_Testing.pdf",
       "reading_list": []
@@ -34,7 +34,7 @@
     {
       "type": "lecture",
       "day": "Friday",
-      "date": "February 9",
+      "date": "September 13",
       "title": "Testing and Recursion",
       "slides": "week2_3_Recursion.pdf",
       "reading_list": [

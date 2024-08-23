@@ -7,28 +7,14 @@
     {
       "type": "lecture",
       "day": "Monday",
-      "date": "April 29",
-      "title": "Classes in Python",
-      "reading_list": []
-    },
-    {
-      "type": "lecture",
-      "day": "Wednesday",
-      "date": "May 1",
-      "title": "Review",
-      "reading_list": []
-    },
-    {
-      "type": "lecture",
-      "day": "Friday",
-      "date": "May 3",
-      "title": "TA Lecture: WTF to do with a CSE Degree",
+      "date": "December 9",
+      "title": "Catch Up Day",
       "reading_list": []
     },
     {
       "type": "deadline",
       "day": "Friday",
-      "date": "May 3",
+      "date": "December 13",
       "time": "11:59pm",
       "assignment": "Task 8",
       "deadline_type": "final"
@@ -36,7 +22,7 @@
     {
       "type": "deadline",
       "day": "Friday",
-      "date": "May 3",
+      "date": "December 13",
       "time": "11:59pm",
       "assignment": "Application Objective Task 2",
       "deadline_type": "final"

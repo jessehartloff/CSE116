@@ -13,7 +13,7 @@
     {
       "type": "lecture",
       "day": "Monday",
-      "date": "February 12",
+      "date": "September 16",
       "title": "Classes and Objects",
       "slides": "week3_1_Classes.pdf",
       "reading_list": [
@@ -30,7 +30,7 @@
     {
       "type": "lecture",
       "day": "Wednesday",
-      "date": "February 14",
+      "date": "September 18",
       "title": "Classes and Objects",
       "slides": "week3_2_Classes.pdf",
       "reading_list": []
@@ -38,7 +38,7 @@
     {
       "type": "lecture",
       "day": "Friday",
-      "date": "February 16",
+      "date": "September 20",
       "title": "Testing Classes and Examples",
       "slides": "week3_3_Execution_Heap.pdf",
       "reading_list": []
@@ -46,7 +46,7 @@
     {
       "type": "deadline",
       "day": "Friday",
-      "date": "February 16",
+      "date": "September 20",
       "time": "11:59pm",
       "assignment": "Task 1",
       "deadline_type": "expected"

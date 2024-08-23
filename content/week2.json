@@ -7,20 +7,14 @@
     {
       "type": "lecture",
       "day": "Monday",
-      "date": "January 29",
-      "title": "Java Loops and Conditionals",
-      "slides": "week1_2_Java.pdf",
-      "reading_list": [
-        {
-          "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html",
-          "text": "Java for loops"
-        }
-      ]
+      "date": "September 2",
+      "title": "No Lecture",
+      "reading_list": []
     },
     {
       "type": "lecture",
       "day": "Wednesday",
-      "date": "January 31",
+      "date": "September 4",
       "title": "Java Data Structures",
       "slides": "week2_1_Java.pdf",
       "reading_list": [
@@ -45,7 +39,7 @@
     {
       "type": "lecture",
       "day": "Friday",
-      "date": "February 2",
+      "date": "September 6",
       "title": "Java Examples",
       "reading_list": []
     }

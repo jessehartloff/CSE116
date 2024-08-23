@@ -7,16 +7,11 @@
     {
       "type": "lecture",
       "day": "Monday",
-      "date": "May 6",
-      "title": "Review",
-      "reading_list": []
-    },
-    {
-      "type": "lecture",
-      "day": "Friday",
-      "date": "May 10 @ 11:45am - 2:45pm",
+      "date": "December 16 @ 11:45 - 2:45 PM",
       "title": "Final Exam",
-      "reading_list": []
+      "reading_list": [],
+      "text_lists": [
+      ]
     }
   ]
 }

@@ -13,7 +13,7 @@
     {
       "type": "lecture",
       "day": "Monday",
-      "date": "February 19",
+      "date": "September 23",
       "title": "Linked List Structure",
       "slides": "Week4_1_Linked_List.pdf",
       "reading_list": [
@@ -26,7 +26,7 @@
     {
       "type": "lecture",
       "day": "Wednesday",
-      "date": "February 21",
+      "date": "September 25",
       "title": "Linked List Algorithms",
       "slides": "Week4_2_Linked_List.pdf",
       "reading_list": []
@@ -34,7 +34,7 @@
     {
       "type": "lecture",
       "day": "Friday",
-      "date": "February 23",
+      "date": "September 27",
       "title": "Stack and Queue",
       "slides": "Week4_3_Stack_Queue.pdf",
       "reading_list": [
@@ -51,7 +51,7 @@
     {
       "type": "deadline",
       "day": "Friday",
-      "date": "February 23",
+      "date": "September 27",
       "time": "11:59pm",
       "assignment": "Task 2",
       "deadline_type": "expected"
@@ -59,7 +59,7 @@
     {
       "type": "deadline",
       "day": "Friday",
-      "date": "February 23",
+      "date": "September 27",
       "time": "11:59pm",
       "assignment": "Task 1",
       "deadline_type": "late"
