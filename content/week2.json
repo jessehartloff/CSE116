@@ -1,12 +1,26 @@
 {
-  "title": "Lecture 2: Introduction to Java",
+  "title": "Week 2: Introduction to Java",
   "theme": "intro",
   "homework": [],
+  "lab": "IntelliJ Setup",
   "content": [
     {
       "type": "lecture",
-      "day": "Thursday",
-      "date": "May 30",
+      "day": "Monday",
+      "date": "January 29",
+      "title": "Java Loops and Conditionals",
+      "slides": "week1_2_Java.pdf",
+      "reading_list": [
+        {
+          "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html",
+          "text": "Java for loops"
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "date": "January 31",
       "title": "Java Data Structures",
       "slides": "week2_1_Java.pdf",
       "reading_list": [
@@ -30,6 +44,8 @@
     },
     {
       "type": "lecture",
+      "day": "Friday",
+      "date": "February 2",
       "title": "Java Examples",
       "reading_list": []
     }

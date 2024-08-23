@@ -1,0 +1,45 @@
+{
+  "title": "Week 14: Review",
+  "theme": "outro",
+  "homework": [],
+  "lab": "Review",
+  "content": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "date": "April 29",
+      "title": "Classes in Python",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "date": "May 1",
+      "title": "Review",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Friday",
+      "date": "May 3",
+      "title": "TA Lecture: WTF to do with a CSE Degree",
+      "reading_list": []
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "May 3",
+      "time": "11:59pm",
+      "assignment": "Task 8",
+      "deadline_type": "final"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "May 3",
+      "time": "11:59pm",
+      "assignment": "Application Objective Task 2",
+      "deadline_type": "final"
+    }
+  ]
+}

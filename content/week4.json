@@ -1,5 +1,5 @@
 {
-  "title": "Lecture 4: Classes/OOP 1 - Classes",
+  "title": "Week 4: Classes/OOP 1 - Classes",
   "theme": "oop",
   "homework": [
     {
@@ -8,19 +8,12 @@
       "released": true
     }
   ],
+  "lab": "Practice Quiz and Interview",
   "content": [
     {
-      "type": "deadline",
-      "day": "Thursday",
-      "date": "June 6",
-      "time": "8:00am",
-      "assignment": "Task 1",
-      "deadline_type": "expected"
-    },
-    {
       "type": "lecture",
-      "day": "Thursday",
-      "date": "June 6",
+      "day": "Monday",
+      "date": "February 12",
       "title": "Classes and Objects",
       "slides": "week3_1_Classes.pdf",
       "reading_list": [
@@ -36,31 +29,27 @@
     },
     {
       "type": "lecture",
+      "day": "Wednesday",
+      "date": "February 14",
       "title": "Classes and Objects",
       "slides": "week3_2_Classes.pdf",
       "reading_list": []
     },
     {
       "type": "lecture",
+      "day": "Friday",
+      "date": "February 16",
       "title": "Testing Classes and Examples",
       "slides": "week3_3_Execution_Heap.pdf",
       "reading_list": []
     },
     {
       "type": "deadline",
-      "day": "Saturday",
-      "date": "June 8",
-      "time": "8:00am",
-      "assignment": "Task 2",
-      "deadline_type": "expected"
-    },
-    {
-      "type": "deadline",
-      "day": "Sunday",
-      "date": "June 9",
-      "time": "8:00am",
+      "day": "Friday",
+      "date": "February 16",
+      "time": "11:59pm",
       "assignment": "Task 1",
-      "deadline_type": "late"
+      "deadline_type": "expected"
     }
   ]
 }

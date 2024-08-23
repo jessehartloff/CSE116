@@ -1,49 +1,52 @@
 {
-  "title": "Lecture 9: Classes/OOP - Polymorphism",
-  "theme": "oop",
+  "title": "Week 9: Testing 3 - Testing and Files ",
+  "theme": "testing",
   "homework": [
     {
-      "title": "Programming Task 7: Polymorphism",
-      "url": "task7.html",
+      "title": "Programming Task 6: Files",
+      "url": "task6.html",
       "released": true
     }
   ],
-  "lab": "2nd Chance - Inheritance/Trees Interviews & Quizzes",
+  "lab": "1st Chance - Trees Interview & Quiz",
   "content": [
     {
-      "type": "deadline",
+      "type": "lecture",
       "day": "Monday",
-      "date": "June 24",
+      "date": "March 25",
+      "title": "Files and Exceptions",
+      "slides": "Week8_Reading_Files.pdf",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "date": "March 27",
+      "title": "Testing With Files",
+      "reading_list": []
+    },
+    {
+      "type": "lecture",
+      "day": "Friday",
+      "date": "March 29",
+      "title": "Debugger Tips",
+      "reading_list": []
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "March 29",
+      "time": "11:59pm",
+      "assignment": "Task 5",
+      "deadline_type": "expected"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "March 29",
       "time": "11:59pm",
       "assignment": "Task 4",
-      "deadline_type": "final"
-    },
-    {
-      "type": "deadline",
-      "day": "Tuesday",
-      "date": "June 25",
-      "time": "8:00am",
-      "assignment": "Task 6",
       "deadline_type": "late"
-    },
-    {
-      "type": "lecture",
-      "day": "Tuesday",
-      "date": "June 25",
-      "title": "Polymorphism",
-      "slides": "Week9_1_Polymorphism.pdf",
-      "reading_list": []
-    },
-    {
-      "type": "lecture",
-      "title": "Polymorphism",
-      "slides": "Week9_2_Polymorphism_2.pdf",
-      "reading_list": []
-    },
-    {
-      "type": "lecture",
-      "title": "Polymorphism Example",
-      "reading_list": []
     }
   ]
 }

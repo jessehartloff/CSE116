@@ -1,5 +1,5 @@
 {
-  "title": "Lecture 5: Data Structures 1 - Linked Lists",
+  "title": "Week 5: Data Structures 1 - Linked Lists",
   "theme": "ds",
   "homework": [
     {
@@ -8,19 +8,12 @@
       "released": true
     }
   ],
+  "lab": "1st Chance - Classes Interview & Quiz",
   "content": [
     {
-      "type": "deadline",
-      "day": "Tuesday",
-      "date": "June 11",
-      "time": "8:00am",
-      "assignment": "Task 2",
-      "deadline_type": "late"
-    },
-    {
       "type": "lecture",
-      "day": "Tuesday",
-      "date": "June 11",
+      "day": "Monday",
+      "date": "February 19",
       "title": "Linked List Structure",
       "slides": "Week4_1_Linked_List.pdf",
       "reading_list": [
@@ -32,12 +25,16 @@
     },
     {
       "type": "lecture",
+      "day": "Wednesday",
+      "date": "February 21",
       "title": "Linked List Algorithms",
       "slides": "Week4_2_Linked_List.pdf",
       "reading_list": []
     },
     {
       "type": "lecture",
+      "day": "Friday",
+      "date": "February 23",
       "title": "Stack and Queue",
       "slides": "Week4_3_Stack_Queue.pdf",
       "reading_list": [
@@ -50,6 +47,22 @@
           "text": "Queue"
         }
       ]
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "February 23",
+      "time": "11:59pm",
+      "assignment": "Task 2",
+      "deadline_type": "expected"
+    },
+    {
+      "type": "deadline",
+      "day": "Friday",
+      "date": "February 23",
+      "time": "11:59pm",
+      "assignment": "Task 1",
+      "deadline_type": "late"
     }
   ]
 }
