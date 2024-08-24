@@ -1,34 +1,29 @@
 {
-  "title": "Week 13: AO2 - Algorithms",
+  "title": "Week 13: Review",
   "theme": "outro",
   "homework": [
-    {
-      "title": "Application Objective Task 2",
-      "url": "ao2.html",
-      "released": true
-    }
   ],
-  "lab": "2nd Chance - Polymorphism/Graphs Interviews & Quizzes",
+  "lab": "2nd Chance - Interview 4 & Quiz 2",
   "content": [
     {
       "type": "lecture",
       "day": "Monday",
       "date": "December 2",
-      "title": "Weighted Graphs",
+      "title": "Review",
       "reading_list": []
     },
     {
       "type": "lecture",
       "day": "Wednesday",
       "date": "December 4",
-      "title": "Weighted Graphs",
+      "title": "Review",
       "reading_list": []
     },
     {
       "type": "lecture",
       "day": "Friday",
       "date": "December 6",
-      "title": "Merge Sort",
+      "title": "Review",
       "reading_list": []
     },
     {
@@ -52,7 +47,7 @@
       "day": "Friday",
       "date": "December 6",
       "time": "11:59pm",
-      "assignment": "Application Objective Task 1",
+      "assignment": "Application Objective Task",
       "deadline_type": "final"
     }
   ]

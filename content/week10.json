@@ -5,10 +5,10 @@
     {
       "title": "Programming Task 7: Polymorphism",
       "url": "task7.html",
-      "released": true
+      "released": false
     }
   ],
-  "lab": "2nd Chance - Inheritance/Trees Interviews & Quizzes",
+  "lab": "1st Chance - Quiz 1 (Data Structures)",
   "content": [
     {
       "type": "lecture",

@@ -2,7 +2,7 @@
   "title": "Week 14: Review",
   "theme": "outro",
   "homework": [],
-  "lab": "Review",
+  "lab": "No Lab",
   "content": [
     {
       "type": "lecture",
@@ -17,14 +17,6 @@
       "date": "December 13",
       "time": "11:59pm",
       "assignment": "Task 8",
-      "deadline_type": "final"
-    },
-    {
-      "type": "deadline",
-      "day": "Friday",
-      "date": "December 13",
-      "time": "11:59pm",
-      "assignment": "Application Objective Task 2",
       "deadline_type": "final"
     }
   ]

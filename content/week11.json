@@ -5,10 +5,10 @@
     {
       "title": "Programming Task 8: Graphs",
       "url": "task8.html",
-      "released": true
+      "released": false
     }
   ],
-  "lab": "1st Chance - Polymorphism Interview & Quiz",
+  "lab": "1st Chance - Interview 4 (Inheritance & Polymorphism) & Quiz 2 (OOP)",
   "content": [
     {
       "type": "lecture",

@@ -5,10 +5,10 @@
     {
       "title": "Programming Task 4: Inheritance",
       "url": "task4.html",
-      "released": true
+      "released": false
     }
   ],
-  "lab": "2nd Chance - Classes/Linked List Interviews & Quizzes",
+  "lab": "2nd Chance - Interview 1",
   "content": [
     {
       "type": "lecture",

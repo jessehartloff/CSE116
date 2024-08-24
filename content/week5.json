@@ -5,10 +5,10 @@
     {
       "title": "Programming Task 3: Linked Lists",
       "url": "task3.html",
-      "released": true
+      "released": false
     }
   ],
-  "lab": "1st Chance - Classes Interview & Quiz",
+  "lab": "1st Chance - Interview 1 (Classes)",
   "content": [
     {
       "type": "lecture",

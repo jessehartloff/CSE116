@@ -3,12 +3,12 @@
   "theme": "oop",
   "homework": [
     {
-      "title": "Application Objective Task 1",
+      "title": "Application Objective Task",
       "url": "ao1.html",
-      "released": true
+      "released": false
     }
   ],
-  "lab": "1st Chance - Graphs Interview & Quiz",
+  "lab": "2nd Chance - Interview 3 & Quiz 1",
   "content": [
     {
       "type": "lecture",
