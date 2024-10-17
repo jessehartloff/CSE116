@@ -82,7 +82,7 @@
 
             <li>A method named <code>getSongTree</code> that takes no parameters and returns the
                 <code>BinaryTreeNode</code> of <code>Songs</code> that is the root node of your
-                BST. This method should be a simple getter with one line of code
+                BST. This method should be a getter with one line of code
             </li>
 
 
@@ -122,18 +122,18 @@
                         while writing your code
                     </li>
                     <li>The returned node will be the head of a linked list containing all the Songs
-                        that were added in sorted order according to the comparator provided to the
+                        that were added to your playlist in sorted order according to the comparator provided to the
                         constructor
                     </li>
                     <li>
                         Example: If you provided a <code>SongTitleComparator</code>, the songs will be sorted
-                        alphabetically
+                        alphabetically by title
                     </li>
                     <li>
                         Example: If you provided a <code>SongBayesianRatingComparator</code>, the songs will be sorted
                         in
                         decreasing order (The highest rated songs first) according to their bayesian
-                        average rating with 2 fake ratings of 3 being added.
+                        average rating with 2 fake ratings of 3 being added
                     </li>
                     <li>If no songs have been added to the Playlist, this method returns null to represent an empty
                         linked list
@@ -165,10 +165,10 @@
                         Takes [references to] 2 <code>BinaryTreeNode&lt;Song&gt;</code> objects as parameters
                     </li>
                     <li>
-                        Returns a boolean that is true if all the songs in the two trees have the same exact title,
+                        Checks if all the songs in the two trees have the same exact title,
                         artist, id, and ratings in the same positions in the tree.
-                        The method either returns false, or fails a JUnit
-                        assert, if the trees do not contain all the same songs in the same positions
+                        The method fails a JUnit
+                        assert if the trees do not contain all the same songs in the same positions
                     </li>
                 </ul>
             </li>
@@ -222,7 +222,7 @@
                         contains all the songs in the correct places based on the comparator you provided in the
                         constructor and the algorithm for inserting into a BST
                         <ul>
-                            <li>Do not write tests where 2 of your songs are tied according ot the comparator
+                            <li>Do not write tests where 2 of your songs are tied according to the comparator
                             </li>
                             <li>
                                 If no songs have been added, this method returns null
@@ -236,7 +236,7 @@
                         Write tests for the <code>getSongList</code> method that takes no parameters and assert that it returns a linked list
                         of all the added songs in sorted order according to the comparator you provided in the constructor
                         <ul>
-                            <li>Do not write tests where 2 of your songs are tied according ot the comparator
+                            <li>Do not write tests where 2 of your songs are tied according to the comparator
                             </li>
                             <li>
                                 If no songs have been added, this method returns null
