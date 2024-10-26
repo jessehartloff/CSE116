@@ -18,7 +18,7 @@ code {
     border-radius: 4px;
     color: unset;
     background-color: #d5d5d5;
-    font-family: "JetBrains Mono",Consolas,"Liberation Mono","Courier New",monospace;
+    font-family: "JetBrains Mono", Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .table {
@@ -26,45 +26,45 @@ code {
     margin-bottom: 0;
 }
 
-.my-social-icon{
+.my-social-icon {
     width: 40px;
     margin: 6px;
 }
 
 
-.help{
+.help {
     width: 14px;
     /*margin: 4px;*/
 }
 
-.homework{
+.homework {
     background-color: #f9fff9;
 }
 
-.lab{
+.lab {
     background-color: #f9fff9;
 }
 
-.non_visual_link{
+.non_visual_link {
     color: inherit;
     text-decoration: inherit;
 }
 
-.non_visual_link:hover{
+.non_visual_link:hover {
     color: inherit;
     text-decoration: inherit;
 }
 
-.reading{
+.reading {
     text-align: left;
     margin: 0;
 }
 
-li.reading{
+li.reading {
     margin: 0;
 }
 
-.table td{
+.table td {
     padding: 7px;
 }
 
@@ -122,13 +122,13 @@ p, li {
     cursor: pointer;
 }
 
-.section-card{
+.section-card {
     margin-bottom: 15px;
     border: 2px solid;
     border-radius: 0;
 }
 
-.card-intro{
+.card-intro {
     border-color: #f0f0f0;
 }
 
@@ -139,15 +139,15 @@ p, li {
     cursor: pointer;
 }
 
-.card-outro{
+.card-outro {
     border-color: #555555;
 }
 
-.hw-content{
+.hw-content {
     padding: 20px;
 }
 
-td.date{
+td.date {
     width: 20%;
     white-space: nowrap;
 }
@@ -159,8 +159,7 @@ td.date{
 }
 
 
-
-.card-testing{
+.card-testing {
     border-color: #3265cb;
 }
 
@@ -171,25 +170,27 @@ td.date{
 }
 
 
-.card-oop{
+.card-oop {
     border-color: #3c9b3b;
 }
+
 .section-oop {
     background-color: #3c9b3b;
     color: #ffffff;
     cursor: pointer;
 }
 
-.card-fp{
+.card-fp {
     border-color: #cca238;
 }
+
 .section-fp {
     background-color: #cca238;
     color: #ffffff;
     cursor: pointer;
 }
 
-.card-ds{
+.card-ds {
     border-color: #319397;
 }
 
@@ -252,6 +253,11 @@ div.grading-progress-bar {
     background: #1662ed;
 }
 
+.h {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
 
 ul.plain {
     list-style-type: none;
@@ -300,13 +306,13 @@ div.comment_time {
     padding: 2px;
 }
 
-table.table-big td{
+table.table-big td {
     width: available;
     margin: 0 0;
     padding: 7px;
 }
 
-table.table-big th{
+table.table-big th {
     font-size: smaller;
     width: available;
     margin: 0 0;
